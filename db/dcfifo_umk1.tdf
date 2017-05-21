@@ -1,0 +1,177 @@
+--dcfifo_mixed_widths ADD_RAM_OUTPUT_REGISTER="OFF" CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 CLOCKS_ARE_SYNCHRONIZED="FALSE" DEVICE_FAMILY="Cyclone" IGNORE_CARRY_BUFFERS="OFF" LPM_NUMWORDS=1024 LPM_SHOWAHEAD="OFF" LPM_WIDTH=8 LPM_WIDTH_R=8 LPM_WIDTHU=10 LPM_WIDTHU_R=10 OVERFLOW_CHECKING="ON" UNDERFLOW_CHECKING="ON" USE_EAB="ON" aclr data q rdclk rdempty rdfull rdreq rdusedw wrclk wrempty wrfull wrreq wrusedw CYCLONEII_M4K_COMPATIBILITY="ON" INTENDED_DEVICE_FAMILY="Cyclone" LOW_POWER_MODE="AUTO" ALTERA_INTERNAL_OPTIONS=AUTO_SHIFT_REGISTER_RECOGNITION=OFF
+--VERSION_BEGIN 11.0 cbx_a_gray2bin 2011:04:27:21:07:19:SJ cbx_a_graycounter 2011:04:27:21:07:19:SJ cbx_altdpram 2011:04:27:21:07:19:SJ cbx_altsyncram 2011:04:27:21:07:19:SJ cbx_cycloneii 2011:04:27:21:07:19:SJ cbx_dcfifo 2011:04:27:21:07:19:SJ cbx_fifo_common 2011:04:27:21:07:19:SJ cbx_lpm_add_sub 2011:04:27:21:07:19:SJ cbx_lpm_compare 2011:04:27:21:07:19:SJ cbx_lpm_counter 2011:04:27:21:07:19:SJ cbx_lpm_decode 2011:04:27:21:07:19:SJ cbx_lpm_mux 2011:04:27:21:07:19:SJ cbx_mgl 2011:04:27:21:11:03:SJ cbx_scfifo 2011:04:27:21:07:19:SJ cbx_stratix 2011:04:27:21:07:19:SJ cbx_stratixii 2011:04:27:21:07:19:SJ cbx_stratixiii 2011:04:27:21:07:19:SJ cbx_stratixv 2011:04:27:21:07:19:SJ cbx_util_mgl 2011:04:27:21:07:19:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2011 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION a_fefifo_30d (aclr, clock, rreq, usedw_in[9..0])
+RETURNS ( empty, full);
+FUNCTION a_fefifo_80d (aclr, clock, usedw_in[9..0], wreq)
+RETURNS ( empty, full);
+FUNCTION a_gray2bin_26b (gray[9..0])
+RETURNS ( bin[9..0]);
+FUNCTION a_graycounter_626 (aclr, clock, cnt_en)
+RETURNS ( q[9..0]);
+FUNCTION dpram_n3v (data[7..0], inclock, outclock, outclocken, rdaddress[9..0], wraddress[9..0], wren)
+RETURNS ( q[7..0]);
+FUNCTION dffpipe_oe9 (clock, clrn, d[9..0])
+RETURNS ( q[9..0]);
+FUNCTION alt_synch_pipe_0e8 (clock, clrn, d[9..0])
+RETURNS ( q[9..0]);
+FUNCTION add_sub_ovb (dataa[9..0], datab[9..0])
+RETURNS ( result[9..0]);
+FUNCTION cntr_kua (aclr, clock, cnt_en)
+RETURNS ( q[9..0]);
+
+--synthesis_resources = lut 239 M4K 2 
+OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;suppress_da_rule_internal=d101;suppress_da_rule_internal=d102;-name CUT ON -from write_delay_cycle -to dffpipe_rs_dgwp|dffpipe9|dffe10a;-name SDC_STATEMENT ""set_false_path -from *write_delay_cycle* -to *dffpipe_rs_dgwp|dffpipe_se9:dffpipe9|dffe10a* """;
+
+SUBDESIGN dcfifo_umk1
+( 
+	aclr	:	input;
+	data[7..0]	:	input;
+	q[7..0]	:	output;
+	rdclk	:	input;
+	rdempty	:	output;
+	rdfull	:	output;
+	rdreq	:	input;
+	rdusedw[9..0]	:	output;
+	wrclk	:	input;
+	wrempty	:	output;
+	wrfull	:	output;
+	wrreq	:	input;
+	wrusedw[9..0]	:	output;
+) 
+VARIABLE 
+	read_state : a_fefifo_30d;
+	write_state : a_fefifo_80d;
+	gray2bin_rs_nbwp : a_gray2bin_26b;
+	gray2bin_ws_nbrp : a_gray2bin_26b;
+	rdptr_g : a_graycounter_626;
+	wrptr_g : a_graycounter_626;
+	fiforam : dpram_n3v;
+	write_delay_cycle[9..0] : dffe;
+	dffpipe_rdbuw : dffpipe_oe9;
+	dffpipe_rdusedw : dffpipe_oe9;
+	dffpipe_rs_dbwp : dffpipe_oe9;
+	dffpipe_rs_dgwp : alt_synch_pipe_0e8;
+	dffpipe_wr_dbuw : dffpipe_oe9;
+	dffpipe_wrusedw : dffpipe_oe9;
+	dffpipe_ws_dgrp : alt_synch_pipe_0e8;
+	dffpipe_ws_nbrp : dffpipe_oe9;
+	lpm_add_sub_rd_udwn : add_sub_ovb;
+	lpm_add_sub_wr_udwn : add_sub_ovb;
+	rdptr_b : cntr_kua;
+	wrptr_b : cntr_kua;
+	rd_dbuw[9..0]	: WIRE;
+	rd_udwn[9..0]	: WIRE;
+	rs_dbwp[9..0]	: WIRE;
+	rs_dgwp[9..0]	: WIRE;
+	rs_nbwp[9..0]	: WIRE;
+	tmp_aclr	: WIRE;
+	tmp_data[9..0]	: WIRE;
+	valid_rreq	: WIRE;
+	valid_wreq	: WIRE;
+	wr_dbuw[9..0]	: WIRE;
+	wr_udwn[9..0]	: WIRE;
+	ws_dbrp[9..0]	: WIRE;
+	ws_dgrp[9..0]	: WIRE;
+	ws_nbrp[9..0]	: WIRE;
+
+BEGIN 
+	read_state.aclr = aclr;
+	read_state.clock = rdclk;
+	read_state.rreq = rdreq;
+	read_state.usedw_in[] = rd_dbuw[];
+	write_state.aclr = aclr;
+	write_state.clock = wrclk;
+	write_state.usedw_in[] = wr_dbuw[];
+	write_state.wreq = wrreq;
+	gray2bin_rs_nbwp.gray[] = rs_dgwp[];
+	gray2bin_ws_nbrp.gray[] = ws_dgrp[];
+	rdptr_g.aclr = aclr;
+	rdptr_g.clock = rdclk;
+	rdptr_g.cnt_en = valid_rreq;
+	wrptr_g.aclr = aclr;
+	wrptr_g.clock = wrclk;
+	wrptr_g.cnt_en = valid_wreq;
+	fiforam.data[] = data[];
+	fiforam.inclock = wrclk;
+	fiforam.outclock = rdclk;
+	fiforam.outclocken = valid_rreq;
+	fiforam.rdaddress[] = rdptr_g.q[];
+	fiforam.wraddress[] = wrptr_g.q[];
+	fiforam.wren = valid_wreq;
+	write_delay_cycle[].clk = wrclk;
+	write_delay_cycle[].clrn = (! aclr);
+	write_delay_cycle[].d = wrptr_g.q[];
+	dffpipe_rdbuw.clock = rdclk;
+	dffpipe_rdbuw.clrn = tmp_aclr;
+	dffpipe_rdbuw.d[] = rd_udwn[];
+	dffpipe_rdusedw.clock = rdclk;
+	dffpipe_rdusedw.clrn = tmp_aclr;
+	dffpipe_rdusedw.d[] = rd_udwn[];
+	dffpipe_rs_dbwp.clock = rdclk;
+	dffpipe_rs_dbwp.clrn = tmp_aclr;
+	dffpipe_rs_dbwp.d[] = rs_nbwp[];
+	dffpipe_rs_dgwp.clock = rdclk;
+	dffpipe_rs_dgwp.clrn = tmp_aclr;
+	dffpipe_rs_dgwp.d[] = write_delay_cycle[].q;
+	dffpipe_wr_dbuw.clock = wrclk;
+	dffpipe_wr_dbuw.clrn = tmp_aclr;
+	dffpipe_wr_dbuw.d[] = wr_udwn[];
+	dffpipe_wrusedw.clock = wrclk;
+	dffpipe_wrusedw.clrn = tmp_aclr;
+	dffpipe_wrusedw.d[] = wr_udwn[];
+	dffpipe_ws_dgrp.clock = wrclk;
+	dffpipe_ws_dgrp.clrn = tmp_aclr;
+	dffpipe_ws_dgrp.d[] = tmp_data[];
+	dffpipe_ws_nbrp.clock = wrclk;
+	dffpipe_ws_nbrp.clrn = tmp_aclr;
+	dffpipe_ws_nbrp.d[] = ws_nbrp[];
+	lpm_add_sub_rd_udwn.dataa[] = rs_dbwp[];
+	lpm_add_sub_rd_udwn.datab[] = rdptr_b.q[];
+	lpm_add_sub_wr_udwn.dataa[] = wrptr_b.q[];
+	lpm_add_sub_wr_udwn.datab[] = ws_dbrp[];
+	rdptr_b.aclr = aclr;
+	rdptr_b.clock = rdclk;
+	rdptr_b.cnt_en = valid_rreq;
+	wrptr_b.aclr = aclr;
+	wrptr_b.clock = wrclk;
+	wrptr_b.cnt_en = valid_wreq;
+	q[] = fiforam.q[];
+	rd_dbuw[] = dffpipe_rdbuw.q[];
+	rd_udwn[] = lpm_add_sub_rd_udwn.result[];
+	rdempty = read_state.empty;
+	rdfull = read_state.full;
+	rdusedw[] = dffpipe_rdusedw.q[];
+	rs_dbwp[] = dffpipe_rs_dbwp.q[];
+	rs_dgwp[] = dffpipe_rs_dgwp.q[];
+	rs_nbwp[] = gray2bin_rs_nbwp.bin[];
+	tmp_aclr = (! aclr);
+	tmp_data[] = rdptr_g.q[];
+	valid_rreq = (rdreq & (! read_state.empty));
+	valid_wreq = (wrreq & (! write_state.full));
+	wr_dbuw[] = dffpipe_wr_dbuw.q[];
+	wr_udwn[] = lpm_add_sub_wr_udwn.result[];
+	wrempty = write_state.empty;
+	wrfull = write_state.full;
+	wrusedw[] = dffpipe_wrusedw.q[];
+	ws_dbrp[] = dffpipe_ws_nbrp.q[];
+	ws_dgrp[] = dffpipe_ws_dgrp.q[];
+	ws_nbrp[] = gray2bin_ws_nbrp.bin[];
+END;
+--VALID FILE

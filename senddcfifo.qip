@@ -1,0 +1,6 @@
+set_global_assignment -name IP_TOOL_NAME "FIFO"
+set_global_assignment -name IP_TOOL_VERSION "11.0"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "senddcfifo.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "senddcfifo.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "senddcfifo_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "senddcfifo_bb.v"]

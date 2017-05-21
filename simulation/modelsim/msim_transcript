@@ -1,0 +1,145 @@
+# Reading F:/EngineeringProgramFiles/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do LidarFrameView_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\EngineeringProgramFiles\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\EngineeringProgramFiles\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/CCD_ADC_Control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CCD_ADC_Control
+# 
+# Top level modules:
+# 	CCD_ADC_Control
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/uart_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module my_uart_tx
+# 
+# Top level modules:
+# 	my_uart_tx
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/uart_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module my_uart_rx
+# 
+# Top level modules:
+# 	my_uart_rx
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/timer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/speed_select.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module speed_select
+# 
+# Top level modules:
+# 	speed_select
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/SerialSend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SerialSend
+# 
+# Top level modules:
+# 	SerialSend
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/SamplingControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SamplingControl
+# 
+# Top level modules:
+# 	SamplingControl
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LidarFrameView
+# 
+# Top level modules:
+# 	LidarFrameView
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0 {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/senddcfifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module senddcfifo
+# 
+# Top level modules:
+# 	senddcfifo
+# 
+# vlog -vlog01compat -work work +incdir+F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/simulation/modelsim {F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LidarFrameView_vlg_tst
+# 
+# Top level modules:
+# 	LidarFrameView_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone_ver -L rtl_work -L work -voptargs="+acc" LidarFrameView_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps LidarFrameView_vlg_tst 
+# Loading work.LidarFrameView_vlg_tst
+# Loading work.LidarFrameView
+# Loading work.SamplingControl
+# Loading work.CCD_ADC_Control
+# Loading work.SerialSend
+# Loading work.speed_select
+# Loading work.my_uart_rx
+# Loading work.my_uart_tx
+# Loading work.timer
+# Loading work.senddcfifo
+# Loading altera_mf_ver.dcfifo
+# Loading altera_mf_ver.dcfifo_mixed_widths
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.dcfifo_low_latency
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
+# Loading altera_mf_ver.dcfifo_dffpipe
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt(100): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Too few port connections. Expected 22, found 20.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/CCD_ADC_Control_inst
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdempty'.
+# 
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdfull'.
+# 
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Too few port connections. Expected 13, found 11.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdempty'.
+# 
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdfull'.
+# 
+# ** Warning: (vsim-3015) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/SerialSend.v(147): [PCDPC] - Port size (25 or 25) does not match connection size (32) for port 'timer'. The port definition is at: F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/timer.v(6).
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst/my_timer_tx
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/LidarFrameView_vlg_tst/i1/SerialSend_inst/my_uart_tx/*
+restart
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt(100): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Too few port connections. Expected 22, found 20.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/CCD_ADC_Control_inst
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdempty'.
+# 
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdfull'.
+# 
+# ** Warning: (vsim-3017) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Too few port connections. Expected 13, found 11.
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdempty'.
+# 
+# ** Warning: (vsim-3722) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdfull'.
+# 
+# ** Warning: (vsim-3015) F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/SerialSend.v(147): [PCDPC] - Port size (25 or 25) does not match connection size (32) for port 'timer'. The port definition is at: F:/EngineeringFiles/FPGA/1.laser/LidarFrameView_11.0/timer.v(6).
+# 
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst/my_timer_tx
+run
+run
