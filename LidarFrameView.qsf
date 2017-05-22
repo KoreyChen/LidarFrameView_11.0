@@ -50,7 +50,6 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VERILOG_FILE CCD_ADC_Control.v
 set_global_assignment -name VERILOG_FILE uart_tx.v
-set_global_assignment -name VERILOG_FILE uart_rx.v
 set_global_assignment -name VERILOG_FILE timer.v
 set_global_assignment -name VERILOG_FILE speed_select.v
 set_global_assignment -name VERILOG_FILE SerialSend.v

@@ -34,10 +34,8 @@ output [9:0] wrusedw;     	//写入数量
 input         frameclk;	      //数据帧计数 
 
 //串口操作相关
-wire bps_start1,bps_start2;	//接收到数据后，波特率时钟启动信号置位
-wire clk_bps1,clk_bps2;		   // clk_bps_r高电平为接收数据位的中间采样点,同时也作为发送数据的数据改变点 
-wire[7:0] rx_data;	         //接收数据寄存器，保存直至下一个数据来到
-wire rx_int;		            //接收数据中断信号,接收到数据期间始终为高电平
+wire bps_start;	//接收到数据后，波特率时钟启动信号置位
+wire clk_bps;		   // clk_bps_r高电平为接收数据位的中间采样点,同时也作为发送数据的数据改变点 
 reg  [7:0] Tx_data;
 wire [7:0] Tx_data_t;
 wire Tx_flag;
@@ -94,44 +92,27 @@ reg   rdreq_reg;         //读请求
 wire  fifo_clear;
 reg   fifo_clear_reg;
 
+wire send_complete;
 
 //*********** 串口操作部分 ***********//
-//-----------     RX      ----------//
-speed_select		speed_rx(	
-							.clk(clk),	//波特率选择模块
-							.rst_n(rst_n),
-							.bps_start(bps_start1),
-							.clk_bps(clk_bps1)
-						);
-
-my_uart_rx			my_uart_rx(		
-							.clk(clk),	//接收数据模块
-							.rst_n(rst_n),
-							.rs232_rx(),
-							.rx_data(rx_data),
-							.rx_int(rx_int),
-							.clk_bps(clk_bps1),
-							.bps_start(bps_start1)
-						);
-
-//-----------     TX      ----------//				
+//-----------     TX      ----------//												
 speed_select		speed_tx(	
 							.clk(clk),	//波特率选择模块
 							.rst_n(rst_n),
-							.bps_start(bps_start2),
-							.clk_bps(clk_bps2)
+							.bps_start(bps_start),
+							.clk_bps(clk_bps)
 						);
 						
-my_uart_tx			my_uart_tx(		
-							.clk(clk),	//发送数据模块
-							.rst_n(rst_n),
-							.rx_data(SerialSendData_Reg), //协议发数据							
-							.rx_int(TxSendEN),         //协议发使能位
-							.rs232_tx(rs232_tx),
-							.clk_bps(clk_bps2),
-							.bps_start(bps_start2),
-							.send_complete(send_complete)
-						);
+uart_tx    my_uart_tx (
+				.clk(clk),                       //基础时钟 50MHz 
+				.rst_n(rst_n),                   //复位信号
+				.tx_data(SerialSendData_Reg),               //需要发送的数据  8bit
+				.tx_int(TxSendEN),                 //发送 触发信号  低电平有效
+				.rs232_tx(rs232_tx),             //串口TX引脚
+				.clk_bps(clk_bps),               //clk_bps_r高电平为接收数据位的中间采样点,同时也作为发送数据的数据改变点
+				.bps_start(bps_start),           //接收或者要发送数据，波特率时钟启动信号置位
+				.send_complete(send_complete)    //发送完成标志位 高表示已发送完成  低表示正在发送
+			);		
 	
 
 //-----------------------------------//
@@ -198,8 +179,10 @@ begin
 end
 
 reg SendControlFlag;
+
+
 //---------  协议发送控制模块   -------//
-always @(posedge TxDataClk or negedge rst_n )
+always @(posedge clk or negedge rst_n )
 begin	
 		if(!rst_n)
 			begin
@@ -212,6 +195,7 @@ begin
 				S3_flag <= 0;
 				SendOneFrameFlag <=0;
 				SendControlFlag <= 0;
+				TxSendEN_Reg <= 1'b1;
 			end
 		else  
 			begin
@@ -275,9 +259,12 @@ begin
 												  SateCount <= S2;
 												  end
 									endcase
-									//控制TX 发送
-									TxSendEN_Reg <= 1'b1;
-									count <= count + 1'b1; 
+									if(send_complete)
+										begin
+										//控制TX 发送
+										TxSendEN_Reg <= 1'b1;
+										count <= count + 1'b1; 
+									end
 								end 
 								S2:    //发送数据
 								begin  //控制ADC采样  没有控制起始采样
@@ -332,7 +319,7 @@ begin
 					end
 				COUNT_S4:
 					begin
-					TxSendEN_Reg <= 1'b0;
+					TxSendEN_Reg <= 1'b1;
 					sendcount <= COUNT_S1;	
 					end
 				endcase
