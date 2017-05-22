@@ -2,21 +2,21 @@ library verilog;
 use verilog.vl_types.all;
 entity SerialSend is
     generic(
-        SD1             : vl_logic_vector(0 to 7) := (Hi0, Hi1, Hi1, Hi1, Hi1, Hi0, Hi1, Hi1);
-        SD2             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi0, Hi1, Hi0, Hi0, Hi0);
-        SD3             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi1, Hi0, Hi0, Hi0, Hi1);
-        SD4             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi1, Hi0, Hi0, Hi0, Hi0);
-        SD5             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi1, Hi0, Hi0, Hi1, Hi0);
-        SD6             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi1, Hi0, Hi1, Hi0, Hi0);
-        SD7             : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi1, Hi0, Hi1, Hi0, Hi0, Hi1);
-        SD8             : vl_logic_vector(0 to 7) := (Hi0, Hi1, Hi1, Hi1, Hi1, Hi1, Hi0, Hi1);
-        S1              : vl_logic_vector(0 to 1) := (Hi0, Hi0);
-        S2              : vl_logic_vector(0 to 1) := (Hi0, Hi1);
-        S3              : vl_logic_vector(0 to 1) := (Hi1, Hi0);
-        COUNT_S1        : vl_logic_vector(0 to 1) := (Hi0, Hi0);
-        COUNT_S2        : vl_logic_vector(0 to 1) := (Hi0, Hi1);
-        COUNT_S3        : vl_logic_vector(0 to 1) := (Hi1, Hi0);
-        COUNT_S4        : vl_logic_vector(0 to 1) := (Hi1, Hi1);
+        SD1             : integer := 123;
+        SD2             : integer := 40;
+        SD3             : integer := 49;
+        SD4             : integer := 48;
+        SD5             : integer := 50;
+        SD6             : integer := 52;
+        SD7             : integer := 41;
+        SD8             : integer := 125;
+        S1              : integer := 0;
+        S2              : integer := 1;
+        S3              : integer := 2;
+        COUNT_S1        : integer := 0;
+        COUNT_S2        : integer := 1;
+        COUNT_S3        : integer := 2;
+        COUNT_S4        : integer := 3;
         TXDATA_CNT_NUM  : integer := 1500
     );
     port(
@@ -34,21 +34,4 @@ entity SerialSend is
         rdfull          : out    vl_logic;
         frameclk        : in     vl_logic
     );
-    attribute mti_svvh_generic_type : integer;
-    attribute mti_svvh_generic_type of SD1 : constant is 1;
-    attribute mti_svvh_generic_type of SD2 : constant is 1;
-    attribute mti_svvh_generic_type of SD3 : constant is 1;
-    attribute mti_svvh_generic_type of SD4 : constant is 1;
-    attribute mti_svvh_generic_type of SD5 : constant is 1;
-    attribute mti_svvh_generic_type of SD6 : constant is 1;
-    attribute mti_svvh_generic_type of SD7 : constant is 1;
-    attribute mti_svvh_generic_type of SD8 : constant is 1;
-    attribute mti_svvh_generic_type of S1 : constant is 1;
-    attribute mti_svvh_generic_type of S2 : constant is 1;
-    attribute mti_svvh_generic_type of S3 : constant is 1;
-    attribute mti_svvh_generic_type of COUNT_S1 : constant is 1;
-    attribute mti_svvh_generic_type of COUNT_S2 : constant is 1;
-    attribute mti_svvh_generic_type of COUNT_S3 : constant is 1;
-    attribute mti_svvh_generic_type of COUNT_S4 : constant is 1;
-    attribute mti_svvh_generic_type of TXDATA_CNT_NUM : constant is 1;
 end SerialSend;
