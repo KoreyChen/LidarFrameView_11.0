@@ -1,6 +1,16 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="LidarFrameView">
+<<<<<<< HEAD
 		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_lhk1.tdf"/>
+=======
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux" CBX_FILE_NAME="mux_afc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_0kk1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare" CBX_FILE_NAME="cmpr_33g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare" CBX_FILE_NAME="cmpr_33g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr" CBX_FILE_NAME="cntr_tue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:col_data_out_mux" CBX_FILE_NAME="mux_afc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]" CBX_FILE_NAME="mux_afc.tdf"/>
+>>>>>>> origin/master
 	</PROJECT>
 </LOG_ROOT>

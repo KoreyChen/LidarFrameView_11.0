@@ -1,6 +1,11 @@
 |LidarFrameView
+<<<<<<< HEAD
 clk => clk.IN4
 rst_n => rst_n.IN4
+=======
+clk => clk.IN3
+rst_n => rst_n.IN3
+>>>>>>> origin/master
 startPoint => startPoint.IN1
 AD_data[0] => AD_data[0].IN1
 AD_data[1] => AD_data[1].IN1
@@ -377,9 +382,15 @@ rdfull => ~NO_FANOUT~
 
 
 |LidarFrameView|SerialSend:SerialSend_inst
+<<<<<<< HEAD
 clk => clk.IN2
 rst_n => rst_n.IN2
 serialsend_flag => SerialSendbtn1.DATAIN
+=======
+clk => clk.IN5
+rst_n => rst_n.IN5
+serialsend_flag => SerialSendEN_REG.DATAIN
+>>>>>>> origin/master
 data[0] => data[0].IN1
 data[1] => data[1].IN1
 data[2] => data[2].IN1
@@ -393,6 +404,127 @@ wrreq => wrreq.IN1
 frameclk => btn1.DATAIN
 
 
+<<<<<<< HEAD
+=======
+|LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_rx
+clk => clk_bps_r.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+rst_n => cnt[0].ACLR
+rst_n => cnt[1].ACLR
+rst_n => cnt[2].ACLR
+rst_n => cnt[3].ACLR
+rst_n => cnt[4].ACLR
+rst_n => cnt[5].ACLR
+rst_n => cnt[6].ACLR
+rst_n => cnt[7].ACLR
+rst_n => cnt[8].ACLR
+rst_n => cnt[9].ACLR
+rst_n => cnt[10].ACLR
+rst_n => cnt[11].ACLR
+rst_n => cnt[12].ACLR
+rst_n => clk_bps_r.ACLR
+bps_start => always1.IN1
+bps_start => always0.IN1
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|my_uart_rx:my_uart_rx
+clk => rx_data_r[0].CLK
+clk => rx_data_r[1].CLK
+clk => rx_data_r[2].CLK
+clk => rx_data_r[3].CLK
+clk => rx_data_r[4].CLK
+clk => rx_data_r[5].CLK
+clk => rx_data_r[6].CLK
+clk => rx_data_r[7].CLK
+clk => num[0].CLK
+clk => num[1].CLK
+clk => num[2].CLK
+clk => num[3].CLK
+clk => rx_temp_data[0].CLK
+clk => rx_temp_data[1].CLK
+clk => rx_temp_data[2].CLK
+clk => rx_temp_data[3].CLK
+clk => rx_temp_data[4].CLK
+clk => rx_temp_data[5].CLK
+clk => rx_temp_data[6].CLK
+clk => rx_temp_data[7].CLK
+clk => rx_int~reg0.CLK
+clk => bps_start_r.CLK
+clk => bps_start_r~en.CLK
+clk => rs232_rx3.CLK
+clk => rs232_rx2.CLK
+clk => rs232_rx1.CLK
+clk => rs232_rx0.CLK
+rst_n => rx_data_r[0].ACLR
+rst_n => rx_data_r[1].ACLR
+rst_n => rx_data_r[2].ACLR
+rst_n => rx_data_r[3].ACLR
+rst_n => rx_data_r[4].ACLR
+rst_n => rx_data_r[5].ACLR
+rst_n => rx_data_r[6].ACLR
+rst_n => rx_data_r[7].ACLR
+rst_n => num[0].ACLR
+rst_n => num[1].ACLR
+rst_n => num[2].ACLR
+rst_n => num[3].ACLR
+rst_n => rx_temp_data[0].ACLR
+rst_n => rx_temp_data[1].ACLR
+rst_n => rx_temp_data[2].ACLR
+rst_n => rx_temp_data[3].ACLR
+rst_n => rx_temp_data[4].ACLR
+rst_n => rx_temp_data[5].ACLR
+rst_n => rx_temp_data[6].ACLR
+rst_n => rx_temp_data[7].ACLR
+rst_n => rx_int~reg0.ACLR
+rst_n => bps_start_r~en.ACLR
+rst_n => rs232_rx3.ACLR
+rst_n => rs232_rx2.ACLR
+rst_n => rs232_rx1.ACLR
+rst_n => rs232_rx0.ACLR
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rx_temp_data.DATAB
+rs232_rx => rs232_rx0.DATAIN
+clk_bps => num.OUTPUTSELECT
+clk_bps => num.OUTPUTSELECT
+clk_bps => num.OUTPUTSELECT
+clk_bps => num.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_temp_data.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+clk_bps => rx_data_r.OUTPUTSELECT
+
+
+>>>>>>> origin/master
 |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx
 clk => clk_bps_r.CLK
 clk => cnt[0].CLK
@@ -426,13 +558,18 @@ bps_start => always1.IN1
 bps_start => always0.IN1
 
 
+<<<<<<< HEAD
 |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx
+=======
+|LidarFrameView|SerialSend:SerialSend_inst|my_uart_tx:my_uart_tx
+>>>>>>> origin/master
 clk => rs232_tx_r.CLK
 clk => num[0].CLK
 clk => num[1].CLK
 clk => num[2].CLK
 clk => num[3].CLK
 clk => send_complete~reg0.CLK
+<<<<<<< HEAD
 clk => tx_data_t[0].CLK
 clk => tx_data_t[1].CLK
 clk => tx_data_t[2].CLK
@@ -456,6 +593,31 @@ rst_n => tx_data_t[4].ACLR
 rst_n => tx_data_t[5].ACLR
 rst_n => tx_data_t[6].ACLR
 rst_n => tx_data_t[7].ACLR
+=======
+clk => tx_data[0].CLK
+clk => tx_data[1].CLK
+clk => tx_data[2].CLK
+clk => tx_data[3].CLK
+clk => tx_data[4].CLK
+clk => tx_data[5].CLK
+clk => tx_data[6].CLK
+clk => tx_data[7].CLK
+clk => tx_en.CLK
+clk => bps_start_r.CLK
+clk => bps_start_r~en.CLK
+clk => rx_int2.CLK
+clk => rx_int1.CLK
+clk => rx_int0.CLK
+rst_n => send_complete~reg0.ACLR
+rst_n => tx_data[0].ACLR
+rst_n => tx_data[1].ACLR
+rst_n => tx_data[2].ACLR
+rst_n => tx_data[3].ACLR
+rst_n => tx_data[4].ACLR
+rst_n => tx_data[5].ACLR
+rst_n => tx_data[6].ACLR
+rst_n => tx_data[7].ACLR
+>>>>>>> origin/master
 rst_n => tx_en.ACLR
 rst_n => bps_start_r~en.ACLR
 rst_n => rs232_tx_r.PRESET
@@ -463,6 +625,7 @@ rst_n => num[0].ACLR
 rst_n => num[1].ACLR
 rst_n => num[2].ACLR
 rst_n => num[3].ACLR
+<<<<<<< HEAD
 rst_n => tx_int2.ACLR
 rst_n => tx_int1.ACLR
 rst_n => tx_int0.ACLR
@@ -475,6 +638,20 @@ tx_data[5] => tx_data_t[5].DATAIN
 tx_data[6] => tx_data_t[6].DATAIN
 tx_data[7] => tx_data_t[7].DATAIN
 tx_int => tx_int0.DATAIN
+=======
+rst_n => rx_int2.ACLR
+rst_n => rx_int1.ACLR
+rst_n => rx_int0.ACLR
+rx_data[0] => tx_data[0].DATAIN
+rx_data[1] => tx_data[1].DATAIN
+rx_data[2] => tx_data[2].DATAIN
+rx_data[3] => tx_data[3].DATAIN
+rx_data[4] => tx_data[4].DATAIN
+rx_data[5] => tx_data[5].DATAIN
+rx_data[6] => tx_data[6].DATAIN
+rx_data[7] => tx_data[7].DATAIN
+rx_int => rx_int0.DATAIN
+>>>>>>> origin/master
 clk_bps => num.OUTPUTSELECT
 clk_bps => num.OUTPUTSELECT
 clk_bps => num.OUTPUTSELECT
@@ -482,6 +659,137 @@ clk_bps => num.OUTPUTSELECT
 clk_bps => rs232_tx_r.OUTPUTSELECT
 
 
+<<<<<<< HEAD
+=======
+|LidarFrameView|SerialSend:SerialSend_inst|timer:my_timer_tx
+clk_in => clk_div.CLK
+clk_in => cnt[0].CLK
+clk_in => cnt[1].CLK
+clk_in => cnt[2].CLK
+clk_in => cnt[3].CLK
+clk_in => cnt[4].CLK
+clk_in => cnt[5].CLK
+clk_in => cnt[6].CLK
+clk_in => cnt[7].CLK
+clk_in => cnt[8].CLK
+clk_in => cnt[9].CLK
+clk_in => cnt[10].CLK
+clk_in => cnt[11].CLK
+clk_in => cnt[12].CLK
+clk_in => cnt[13].CLK
+clk_in => cnt[14].CLK
+clk_in => cnt[15].CLK
+clk_in => cnt[16].CLK
+clk_in => cnt[17].CLK
+clk_in => cnt[18].CLK
+clk_in => cnt[19].CLK
+clk_in => cnt[20].CLK
+clk_in => cnt[21].CLK
+clk_in => cnt[22].CLK
+clk_in => cnt[23].CLK
+clk_in => timercount[0].CLK
+clk_in => timercount[1].CLK
+clk_in => timercount[2].CLK
+clk_in => timercount[3].CLK
+clk_in => timercount[4].CLK
+clk_in => timercount[5].CLK
+clk_in => timercount[6].CLK
+clk_in => timercount[7].CLK
+clk_in => timercount[8].CLK
+clk_in => timercount[9].CLK
+clk_in => timercount[10].CLK
+clk_in => timercount[11].CLK
+clk_in => timercount[12].CLK
+clk_in => timercount[13].CLK
+clk_in => timercount[14].CLK
+clk_in => timercount[15].CLK
+clk_in => timercount[16].CLK
+clk_in => timercount[17].CLK
+clk_in => timercount[18].CLK
+clk_in => timercount[19].CLK
+clk_in => timercount[20].CLK
+clk_in => timercount[21].CLK
+clk_in => timercount[22].CLK
+clk_in => timercount[23].CLK
+clk_in => timercount[24].CLK
+rst_n_in => clk_div.PRESET
+rst_n_in => cnt[0].ACLR
+rst_n_in => cnt[1].ACLR
+rst_n_in => cnt[2].ACLR
+rst_n_in => cnt[3].ACLR
+rst_n_in => cnt[4].ACLR
+rst_n_in => cnt[5].ACLR
+rst_n_in => cnt[6].ACLR
+rst_n_in => cnt[7].ACLR
+rst_n_in => cnt[8].ACLR
+rst_n_in => cnt[9].ACLR
+rst_n_in => cnt[10].ACLR
+rst_n_in => cnt[11].ACLR
+rst_n_in => cnt[12].ACLR
+rst_n_in => cnt[13].ACLR
+rst_n_in => cnt[14].ACLR
+rst_n_in => cnt[15].ACLR
+rst_n_in => cnt[16].ACLR
+rst_n_in => cnt[17].ACLR
+rst_n_in => cnt[18].ACLR
+rst_n_in => cnt[19].ACLR
+rst_n_in => cnt[20].ACLR
+rst_n_in => cnt[21].ACLR
+rst_n_in => cnt[22].ACLR
+rst_n_in => cnt[23].ACLR
+rst_n_in => timercount[0].PRESET
+rst_n_in => timercount[1].ACLR
+rst_n_in => timercount[2].ACLR
+rst_n_in => timercount[3].ACLR
+rst_n_in => timercount[4].ACLR
+rst_n_in => timercount[5].ACLR
+rst_n_in => timercount[6].ACLR
+rst_n_in => timercount[7].ACLR
+rst_n_in => timercount[8].ACLR
+rst_n_in => timercount[9].ACLR
+rst_n_in => timercount[10].ACLR
+rst_n_in => timercount[11].ACLR
+rst_n_in => timercount[12].ACLR
+rst_n_in => timercount[13].ACLR
+rst_n_in => timercount[14].ACLR
+rst_n_in => timercount[15].ACLR
+rst_n_in => timercount[16].ACLR
+rst_n_in => timercount[17].ACLR
+rst_n_in => timercount[18].ACLR
+rst_n_in => timercount[19].ACLR
+rst_n_in => timercount[20].ACLR
+rst_n_in => timercount[21].ACLR
+rst_n_in => timercount[22].ACLR
+rst_n_in => timercount[23].ACLR
+rst_n_in => timercount[24].ACLR
+timer[0] => timercount[0].DATAIN
+timer[1] => timercount[1].DATAIN
+timer[2] => timercount[2].DATAIN
+timer[3] => timercount[3].DATAIN
+timer[4] => timercount[4].DATAIN
+timer[5] => timercount[5].DATAIN
+timer[6] => timercount[6].DATAIN
+timer[7] => timercount[7].DATAIN
+timer[8] => timercount[8].DATAIN
+timer[9] => timercount[9].DATAIN
+timer[10] => timercount[10].DATAIN
+timer[11] => timercount[11].DATAIN
+timer[12] => timercount[12].DATAIN
+timer[13] => timercount[13].DATAIN
+timer[14] => timercount[14].DATAIN
+timer[15] => timercount[15].DATAIN
+timer[16] => timercount[16].DATAIN
+timer[17] => timercount[17].DATAIN
+timer[18] => timercount[18].DATAIN
+timer[19] => timercount[19].DATAIN
+timer[20] => timercount[20].DATAIN
+timer[21] => timercount[21].DATAIN
+timer[22] => timercount[22].DATAIN
+timer[23] => timercount[23].DATAIN
+timer[24] => timercount[24].DATAIN
+
+
+>>>>>>> origin/master
 |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst
 aclr => aclr.IN1
 data[0] => data[0].IN1
@@ -499,6 +807,7 @@ wrreq => wrreq.IN1
 
 
 |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+<<<<<<< HEAD
 data[0] => dcfifo_lhk1:auto_generated.data[0]
 data[1] => dcfifo_lhk1:auto_generated.data[1]
 data[2] => dcfifo_lhk1:auto_generated.data[2]
@@ -557,6 +866,68 @@ rdclk => dffe5a[2].CLK
 rdclk => dffe5a[1].CLK
 rdclk => dffe5a[0].CLK
 rdclk => dffe8a[10].CLK
+=======
+data[0] => dcfifo_0kk1:auto_generated.data[0]
+data[1] => dcfifo_0kk1:auto_generated.data[1]
+data[2] => dcfifo_0kk1:auto_generated.data[2]
+data[3] => dcfifo_0kk1:auto_generated.data[3]
+data[4] => dcfifo_0kk1:auto_generated.data[4]
+data[5] => dcfifo_0kk1:auto_generated.data[5]
+data[6] => dcfifo_0kk1:auto_generated.data[6]
+data[7] => dcfifo_0kk1:auto_generated.data[7]
+rdclk => dcfifo_0kk1:auto_generated.rdclk
+rdreq => dcfifo_0kk1:auto_generated.rdreq
+wrclk => dcfifo_0kk1:auto_generated.wrclk
+wrreq => dcfifo_0kk1:auto_generated.wrreq
+aclr => dcfifo_0kk1:auto_generated.aclr
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated
+aclr => a_graycounter_r16:rdptr_g.aclr
+aclr => a_graycounter_s16:read_counter_for_write.aclr
+aclr => a_graycounter_r16:wrptr_g.aclr
+aclr => delayed_wrptr_g[9].IN0
+aclr => dffe10a[9].IN0
+aclr => dffe3a[9].IN0
+aclr => dffe4a[9].IN0
+aclr => dffe5a[9].IN0
+aclr => dffe8a[9].IN0
+aclr => dffe9a[9].IN0
+aclr => fifo_wreq_pipe[1].IN0
+aclr => lwrreq.IN0
+aclr => rdfull_delay.IN0
+aclr => wrempty_delay.IN0
+aclr => wrfull_delay.IN0
+aclr => _.IN0
+aclr => _.IN0
+aclr => cntr_9ua:rdptr_b.aclr
+aclr => cntr_9ua:wrptr_b.aclr
+aclr => scfifo:output_channel.aclr
+data[0] => altsyncram_4941:fifo_ram.data_a[0]
+data[1] => altsyncram_4941:fifo_ram.data_a[1]
+data[2] => altsyncram_4941:fifo_ram.data_a[2]
+data[3] => altsyncram_4941:fifo_ram.data_a[3]
+data[4] => altsyncram_4941:fifo_ram.data_a[4]
+data[5] => altsyncram_4941:fifo_ram.data_a[5]
+data[6] => altsyncram_4941:fifo_ram.data_a[6]
+data[7] => altsyncram_4941:fifo_ram.data_a[7]
+rdclk => a_graycounter_r16:rdptr_g.clock
+rdclk => a_graycounter_s16:read_counter_for_write.clock
+rdclk => altsyncram_4941:fifo_ram.clock1
+rdclk => alt_synch_pipe_0e8:read_sync_registers.clock
+rdclk => cntr_9ua:rdptr_b.clock
+rdclk => scfifo:output_channel.clock
+rdclk => dffe10a[9].CLK
+rdclk => dffe10a[8].CLK
+rdclk => dffe10a[7].CLK
+rdclk => dffe10a[6].CLK
+rdclk => dffe10a[5].CLK
+rdclk => dffe10a[4].CLK
+rdclk => dffe10a[3].CLK
+rdclk => dffe10a[2].CLK
+rdclk => dffe10a[1].CLK
+rdclk => dffe10a[0].CLK
+>>>>>>> origin/master
 rdclk => dffe8a[9].CLK
 rdclk => dffe8a[8].CLK
 rdclk => dffe8a[7].CLK
@@ -567,6 +938,7 @@ rdclk => dffe8a[3].CLK
 rdclk => dffe8a[2].CLK
 rdclk => dffe8a[1].CLK
 rdclk => dffe8a[0].CLK
+<<<<<<< HEAD
 rdreq => cs13.IN1
 rdreq => cs13.IN1
 wrclk => dpram_n3v:dpram4.inclock
@@ -844,6 +1216,624 @@ wren_a => ram_block15a7.ENA0
 
 
 |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_4g8:add_sub2
+=======
+rdclk => dffe9a[9].CLK
+rdclk => dffe9a[8].CLK
+rdclk => dffe9a[7].CLK
+rdclk => dffe9a[6].CLK
+rdclk => dffe9a[5].CLK
+rdclk => dffe9a[4].CLK
+rdclk => dffe9a[3].CLK
+rdclk => dffe9a[2].CLK
+rdclk => dffe9a[1].CLK
+rdclk => dffe9a[0].CLK
+rdclk => fifo_wreq_pipe[1].CLK
+rdclk => fifo_wreq_pipe[0].CLK
+rdclk => rdfull_delay.CLK
+rdreq => scfifo:output_channel.rdreq
+rdreq => valid_rreq.IN0
+wrclk => a_graycounter_r16:wrptr_g.clock
+wrclk => altsyncram_4941:fifo_ram.clock0
+wrclk => alt_synch_pipe_1e8:write_sync_registers.clock
+wrclk => cntr_9ua:wrptr_b.clock
+wrclk => delayed_wrptr_g[9].CLK
+wrclk => delayed_wrptr_g[8].CLK
+wrclk => delayed_wrptr_g[7].CLK
+wrclk => delayed_wrptr_g[6].CLK
+wrclk => delayed_wrptr_g[5].CLK
+wrclk => delayed_wrptr_g[4].CLK
+wrclk => delayed_wrptr_g[3].CLK
+wrclk => delayed_wrptr_g[2].CLK
+wrclk => delayed_wrptr_g[1].CLK
+wrclk => delayed_wrptr_g[0].CLK
+wrclk => dffe3a[9].CLK
+wrclk => dffe3a[8].CLK
+wrclk => dffe3a[7].CLK
+wrclk => dffe3a[6].CLK
+wrclk => dffe3a[5].CLK
+wrclk => dffe3a[4].CLK
+wrclk => dffe3a[3].CLK
+wrclk => dffe3a[2].CLK
+wrclk => dffe3a[1].CLK
+wrclk => dffe3a[0].CLK
+wrclk => dffe4a[9].CLK
+wrclk => dffe4a[8].CLK
+wrclk => dffe4a[7].CLK
+wrclk => dffe4a[6].CLK
+wrclk => dffe4a[5].CLK
+wrclk => dffe4a[4].CLK
+wrclk => dffe4a[3].CLK
+wrclk => dffe4a[2].CLK
+wrclk => dffe4a[1].CLK
+wrclk => dffe4a[0].CLK
+wrclk => dffe5a[9].CLK
+wrclk => dffe5a[8].CLK
+wrclk => dffe5a[7].CLK
+wrclk => dffe5a[6].CLK
+wrclk => dffe5a[5].CLK
+wrclk => dffe5a[4].CLK
+wrclk => dffe5a[3].CLK
+wrclk => dffe5a[2].CLK
+wrclk => dffe5a[1].CLK
+wrclk => dffe5a[0].CLK
+wrclk => lwrreq.CLK
+wrclk => wrempty_delay.CLK
+wrclk => wrfull_delay.CLK
+wrreq => _.IN0
+wrreq => dup_valid_wrreq.IN1
+wrreq => valid_wrreq.IN1
+wrreq => lwrreq.DATAIN
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:read_side_gray_converter
+gray[0] => xor0.IN0
+gray[1] => xor1.IN0
+gray[2] => xor2.IN0
+gray[3] => xor3.IN0
+gray[4] => xor4.IN0
+gray[5] => xor5.IN0
+gray[6] => xor6.IN0
+gray[7] => xor7.IN0
+gray[8] => xor8.IN1
+gray[9] => bin[9].DATAIN
+gray[9] => xor8.IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:write_side_gray_converter
+gray[0] => xor0.IN0
+gray[1] => xor1.IN0
+gray[2] => xor2.IN0
+gray[3] => xor3.IN0
+gray[4] => xor4.IN0
+gray[5] => xor5.IN0
+gray[6] => xor6.IN0
+gray[7] => xor7.IN0
+gray[8] => xor8.IN1
+gray[9] => bin[9].DATAIN
+gray[9] => xor8.IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g
+aclr => counter13a[9].IN0
+aclr => counter13a[8].IN0
+aclr => counter13a[7].IN0
+aclr => counter13a[6].IN0
+aclr => counter13a[5].IN0
+aclr => counter13a[4].IN0
+aclr => counter13a[3].IN0
+aclr => counter13a[2].IN0
+aclr => counter13a[1].IN0
+aclr => counter13a[0].IN0
+aclr => parity11.IN0
+aclr => sub_parity12a1.IN0
+aclr => sub_parity12a0.IN0
+clk_en => counter13a[9].ENA
+clk_en => counter13a[8].ENA
+clk_en => counter13a[7].ENA
+clk_en => counter13a[6].ENA
+clk_en => counter13a[5].ENA
+clk_en => counter13a[4].ENA
+clk_en => counter13a[3].ENA
+clk_en => counter13a[2].ENA
+clk_en => counter13a[1].ENA
+clk_en => counter13a[0].ENA
+clk_en => parity11.ENA
+clk_en => sub_parity12a0.ENA
+clk_en => sub_parity12a1.ENA
+clk_en => sub_parity12a2.ENA
+clock => counter13a[9].CLK
+clock => counter13a[8].CLK
+clock => counter13a[7].CLK
+clock => counter13a[6].CLK
+clock => counter13a[5].CLK
+clock => counter13a[4].CLK
+clock => counter13a[3].CLK
+clock => counter13a[2].CLK
+clock => counter13a[1].CLK
+clock => counter13a[0].CLK
+clock => parity11.CLK
+clock => sub_parity12a0.CLK
+clock => sub_parity12a1.CLK
+clock => sub_parity12a2.CLK
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write
+aclr => counter16a[9].IN0
+aclr => counter16a[8].IN0
+aclr => counter16a[7].IN0
+aclr => counter16a[6].IN0
+aclr => counter16a[5].IN0
+aclr => counter16a[4].IN0
+aclr => counter16a[3].IN0
+aclr => counter16a[2].IN0
+aclr => counter16a[1].IN0
+aclr => counter16a[0].IN0
+aclr => parity14.IN0
+aclr => sub_parity15a1.IN0
+aclr => sub_parity15a0.IN0
+clk_en => counter16a[9].ENA
+clk_en => counter16a[8].ENA
+clk_en => counter16a[7].ENA
+clk_en => counter16a[6].ENA
+clk_en => counter16a[5].ENA
+clk_en => counter16a[4].ENA
+clk_en => counter16a[3].ENA
+clk_en => counter16a[2].ENA
+clk_en => counter16a[1].ENA
+clk_en => counter16a[0].ENA
+clk_en => parity14.ENA
+clk_en => sub_parity15a0.ENA
+clk_en => sub_parity15a1.ENA
+clk_en => sub_parity15a2.ENA
+clock => counter16a[9].CLK
+clock => counter16a[8].CLK
+clock => counter16a[7].CLK
+clock => counter16a[6].CLK
+clock => counter16a[5].CLK
+clock => counter16a[4].CLK
+clock => counter16a[3].CLK
+clock => counter16a[2].CLK
+clock => counter16a[1].CLK
+clock => counter16a[0].CLK
+clock => parity14.CLK
+clock => sub_parity15a0.CLK
+clock => sub_parity15a1.CLK
+clock => sub_parity15a2.CLK
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g
+aclr => counter13a[9].IN0
+aclr => counter13a[8].IN0
+aclr => counter13a[7].IN0
+aclr => counter13a[6].IN0
+aclr => counter13a[5].IN0
+aclr => counter13a[4].IN0
+aclr => counter13a[3].IN0
+aclr => counter13a[2].IN0
+aclr => counter13a[1].IN0
+aclr => counter13a[0].IN0
+aclr => parity11.IN0
+aclr => sub_parity12a1.IN0
+aclr => sub_parity12a0.IN0
+clk_en => counter13a[9].ENA
+clk_en => counter13a[8].ENA
+clk_en => counter13a[7].ENA
+clk_en => counter13a[6].ENA
+clk_en => counter13a[5].ENA
+clk_en => counter13a[4].ENA
+clk_en => counter13a[3].ENA
+clk_en => counter13a[2].ENA
+clk_en => counter13a[1].ENA
+clk_en => counter13a[0].ENA
+clk_en => parity11.ENA
+clk_en => sub_parity12a0.ENA
+clk_en => sub_parity12a1.ENA
+clk_en => sub_parity12a2.ENA
+clock => counter13a[9].CLK
+clock => counter13a[8].CLK
+clock => counter13a[7].CLK
+clock => counter13a[6].CLK
+clock => counter13a[5].CLK
+clock => counter13a[4].CLK
+clock => counter13a[3].CLK
+clock => counter13a[2].CLK
+clock => counter13a[1].CLK
+clock => counter13a[0].CLK
+clock => parity11.CLK
+clock => sub_parity12a0.CLK
+clock => sub_parity12a1.CLK
+clock => sub_parity12a2.CLK
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram
+address_a[0] => ram_block17a0.PORTAADDR
+address_a[0] => ram_block17a1.PORTAADDR
+address_a[0] => ram_block17a2.PORTAADDR
+address_a[0] => ram_block17a3.PORTAADDR
+address_a[0] => ram_block17a4.PORTAADDR
+address_a[0] => ram_block17a5.PORTAADDR
+address_a[0] => ram_block17a6.PORTAADDR
+address_a[0] => ram_block17a7.PORTAADDR
+address_a[1] => ram_block17a0.PORTAADDR1
+address_a[1] => ram_block17a1.PORTAADDR1
+address_a[1] => ram_block17a2.PORTAADDR1
+address_a[1] => ram_block17a3.PORTAADDR1
+address_a[1] => ram_block17a4.PORTAADDR1
+address_a[1] => ram_block17a5.PORTAADDR1
+address_a[1] => ram_block17a6.PORTAADDR1
+address_a[1] => ram_block17a7.PORTAADDR1
+address_a[2] => ram_block17a0.PORTAADDR2
+address_a[2] => ram_block17a1.PORTAADDR2
+address_a[2] => ram_block17a2.PORTAADDR2
+address_a[2] => ram_block17a3.PORTAADDR2
+address_a[2] => ram_block17a4.PORTAADDR2
+address_a[2] => ram_block17a5.PORTAADDR2
+address_a[2] => ram_block17a6.PORTAADDR2
+address_a[2] => ram_block17a7.PORTAADDR2
+address_a[3] => ram_block17a0.PORTAADDR3
+address_a[3] => ram_block17a1.PORTAADDR3
+address_a[3] => ram_block17a2.PORTAADDR3
+address_a[3] => ram_block17a3.PORTAADDR3
+address_a[3] => ram_block17a4.PORTAADDR3
+address_a[3] => ram_block17a5.PORTAADDR3
+address_a[3] => ram_block17a6.PORTAADDR3
+address_a[3] => ram_block17a7.PORTAADDR3
+address_a[4] => ram_block17a0.PORTAADDR4
+address_a[4] => ram_block17a1.PORTAADDR4
+address_a[4] => ram_block17a2.PORTAADDR4
+address_a[4] => ram_block17a3.PORTAADDR4
+address_a[4] => ram_block17a4.PORTAADDR4
+address_a[4] => ram_block17a5.PORTAADDR4
+address_a[4] => ram_block17a6.PORTAADDR4
+address_a[4] => ram_block17a7.PORTAADDR4
+address_a[5] => ram_block17a0.PORTAADDR5
+address_a[5] => ram_block17a1.PORTAADDR5
+address_a[5] => ram_block17a2.PORTAADDR5
+address_a[5] => ram_block17a3.PORTAADDR5
+address_a[5] => ram_block17a4.PORTAADDR5
+address_a[5] => ram_block17a5.PORTAADDR5
+address_a[5] => ram_block17a6.PORTAADDR5
+address_a[5] => ram_block17a7.PORTAADDR5
+address_a[6] => ram_block17a0.PORTAADDR6
+address_a[6] => ram_block17a1.PORTAADDR6
+address_a[6] => ram_block17a2.PORTAADDR6
+address_a[6] => ram_block17a3.PORTAADDR6
+address_a[6] => ram_block17a4.PORTAADDR6
+address_a[6] => ram_block17a5.PORTAADDR6
+address_a[6] => ram_block17a6.PORTAADDR6
+address_a[6] => ram_block17a7.PORTAADDR6
+address_a[7] => ram_block17a0.PORTAADDR7
+address_a[7] => ram_block17a1.PORTAADDR7
+address_a[7] => ram_block17a2.PORTAADDR7
+address_a[7] => ram_block17a3.PORTAADDR7
+address_a[7] => ram_block17a4.PORTAADDR7
+address_a[7] => ram_block17a5.PORTAADDR7
+address_a[7] => ram_block17a6.PORTAADDR7
+address_a[7] => ram_block17a7.PORTAADDR7
+address_a[8] => ram_block17a0.PORTAADDR8
+address_a[8] => ram_block17a1.PORTAADDR8
+address_a[8] => ram_block17a2.PORTAADDR8
+address_a[8] => ram_block17a3.PORTAADDR8
+address_a[8] => ram_block17a4.PORTAADDR8
+address_a[8] => ram_block17a5.PORTAADDR8
+address_a[8] => ram_block17a6.PORTAADDR8
+address_a[8] => ram_block17a7.PORTAADDR8
+address_a[9] => ram_block17a0.PORTAADDR9
+address_a[9] => ram_block17a1.PORTAADDR9
+address_a[9] => ram_block17a2.PORTAADDR9
+address_a[9] => ram_block17a3.PORTAADDR9
+address_a[9] => ram_block17a4.PORTAADDR9
+address_a[9] => ram_block17a5.PORTAADDR9
+address_a[9] => ram_block17a6.PORTAADDR9
+address_a[9] => ram_block17a7.PORTAADDR9
+address_b[0] => ram_block17a0.PORTBADDR
+address_b[0] => ram_block17a1.PORTBADDR
+address_b[0] => ram_block17a2.PORTBADDR
+address_b[0] => ram_block17a3.PORTBADDR
+address_b[0] => ram_block17a4.PORTBADDR
+address_b[0] => ram_block17a5.PORTBADDR
+address_b[0] => ram_block17a6.PORTBADDR
+address_b[0] => ram_block17a7.PORTBADDR
+address_b[1] => ram_block17a0.PORTBADDR1
+address_b[1] => ram_block17a1.PORTBADDR1
+address_b[1] => ram_block17a2.PORTBADDR1
+address_b[1] => ram_block17a3.PORTBADDR1
+address_b[1] => ram_block17a4.PORTBADDR1
+address_b[1] => ram_block17a5.PORTBADDR1
+address_b[1] => ram_block17a6.PORTBADDR1
+address_b[1] => ram_block17a7.PORTBADDR1
+address_b[2] => ram_block17a0.PORTBADDR2
+address_b[2] => ram_block17a1.PORTBADDR2
+address_b[2] => ram_block17a2.PORTBADDR2
+address_b[2] => ram_block17a3.PORTBADDR2
+address_b[2] => ram_block17a4.PORTBADDR2
+address_b[2] => ram_block17a5.PORTBADDR2
+address_b[2] => ram_block17a6.PORTBADDR2
+address_b[2] => ram_block17a7.PORTBADDR2
+address_b[3] => ram_block17a0.PORTBADDR3
+address_b[3] => ram_block17a1.PORTBADDR3
+address_b[3] => ram_block17a2.PORTBADDR3
+address_b[3] => ram_block17a3.PORTBADDR3
+address_b[3] => ram_block17a4.PORTBADDR3
+address_b[3] => ram_block17a5.PORTBADDR3
+address_b[3] => ram_block17a6.PORTBADDR3
+address_b[3] => ram_block17a7.PORTBADDR3
+address_b[4] => ram_block17a0.PORTBADDR4
+address_b[4] => ram_block17a1.PORTBADDR4
+address_b[4] => ram_block17a2.PORTBADDR4
+address_b[4] => ram_block17a3.PORTBADDR4
+address_b[4] => ram_block17a4.PORTBADDR4
+address_b[4] => ram_block17a5.PORTBADDR4
+address_b[4] => ram_block17a6.PORTBADDR4
+address_b[4] => ram_block17a7.PORTBADDR4
+address_b[5] => ram_block17a0.PORTBADDR5
+address_b[5] => ram_block17a1.PORTBADDR5
+address_b[5] => ram_block17a2.PORTBADDR5
+address_b[5] => ram_block17a3.PORTBADDR5
+address_b[5] => ram_block17a4.PORTBADDR5
+address_b[5] => ram_block17a5.PORTBADDR5
+address_b[5] => ram_block17a6.PORTBADDR5
+address_b[5] => ram_block17a7.PORTBADDR5
+address_b[6] => ram_block17a0.PORTBADDR6
+address_b[6] => ram_block17a1.PORTBADDR6
+address_b[6] => ram_block17a2.PORTBADDR6
+address_b[6] => ram_block17a3.PORTBADDR6
+address_b[6] => ram_block17a4.PORTBADDR6
+address_b[6] => ram_block17a5.PORTBADDR6
+address_b[6] => ram_block17a6.PORTBADDR6
+address_b[6] => ram_block17a7.PORTBADDR6
+address_b[7] => ram_block17a0.PORTBADDR7
+address_b[7] => ram_block17a1.PORTBADDR7
+address_b[7] => ram_block17a2.PORTBADDR7
+address_b[7] => ram_block17a3.PORTBADDR7
+address_b[7] => ram_block17a4.PORTBADDR7
+address_b[7] => ram_block17a5.PORTBADDR7
+address_b[7] => ram_block17a6.PORTBADDR7
+address_b[7] => ram_block17a7.PORTBADDR7
+address_b[8] => ram_block17a0.PORTBADDR8
+address_b[8] => ram_block17a1.PORTBADDR8
+address_b[8] => ram_block17a2.PORTBADDR8
+address_b[8] => ram_block17a3.PORTBADDR8
+address_b[8] => ram_block17a4.PORTBADDR8
+address_b[8] => ram_block17a5.PORTBADDR8
+address_b[8] => ram_block17a6.PORTBADDR8
+address_b[8] => ram_block17a7.PORTBADDR8
+address_b[9] => ram_block17a0.PORTBADDR9
+address_b[9] => ram_block17a1.PORTBADDR9
+address_b[9] => ram_block17a2.PORTBADDR9
+address_b[9] => ram_block17a3.PORTBADDR9
+address_b[9] => ram_block17a4.PORTBADDR9
+address_b[9] => ram_block17a5.PORTBADDR9
+address_b[9] => ram_block17a6.PORTBADDR9
+address_b[9] => ram_block17a7.PORTBADDR9
+clock0 => ram_block17a0.CLK0
+clock0 => ram_block17a1.CLK0
+clock0 => ram_block17a2.CLK0
+clock0 => ram_block17a3.CLK0
+clock0 => ram_block17a4.CLK0
+clock0 => ram_block17a5.CLK0
+clock0 => ram_block17a6.CLK0
+clock0 => ram_block17a7.CLK0
+clock1 => ram_block17a0.CLK1
+clock1 => ram_block17a1.CLK1
+clock1 => ram_block17a2.CLK1
+clock1 => ram_block17a3.CLK1
+clock1 => ram_block17a4.CLK1
+clock1 => ram_block17a5.CLK1
+clock1 => ram_block17a6.CLK1
+clock1 => ram_block17a7.CLK1
+clocken1 => ram_block17a0.ENA1
+clocken1 => ram_block17a1.ENA1
+clocken1 => ram_block17a2.ENA1
+clocken1 => ram_block17a3.ENA1
+clocken1 => ram_block17a4.ENA1
+clocken1 => ram_block17a5.ENA1
+clocken1 => ram_block17a6.ENA1
+clocken1 => ram_block17a7.ENA1
+data_a[0] => ram_block17a0.PORTADATAIN
+data_a[1] => ram_block17a1.PORTADATAIN
+data_a[2] => ram_block17a2.PORTADATAIN
+data_a[3] => ram_block17a3.PORTADATAIN
+data_a[4] => ram_block17a4.PORTADATAIN
+data_a[5] => ram_block17a5.PORTADATAIN
+data_a[6] => ram_block17a6.PORTADATAIN
+data_a[7] => ram_block17a7.PORTADATAIN
+wren_a => ram_block17a0.PORTAWE
+wren_a => ram_block17a0.ENA0
+wren_a => ram_block17a1.PORTAWE
+wren_a => ram_block17a1.ENA0
+wren_a => ram_block17a2.PORTAWE
+wren_a => ram_block17a2.ENA0
+wren_a => ram_block17a3.PORTAWE
+wren_a => ram_block17a3.ENA0
+wren_a => ram_block17a4.PORTAWE
+wren_a => ram_block17a4.ENA0
+wren_a => ram_block17a5.PORTAWE
+wren_a => ram_block17a5.ENA0
+wren_a => ram_block17a6.PORTAWE
+wren_a => ram_block17a6.ENA0
+wren_a => ram_block17a7.PORTAWE
+wren_a => ram_block17a7.ENA0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers
+clock => dffpipe_qe9:dffpipe18.clock
+clrn => dffpipe_qe9:dffpipe18.clrn
+d[0] => dffpipe_qe9:dffpipe18.d[0]
+d[1] => dffpipe_qe9:dffpipe18.d[1]
+d[2] => dffpipe_qe9:dffpipe18.d[2]
+d[3] => dffpipe_qe9:dffpipe18.d[3]
+d[4] => dffpipe_qe9:dffpipe18.d[4]
+d[5] => dffpipe_qe9:dffpipe18.d[5]
+d[6] => dffpipe_qe9:dffpipe18.d[6]
+d[7] => dffpipe_qe9:dffpipe18.d[7]
+d[8] => dffpipe_qe9:dffpipe18.d[8]
+d[9] => dffpipe_qe9:dffpipe18.d[9]
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18
+clock => dffe19a[9].CLK
+clock => dffe19a[8].CLK
+clock => dffe19a[7].CLK
+clock => dffe19a[6].CLK
+clock => dffe19a[5].CLK
+clock => dffe19a[4].CLK
+clock => dffe19a[3].CLK
+clock => dffe19a[2].CLK
+clock => dffe19a[1].CLK
+clock => dffe19a[0].CLK
+clock => dffe20a[9].CLK
+clock => dffe20a[8].CLK
+clock => dffe20a[7].CLK
+clock => dffe20a[6].CLK
+clock => dffe20a[5].CLK
+clock => dffe20a[4].CLK
+clock => dffe20a[3].CLK
+clock => dffe20a[2].CLK
+clock => dffe20a[1].CLK
+clock => dffe20a[0].CLK
+clock => dffe21a[9].CLK
+clock => dffe21a[8].CLK
+clock => dffe21a[7].CLK
+clock => dffe21a[6].CLK
+clock => dffe21a[5].CLK
+clock => dffe21a[4].CLK
+clock => dffe21a[3].CLK
+clock => dffe21a[2].CLK
+clock => dffe21a[1].CLK
+clock => dffe21a[0].CLK
+clrn => dffe19a[9].ACLR
+clrn => dffe19a[8].ACLR
+clrn => dffe19a[7].ACLR
+clrn => dffe19a[6].ACLR
+clrn => dffe19a[5].ACLR
+clrn => dffe19a[4].ACLR
+clrn => dffe19a[3].ACLR
+clrn => dffe19a[2].ACLR
+clrn => dffe19a[1].ACLR
+clrn => dffe19a[0].ACLR
+clrn => dffe20a[9].ACLR
+clrn => dffe20a[8].ACLR
+clrn => dffe20a[7].ACLR
+clrn => dffe20a[6].ACLR
+clrn => dffe20a[5].ACLR
+clrn => dffe20a[4].ACLR
+clrn => dffe20a[3].ACLR
+clrn => dffe20a[2].ACLR
+clrn => dffe20a[1].ACLR
+clrn => dffe20a[0].ACLR
+clrn => dffe21a[9].ACLR
+clrn => dffe21a[8].ACLR
+clrn => dffe21a[7].ACLR
+clrn => dffe21a[6].ACLR
+clrn => dffe21a[5].ACLR
+clrn => dffe21a[4].ACLR
+clrn => dffe21a[3].ACLR
+clrn => dffe21a[2].ACLR
+clrn => dffe21a[1].ACLR
+clrn => dffe21a[0].ACLR
+d[0] => dffe19a[0].IN0
+d[1] => dffe19a[1].IN0
+d[2] => dffe19a[2].IN0
+d[3] => dffe19a[3].IN0
+d[4] => dffe19a[4].IN0
+d[5] => dffe19a[5].IN0
+d[6] => dffe19a[6].IN0
+d[7] => dffe19a[7].IN0
+d[8] => dffe19a[8].IN0
+d[9] => dffe19a[9].IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers
+clock => dffpipe_re9:dffpipe22.clock
+clrn => dffpipe_re9:dffpipe22.clrn
+d[0] => dffpipe_re9:dffpipe22.d[0]
+d[1] => dffpipe_re9:dffpipe22.d[1]
+d[2] => dffpipe_re9:dffpipe22.d[2]
+d[3] => dffpipe_re9:dffpipe22.d[3]
+d[4] => dffpipe_re9:dffpipe22.d[4]
+d[5] => dffpipe_re9:dffpipe22.d[5]
+d[6] => dffpipe_re9:dffpipe22.d[6]
+d[7] => dffpipe_re9:dffpipe22.d[7]
+d[8] => dffpipe_re9:dffpipe22.d[8]
+d[9] => dffpipe_re9:dffpipe22.d[9]
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22
+clock => dffe23a[9].CLK
+clock => dffe23a[8].CLK
+clock => dffe23a[7].CLK
+clock => dffe23a[6].CLK
+clock => dffe23a[5].CLK
+clock => dffe23a[4].CLK
+clock => dffe23a[3].CLK
+clock => dffe23a[2].CLK
+clock => dffe23a[1].CLK
+clock => dffe23a[0].CLK
+clock => dffe24a[9].CLK
+clock => dffe24a[8].CLK
+clock => dffe24a[7].CLK
+clock => dffe24a[6].CLK
+clock => dffe24a[5].CLK
+clock => dffe24a[4].CLK
+clock => dffe24a[3].CLK
+clock => dffe24a[2].CLK
+clock => dffe24a[1].CLK
+clock => dffe24a[0].CLK
+clock => dffe25a[9].CLK
+clock => dffe25a[8].CLK
+clock => dffe25a[7].CLK
+clock => dffe25a[6].CLK
+clock => dffe25a[5].CLK
+clock => dffe25a[4].CLK
+clock => dffe25a[3].CLK
+clock => dffe25a[2].CLK
+clock => dffe25a[1].CLK
+clock => dffe25a[0].CLK
+clrn => dffe23a[9].ACLR
+clrn => dffe23a[8].ACLR
+clrn => dffe23a[7].ACLR
+clrn => dffe23a[6].ACLR
+clrn => dffe23a[5].ACLR
+clrn => dffe23a[4].ACLR
+clrn => dffe23a[3].ACLR
+clrn => dffe23a[2].ACLR
+clrn => dffe23a[1].ACLR
+clrn => dffe23a[0].ACLR
+clrn => dffe24a[9].ACLR
+clrn => dffe24a[8].ACLR
+clrn => dffe24a[7].ACLR
+clrn => dffe24a[6].ACLR
+clrn => dffe24a[5].ACLR
+clrn => dffe24a[4].ACLR
+clrn => dffe24a[3].ACLR
+clrn => dffe24a[2].ACLR
+clrn => dffe24a[1].ACLR
+clrn => dffe24a[0].ACLR
+clrn => dffe25a[9].ACLR
+clrn => dffe25a[8].ACLR
+clrn => dffe25a[7].ACLR
+clrn => dffe25a[6].ACLR
+clrn => dffe25a[5].ACLR
+clrn => dffe25a[4].ACLR
+clrn => dffe25a[3].ACLR
+clrn => dffe25a[2].ACLR
+clrn => dffe25a[1].ACLR
+clrn => dffe25a[0].ACLR
+d[0] => dffe23a[0].IN0
+d[1] => dffe23a[1].IN0
+d[2] => dffe23a[2].IN0
+d[3] => dffe23a[3].IN0
+d[4] => dffe23a[4].IN0
+d[5] => dffe23a[5].IN0
+d[6] => dffe23a[6].IN0
+d[7] => dffe23a[7].IN0
+d[8] => dffe23a[8].IN0
+d[9] => dffe23a[9].IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|add_sub_ovb:rdusedw_subtractor
+>>>>>>> origin/master
 dataa[0] => _.IN0
 dataa[0] => _.IN0
 dataa[0] => _.IN0
@@ -886,7 +1876,11 @@ datab[8] => datab_node[8].IN0
 datab[9] => datab_node[9].IN0
 
 
+<<<<<<< HEAD
 |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_a18:add_sub3
+=======
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|add_sub_ovb:wrusedw_subtractor
+>>>>>>> origin/master
 dataa[0] => _.IN0
 dataa[0] => _.IN0
 dataa[0] => _.IN0
@@ -917,9 +1911,12 @@ dataa[8] => _.IN0
 dataa[9] => _.IN0
 dataa[9] => _.IN0
 dataa[9] => _.IN0
+<<<<<<< HEAD
 dataa[10] => _.IN0
 dataa[10] => _.IN0
 dataa[10] => _.IN0
+=======
+>>>>>>> origin/master
 datab[0] => datab_node[0].IN0
 datab[1] => datab_node[1].IN0
 datab[2] => datab_node[2].IN0
@@ -930,10 +1927,61 @@ datab[6] => datab_node[6].IN0
 datab[7] => datab_node[7].IN0
 datab[8] => datab_node[8].IN0
 datab[9] => datab_node[9].IN0
+<<<<<<< HEAD
 datab[10] => datab_node[10].IN0
 
 
 |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1
+=======
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_jr5:address_comparer
+dataa[0] => data_wire[2].IN0
+dataa[1] => data_wire[2].IN0
+dataa[2] => data_wire[3].IN0
+dataa[3] => data_wire[3].IN0
+dataa[4] => data_wire[4].IN0
+dataa[5] => data_wire[4].IN0
+dataa[6] => data_wire[5].IN0
+dataa[7] => data_wire[5].IN0
+dataa[8] => data_wire[6].IN0
+dataa[9] => data_wire[6].IN0
+datab[0] => data_wire[2].IN1
+datab[1] => data_wire[2].IN1
+datab[2] => data_wire[3].IN1
+datab[3] => data_wire[3].IN1
+datab[4] => data_wire[4].IN1
+datab[5] => data_wire[4].IN1
+datab[6] => data_wire[5].IN1
+datab[7] => data_wire[5].IN1
+datab[8] => data_wire[6].IN1
+datab[9] => data_wire[6].IN1
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_qh8:wrempty_comparison
+dataa[0] => data_wire[2].IN0
+dataa[1] => data_wire[2].IN0
+dataa[2] => data_wire[3].IN0
+dataa[3] => data_wire[3].IN0
+dataa[4] => data_wire[4].IN0
+dataa[5] => data_wire[4].IN0
+dataa[6] => data_wire[5].IN0
+dataa[7] => data_wire[5].IN0
+dataa[8] => data_wire[6].IN0
+dataa[9] => data_wire[6].IN0
+datab[0] => data_wire[2].IN1
+datab[1] => data_wire[2].IN1
+datab[2] => data_wire[3].IN1
+datab[3] => data_wire[3].IN1
+datab[4] => data_wire[4].IN1
+datab[5] => data_wire[4].IN1
+datab[6] => data_wire[5].IN1
+datab[7] => data_wire[5].IN1
+datab[8] => data_wire[6].IN1
+datab[9] => data_wire[6].IN1
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b
 aclr => counter_cella0.ACLR
 aclr => counter_cella1.ACLR
 aclr => counter_cella2.ACLR
@@ -944,7 +1992,16 @@ aclr => counter_cella6.ACLR
 aclr => counter_cella7.ACLR
 aclr => counter_cella8.ACLR
 aclr => counter_cella9.ACLR
-aclr => counter_cella10.ACLR
+clk_en => counter_cella0.ENA
+clk_en => counter_cella1.ENA
+clk_en => counter_cella2.ENA
+clk_en => counter_cella3.ENA
+clk_en => counter_cella4.ENA
+clk_en => counter_cella5.ENA
+clk_en => counter_cella6.ENA
+clk_en => counter_cella7.ENA
+clk_en => counter_cella8.ENA
+clk_en => counter_cella9.ENA
 clock => counter_cella0.CLK
 clock => counter_cella1.CLK
 clock => counter_cella2.CLK
@@ -955,6 +2012,45 @@ clock => counter_cella6.CLK
 clock => counter_cella7.CLK
 clock => counter_cella8.CLK
 clock => counter_cella9.CLK
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:wrptr_b
+>>>>>>> origin/master
+aclr => counter_cella0.ACLR
+aclr => counter_cella1.ACLR
+aclr => counter_cella2.ACLR
+aclr => counter_cella3.ACLR
+aclr => counter_cella4.ACLR
+aclr => counter_cella5.ACLR
+aclr => counter_cella6.ACLR
+aclr => counter_cella7.ACLR
+aclr => counter_cella8.ACLR
+aclr => counter_cella9.ACLR
+<<<<<<< HEAD
+aclr => counter_cella10.ACLR
+=======
+clk_en => counter_cella0.ENA
+clk_en => counter_cella1.ENA
+clk_en => counter_cella2.ENA
+clk_en => counter_cella3.ENA
+clk_en => counter_cella4.ENA
+clk_en => counter_cella5.ENA
+clk_en => counter_cella6.ENA
+clk_en => counter_cella7.ENA
+clk_en => counter_cella8.ENA
+clk_en => counter_cella9.ENA
+>>>>>>> origin/master
+clock => counter_cella0.CLK
+clock => counter_cella1.CLK
+clock => counter_cella2.CLK
+clock => counter_cella3.CLK
+clock => counter_cella4.CLK
+clock => counter_cella5.CLK
+clock => counter_cella6.CLK
+clock => counter_cella7.CLK
+clock => counter_cella8.CLK
+clock => counter_cella9.CLK
+<<<<<<< HEAD
 clock => counter_cella10.CLK
 cnt_en => counter_cella0.DATAB
 cnt_en => counter_cella1.DATAB
@@ -1012,5 +2108,493 @@ rst_n => div_count[5].ACLR
 rst_n => div_count[6].ACLR
 rst_n => div_count[7].ACLR
 rst_n => state~6.DATAIN
+=======
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel
+data[0] => a_fffifo:subfifo.data[0]
+data[1] => a_fffifo:subfifo.data[1]
+data[2] => a_fffifo:subfifo.data[2]
+data[3] => a_fffifo:subfifo.data[3]
+data[4] => a_fffifo:subfifo.data[4]
+data[5] => a_fffifo:subfifo.data[5]
+data[6] => a_fffifo:subfifo.data[6]
+data[7] => a_fffifo:subfifo.data[7]
+wrreq => a_fffifo:subfifo.wreq
+rdreq => a_fffifo:subfifo.rreq
+clock => a_fffifo:subfifo.clock
+aclr => a_fffifo:subfifo.aclr
+sclr => a_fffifo:subfifo.sclr
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo
+data[0] => lpm_ff:data_node[0][0].data[0]
+data[0] => lpm_ff:data_node[0][1].data[0]
+data[1] => lpm_ff:data_node[0][0].data[1]
+data[1] => lpm_ff:data_node[0][1].data[1]
+data[2] => lpm_ff:data_node[0][0].data[2]
+data[2] => lpm_ff:data_node[0][1].data[2]
+data[3] => lpm_ff:data_node[0][0].data[3]
+data[3] => lpm_ff:data_node[0][1].data[3]
+data[4] => lpm_ff:data_node[0][0].data[4]
+data[4] => lpm_ff:data_node[0][1].data[4]
+data[5] => lpm_ff:data_node[0][0].data[5]
+data[5] => lpm_ff:data_node[0][1].data[5]
+data[6] => lpm_ff:data_node[0][0].data[6]
+data[6] => lpm_ff:data_node[0][1].data[6]
+data[7] => lpm_ff:data_node[0][0].data[7]
+data[7] => lpm_ff:data_node[0][1].data[7]
+wreq => valid_wreq.IN0
+wreq => a_fefifo:fifo_state.wreq
+rreq => valid_rreq.IN0
+rreq => a_fefifo:fifo_state.rreq
+clock => lpm_ff:data_node[0][1].clock
+clock => lpm_ff:data_node[0][0].clock
+clock => lpm_ff:last_data_node[1].clock
+clock => lpm_ff:last_data_node[0].clock
+clock => lpm_counter:rd_ptr.clock
+clock => lpm_ff:output_buffer.clock
+clock => a_fefifo:fifo_state.clock
+aclr => a_fefifo:fifo_state.aclr
+aclr => lpm_ff:data_node[0][1].aclr
+aclr => lpm_ff:data_node[0][0].aclr
+aclr => lpm_ff:last_data_node[1].aclr
+aclr => lpm_ff:last_data_node[0].aclr
+aclr => lpm_counter:rd_ptr.aclr
+aclr => lpm_ff:output_buffer.aclr
+sclr => lpm_counter:rd_ptr.sclr
+sclr => a_fefifo:fifo_state.sclr
+threshlevel[0] => ~NO_FANOUT~
+threshlevel[1] => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]
+data[0][0] => mux_afc:auto_generated.data[0]
+data[0][1] => mux_afc:auto_generated.data[1]
+data[0][2] => mux_afc:auto_generated.data[2]
+data[0][3] => mux_afc:auto_generated.data[3]
+data[0][4] => mux_afc:auto_generated.data[4]
+data[0][5] => mux_afc:auto_generated.data[5]
+data[0][6] => mux_afc:auto_generated.data[6]
+data[0][7] => mux_afc:auto_generated.data[7]
+data[1][0] => mux_afc:auto_generated.data[8]
+data[1][1] => mux_afc:auto_generated.data[9]
+data[1][2] => mux_afc:auto_generated.data[10]
+data[1][3] => mux_afc:auto_generated.data[11]
+data[1][4] => mux_afc:auto_generated.data[12]
+data[1][5] => mux_afc:auto_generated.data[13]
+data[1][6] => mux_afc:auto_generated.data[14]
+data[1][7] => mux_afc:auto_generated.data[15]
+sel[0] => mux_afc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]|mux_afc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[0].IN1
+data[9] => result_node[1].IN1
+data[10] => result_node[2].IN1
+data[11] => result_node[3].IN1
+data[12] => result_node[4].IN1
+data[13] => result_node[5].IN1
+data[14] => result_node[6].IN1
+data[15] => result_node[7].IN1
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:col_data_out_mux
+data[0][0] => mux_afc:auto_generated.data[0]
+data[0][1] => mux_afc:auto_generated.data[1]
+data[0][2] => mux_afc:auto_generated.data[2]
+data[0][3] => mux_afc:auto_generated.data[3]
+data[0][4] => mux_afc:auto_generated.data[4]
+data[0][5] => mux_afc:auto_generated.data[5]
+data[0][6] => mux_afc:auto_generated.data[6]
+data[0][7] => mux_afc:auto_generated.data[7]
+data[1][0] => mux_afc:auto_generated.data[8]
+data[1][1] => mux_afc:auto_generated.data[9]
+data[1][2] => mux_afc:auto_generated.data[10]
+data[1][3] => mux_afc:auto_generated.data[11]
+data[1][4] => mux_afc:auto_generated.data[12]
+data[1][5] => mux_afc:auto_generated.data[13]
+data[1][6] => mux_afc:auto_generated.data[14]
+data[1][7] => mux_afc:auto_generated.data[15]
+sel[0] => mux_afc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:col_data_out_mux|mux_afc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[0].IN1
+data[9] => result_node[1].IN1
+data[10] => result_node[2].IN1
+data[11] => result_node[3].IN1
+data[12] => result_node[4].IN1
+data[13] => result_node[5].IN1
+data[14] => result_node[6].IN1
+data[15] => result_node[7].IN1
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[1]
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[0]
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux
+data[0][0] => mux_afc:auto_generated.data[0]
+data[0][1] => mux_afc:auto_generated.data[1]
+data[0][2] => mux_afc:auto_generated.data[2]
+data[0][3] => mux_afc:auto_generated.data[3]
+data[0][4] => mux_afc:auto_generated.data[4]
+data[0][5] => mux_afc:auto_generated.data[5]
+data[0][6] => mux_afc:auto_generated.data[6]
+data[0][7] => mux_afc:auto_generated.data[7]
+data[1][0] => mux_afc:auto_generated.data[8]
+data[1][1] => mux_afc:auto_generated.data[9]
+data[1][2] => mux_afc:auto_generated.data[10]
+data[1][3] => mux_afc:auto_generated.data[11]
+data[1][4] => mux_afc:auto_generated.data[12]
+data[1][5] => mux_afc:auto_generated.data[13]
+data[1][6] => mux_afc:auto_generated.data[14]
+data[1][7] => mux_afc:auto_generated.data[15]
+sel[0] => mux_afc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux|mux_afc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[0].IN1
+data[9] => result_node[1].IN1
+data[10] => result_node[2].IN1
+data[11] => result_node[3].IN1
+data[12] => result_node[4].IN1
+data[13] => result_node[5].IN1
+data[14] => result_node[6].IN1
+data[15] => result_node[7].IN1
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr
+clock => cntr_tue:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_tue:auto_generated.cnt_en
+updown => cntr_tue:auto_generated.updown
+aclr => cntr_tue:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_tue:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr|cntr_tue:auto_generated
+aclr => counter_cella0.ACLR
+aclr => counter_cella1.ACLR
+clock => counter_cella0.CLK
+clock => counter_cella1.CLK
+cnt_en => _.IN0
+sclr => _.IN1
+sclr => counter_cella0.SCLR
+sclr => counter_cella1.SCLR
+updown => counter_cella0.DATAB
+updown => counter_cella1.DATAB
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:output_buffer
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state
+usedw_in[0] => lpm_compare:is_almost_empty_compare.dataa[0]
+usedw_in[0] => lpm_compare:is_almost_full_compare.dataa[0]
+usedw_in[0] => usedw_out[0].IN0
+usedw_in[1] => lpm_compare:is_almost_empty_compare.dataa[1]
+usedw_in[1] => lpm_compare:is_almost_full_compare.dataa[1]
+usedw_in[1] => usedw_out[1].IN0
+wreq => _.IN0
+wreq => _.IN0
+wreq => _.IN1
+rreq => _.IN1
+rreq => _.IN0
+rreq => _.IN1
+threshlevel[0] => ~NO_FANOUT~
+threshlevel[1] => ~NO_FANOUT~
+clock => sm_emptyfull.IN1
+aclr => sm_emptyfull.IN1
+sclr => _.IN0
+sclr => _.IN1
+sclr => _.IN0
+sclr => _.IN1
+sclr => _.IN0
+usedw_is_1 => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare
+dataa[0] => cmpr_33g:auto_generated.dataa[0]
+dataa[1] => cmpr_33g:auto_generated.dataa[1]
+datab[0] => cmpr_33g:auto_generated.datab[0]
+datab[1] => cmpr_33g:auto_generated.datab[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare|cmpr_33g:auto_generated
+dataa[0] => aneb_result_wire[0].IN0
+dataa[1] => aneb_result_wire[0].IN0
+datab[0] => aneb_result_wire[0].IN1
+datab[1] => aneb_result_wire[0].IN1
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare
+dataa[0] => cmpr_33g:auto_generated.dataa[0]
+dataa[1] => cmpr_33g:auto_generated.dataa[1]
+datab[0] => cmpr_33g:auto_generated.datab[0]
+datab[1] => cmpr_33g:auto_generated.datab[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare|cmpr_33g:auto_generated
+dataa[0] => aneb_result_wire[0].IN0
+dataa[1] => aneb_result_wire[0].IN0
+datab[0] => aneb_result_wire[0].IN1
+datab[1] => aneb_result_wire[0].IN1
+>>>>>>> origin/master
 
 

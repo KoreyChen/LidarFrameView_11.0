@@ -1,21 +1,27 @@
-# Reading F:/EngineeringProgramFiles/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/11.0/modelsim_ase/tcl/vsim/pref.tcl 
 # do LidarFrameView_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying F:\EngineeringProgramFiles\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied F:\EngineeringProgramFiles\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module CCD_ADC_Control
 # 
 # Top level modules:
 # 	CCD_ADC_Control
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/uart_tx.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module uart_tx
@@ -24,37 +30,84 @@
 # 	uart_tx
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/speed_select.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_tx.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module my_uart_tx
+# 
+# Top level modules:
+# 	my_uart_tx
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_rx.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module my_uart_rx
+# 
+# Top level modules:
+# 	my_uart_rx
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/timer.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/speed_select.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module speed_select
 # 
 # Top level modules:
 # 	speed_select
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/SerialSend.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SerialSend.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module SerialSend
 # 
 # Top level modules:
 # 	SerialSend
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/SamplingControl.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SamplingControl.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module SamplingControl
 # 
 # Top level modules:
 # 	SamplingControl
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/LidarFrameView.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module LidarFrameView
 # 
 # Top level modules:
 # 	LidarFrameView
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 {D:/GitHub/LidarFrameView_11.0/senddcfifo.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/senddcfifo.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module senddcfifo
 # 
 # Top level modules:
 # 	senddcfifo
 # 
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0/simulation/modelsim {D:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+=======
+# vlog -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim {C:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+>>>>>>> origin/master
 # -- Compiling module LidarFrameView_vlg_tst
 # 
 # Top level modules:
@@ -76,6 +129,7 @@
 # Loading altera_mf_ver.dcfifo_low_latency
 # Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
 # Loading altera_mf_ver.dcfifo_dffpipe
+<<<<<<< HEAD
 # Loading altera_mf_ver.dcfifo_sync
 # ** Warning: (vsim-3017) D:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt(100): [TFMPC] - Too few port connections. Expected 15, found 14.
 # 
@@ -94,6 +148,22 @@
 # 
 # ** Warning: (vsim-3722) D:/GitHub/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdfull'.
 # 
+=======
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# ** Warning: (vsim-3017) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt(100): [TFMPC] - Too few port connections. Expected 15, found 14.
+#         Region: /LidarFrameView_vlg_tst/i1
+# ** Warning: (vsim-3017) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Too few port connections. Expected 22, found 20.
+#         Region: /LidarFrameView_vlg_tst/i1/CCD_ADC_Control_inst
+# ** Warning: (vsim-3722) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdempty'.
+# ** Warning: (vsim-3722) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(128): [TFMPC] - Missing connection for port 'rdfull'.
+# ** Warning: (vsim-3017) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Too few port connections. Expected 13, found 11.
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst
+# ** Warning: (vsim-3722) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdempty'.
+# ** Warning: (vsim-3722) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdfull'.
+# ** Warning: (vsim-3015) C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SerialSend.v(147): [PCDPC] - Port size (25 or 25) does not match connection size (32) for port 'timer'. The port definition is at: C:/EngineeringDocument/GitHub/LidarFrameView_11.0/timer.v(6).
+#         Region: /LidarFrameView_vlg_tst/i1/SerialSend_inst/my_timer_tx
+>>>>>>> origin/master
 # 
 # add wave *
 # view structure
@@ -101,6 +171,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+<<<<<<< HEAD
 add wave -position insertpoint sim:/LidarFrameView_vlg_tst/i1/SerialSend_inst/*
 run
 restart
@@ -122,3 +193,5 @@ restart
 # ** Warning: (vsim-3722) D:/GitHub/LidarFrameView_11.0/LidarFrameView.v(145): [TFMPC] - Missing connection for port 'rdfull'.
 # 
 run
+=======
+>>>>>>> origin/master

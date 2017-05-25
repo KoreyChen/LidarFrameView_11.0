@@ -20,18 +20,30 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+<<<<<<< HEAD
 SamplingControl
 # storage
 db|LidarFrameView.(1).cnf
 db|LidarFrameView.(1).cnf
+=======
+LidarFrameView
+# storage
+db|LidarFrameView.(0).cnf
+db|LidarFrameView.(0).cnf
+>>>>>>> origin/master
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
+<<<<<<< HEAD
 samplingcontrol.v
 325f6ee23aa2313b9fe9db77b2a919af
+=======
+lidarframeview.v
+4ab9ddb293ffaf5799ed51f27194d
+>>>>>>> origin/master
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -50,24 +62,40 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
+<<<<<<< HEAD
 SamplingControl:SamplingControl_inst
+=======
+|
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 speed_select
 # storage
 db|LidarFrameView.(4).cnf
 db|LidarFrameView.(4).cnf
+=======
+SamplingControl
+# storage
+db|LidarFrameView.(1).cnf
+db|LidarFrameView.(1).cnf
+>>>>>>> origin/master
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
+<<<<<<< HEAD
 speed_select.v
 2c60583e6a53229c06bd8aabc697357
+=======
+samplingcontrol.v
+325f6ee23aa2313b9fe9db77b2a919af
+>>>>>>> origin/master
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -86,6 +114,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|speed_select:speed_tx
 }
 # macro_sequence
@@ -96,14 +125,31 @@ uart_tx
 # storage
 db|LidarFrameView.(5).cnf
 db|LidarFrameView.(5).cnf
+=======
+SamplingControl:SamplingControl_inst
+}
+# macro_sequence
+
+# end
+# entity
+CCD_ADC_Control
+# storage
+db|LidarFrameView.(2).cnf
+db|LidarFrameView.(2).cnf
+>>>>>>> origin/master
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
+<<<<<<< HEAD
 uart_tx.v
 25ca7458a72609d36c15a78335281ca
+=======
+ccd_adc_control.v
+537f6f9c81bb9ecfb37384eb83dbad38
+>>>>>>> origin/master
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -121,13 +167,117 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
+<<<<<<< HEAD
 # hierarchies {
 SerialSend:SerialSend_inst|uart_tx:my_uart_tx
+=======
+# user_parameter {
+TimeReset
+100
+PARAMETER_SIGNED_DEC
+DEF
+TimeSetClk
+10
+PARAMETER_SIGNED_DEC
+DEF
+TimeIntegration
+500
+PARAMETER_SIGNED_DEC
+DEF
+TimeADCDelay
+5
+PARAMETER_SIGNED_DEC
+DEF
+State1_Reset
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+State2_Integration
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+State3_DataOut
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+State4
+11
+PARAMETER_UNSIGNED_BIN
+DEF
+RestState_S1
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+RestState_S2
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+RestState_S3
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+RestState_S4
+11
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S1
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S2
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S3
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S4
+011
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S5
+100
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S6
+101
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S7
+110
+PARAMETER_UNSIGNED_BIN
+DEF
+IntegState_S8
+111
+PARAMETER_UNSIGNED_BIN
+DEF
+DataOutState_S1
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+DataOutState_S2
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+DataOutState_S3
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+DataOutState_S4
+11
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+CCD_ADC_Control:CCD_ADC_Control_inst
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(7).cnf
@@ -8083,11 +8233,111 @@ lpm_counter.inc
 c5cfeeabc5f2ab60b3453f6abbc42b41
 lpm_decode.inc
 10da69a8bbd590d66779e7a142f73790
+=======
+SerialSend
+# storage
+db|LidarFrameView.(3).cnf
+db|LidarFrameView.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+serialsend.v
+0f623df9f3c281b83b370658f4595
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+SD1
+01111011
+PARAMETER_UNSIGNED_BIN
+DEF
+SD2
+00101000
+PARAMETER_UNSIGNED_BIN
+DEF
+SD3
+00110001
+PARAMETER_UNSIGNED_BIN
+DEF
+SD4
+00110000
+PARAMETER_UNSIGNED_BIN
+DEF
+SD5
+00110010
+PARAMETER_UNSIGNED_BIN
+DEF
+SD6
+00110100
+PARAMETER_UNSIGNED_BIN
+DEF
+SD7
+00101001
+PARAMETER_UNSIGNED_BIN
+DEF
+SD8
+01111101
+PARAMETER_UNSIGNED_BIN
+DEF
+S1
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+S2
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+S3
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+COUNT_S1
+00
+PARAMETER_UNSIGNED_BIN
+DEF
+COUNT_S2
+01
+PARAMETER_UNSIGNED_BIN
+DEF
+COUNT_S3
+10
+PARAMETER_UNSIGNED_BIN
+DEF
+COUNT_S4
+11
+PARAMETER_UNSIGNED_BIN
+DEF
+TXDATA_CNT_NUM
+1500
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+SerialSend:SerialSend_inst
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 a_fefifo
 # storage
 db|LidarFrameView.(74).cnf
@@ -8166,11 +8416,82 @@ lpm_compare.inc
 bbd3e8c93afb7320934629e5fb11566
 lpm_counter.inc
 c5cfeeabc5f2ab60b3453f6abbc42b41
+=======
+speed_select
+# storage
+db|LidarFrameView.(4).cnf
+db|LidarFrameView.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+speed_select.v
+c7d449701f5b67df184f3f4433aa7b9d
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SerialSend:SerialSend_inst|speed_select:speed_rx
+SerialSend:SerialSend_inst|speed_select:speed_tx
+}
+# macro_sequence
+BPS_PARA50	BPS_PARA_225	   
+# end
+# entity
+my_uart_rx
+# storage
+db|LidarFrameView.(5).cnf
+db|LidarFrameView.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+uart_rx.v
+a69b5eb24195293bec14e8f26d371e89
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SerialSend:SerialSend_inst|my_uart_rx:my_uart_rx
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 lpm_compare
 # storage
 db|LidarFrameView.(75).cnf
@@ -8268,114 +8589,8 @@ altshift.inc
 5c767a29f11db3f131fc886ea42a52bd
 lpm_compare.tdf
 7f90afdaac84b18415393f8f254a42
-}
-# macro_sequence
-
-# end
-# entity
-lpm_compare
-# storage
-db|LidarFrameView.(76).cnf
-db|LidarFrameView.(76).cnf
-# case_insensitive
-# source_file
-f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|lpm_compare.tdf
-7f90afdaac84b18415393f8f254a42
-7
-# user_parameter {
-lpm_width
-2
-PARAMETER_UNKNOWN
-USR
-LPM_REPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-DEF
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-CHAIN_SIZE
-8
-PARAMETER_UNKNOWN
-DEF
-ONE_INPUT_IS_CONSTANT
-YES
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CASCADE_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN_LENGTH
-48
-CARRY_CHAIN_LENGTH
-USR
-CASCADE_CHAIN_LENGTH
-2
-CASCADE_CHAIN_LENGTH
-USR
-DEVICE_FAMILY
-Cyclone
-PARAMETER_UNKNOWN
-USR
-CBXI_PARAMETER
-cmpr_33g
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-dataa1
--1
-3
-dataa0
--1
-3
-aeb
--1
-3
-datab0
--1
-1
-datab1
--1
-2
-}
-# include_file {
-comptree.inc
-17f2438ef7f3db194fa362eabd6d61a
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-altshift.inc
-5c767a29f11db3f131fc886ea42a52bd
-lpm_compare.tdf
-7f90afdaac84b18415393f8f254a42
-}
-# macro_sequence
-
-# end
-# entity
-senddcfifo
+=======
+my_uart_tx
 # storage
 db|LidarFrameView.(6).cnf
 db|LidarFrameView.(6).cnf
@@ -8385,8 +8600,190 @@ ON
 }
 # case_sensitive
 # source_file
+uart_tx.v
+6541823f813f33515dac867bb58462c
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SerialSend:SerialSend_inst|my_uart_tx:my_uart_tx
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+<<<<<<< HEAD
+lpm_compare
+# storage
+db|LidarFrameView.(76).cnf
+db|LidarFrameView.(76).cnf
+# case_insensitive
+# source_file
+f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+7
+# user_parameter {
+lpm_width
+2
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+DEF
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_33g
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+datab0
+-1
+1
+datab1
+-1
+2
+}
+# include_file {
+comptree.inc
+17f2438ef7f3db194fa362eabd6d61a
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+=======
+timer
+# storage
+db|LidarFrameView.(7).cnf
+db|LidarFrameView.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+timer.v
+9175d7f7a72ba3301459b3316e50f7db
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SerialSend:SerialSend_inst|timer:my_timer_tx
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+senddcfifo
+# storage
+<<<<<<< HEAD
+db|LidarFrameView.(6).cnf
+db|LidarFrameView.(6).cnf
+=======
+db|LidarFrameView.(8).cnf
+db|LidarFrameView.(8).cnf
+>>>>>>> origin/master
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
 senddcfifo.v
+<<<<<<< HEAD
 0e391fed62d05d1524a1f3df6a99d
+=======
+05645cae45b0c59529509d1864944
+>>>>>>> origin/master
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8413,11 +8810,19 @@ ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # entity
 dcfifo
 # storage
+<<<<<<< HEAD
 db|LidarFrameView.(77).cnf
 db|LidarFrameView.(77).cnf
 # case_insensitive
 # source_file
 f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|dcfifo.tdf
+=======
+db|LidarFrameView.(9).cnf
+db|LidarFrameView.(9).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|dcfifo.tdf
+>>>>>>> origin/master
 27d554629393f1cfc78a2c3ccb14777
 7
 # user_parameter {
@@ -8490,7 +8895,11 @@ WRSYNC_DELAYPIPE
 PARAMETER_UNKNOWN
 DEF
 CLOCKS_ARE_SYNCHRONIZED
+<<<<<<< HEAD
 TRUE
+=======
+FALSE
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 MAXIMIZE_SPEED
@@ -8510,7 +8919,11 @@ OFF
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
+<<<<<<< HEAD
 dcfifo_lhk1
+=======
+dcfifo_0kk1
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 }
@@ -8556,12 +8969,16 @@ aclr
 3
 }
 # include_file {
+<<<<<<< HEAD
 lpm_compare.inc
 bbd3e8c93afb7320934629e5fb11566
+=======
+>>>>>>> origin/master
 lpm_add_sub.inc
 144a73b61081a2a03554ff5acc5e8842
 aglobal110.inc
 f560f9a992734abc3e37886b3957a26a
+<<<<<<< HEAD
 a_gray2bin.inc
 7e4b761bbeb1a382a47a2f89c3e13e
 altsyncram_fifo.inc
@@ -8580,11 +8997,37 @@ altdpram.inc
 2f9e6727b678ffd76e72bc5a95a2630
 alt_sync_fifo.inc
 a019bef5b1e7379dfab915daa2a6c4
+=======
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+a_gray2bin.inc
+7e4b761bbeb1a382a47a2f89c3e13e
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+dcfifo.tdf
+27d554629393f1cfc78a2c3ccb14777
+alt_sync_fifo.inc
+a019bef5b1e7379dfab915daa2a6c4
+a_graycounter.inc
+c8eabdd6f8e7d384595a15fec505aa8
+a_fefifo.inc
+5a44f50e786a1d286adceb22796b9f
+altsyncram_fifo.inc
+4b2b21790828dd59a04a16f08af58b
+dffpipe.inc
+5471cd80ee441dd293deca0963c9aa0
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo_lhk1
 # storage
 db|LidarFrameView.(78).cnf
@@ -8593,6 +9036,16 @@ db|LidarFrameView.(78).cnf
 # source_file
 db|dcfifo_lhk1.tdf
 4a50a697e3eccda97c778ed4153865
+=======
+dcfifo_0kk1
+# storage
+db|LidarFrameView.(10).cnf
+db|LidarFrameView.(10).cnf
+# case_insensitive
+# source_file
+db|dcfifo_0kk1.tdf
+43a41d2692145d543620c03dd7f97e20
+>>>>>>> origin/master
 7
 # used_port {
 wrusedw9
@@ -8732,12 +9185,17 @@ aclr
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 alt_sync_fifo_8gm
 # storage
 db|LidarFrameView.(79).cnf
@@ -8830,6 +9288,101 @@ rdempty
 -1
 3
 rdclk
+=======
+a_gray2bin_26b
+# storage
+db|LidarFrameView.(11).cnf
+db|LidarFrameView.(11).cnf
+# case_insensitive
+# source_file
+db|a_gray2bin_26b.tdf
+a510f0207c8ac0b28af569534d5576a
+7
+# used_port {
+gray9
+-1
+3
+gray8
+-1
+3
+gray7
+-1
+3
+gray6
+-1
+3
+gray5
+-1
+3
+gray4
+-1
+3
+gray3
+-1
+3
+gray2
+-1
+3
+gray1
+-1
+3
+gray0
+-1
+3
+bin9
+-1
+3
+bin8
+-1
+3
+bin7
+-1
+3
+bin6
+-1
+3
+bin5
+-1
+3
+bin4
+-1
+3
+bin3
+-1
+3
+bin2
+-1
+3
+bin1
+-1
+3
+bin0
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:read_side_gray_converter
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:write_side_gray_converter
+}
+# macro_sequence
+
+# end
+# entity
+a_graycounter_r16
+# storage
+db|LidarFrameView.(12).cnf
+db|LidarFrameView.(12).cnf
+# case_insensitive
+# source_file
+db|a_graycounter_r16.tdf
+3ee15324c588e5ed9593339e461c82
+7
+# used_port {
+q9
+-1
+3
+q8
+>>>>>>> origin/master
 -1
 3
 q7
@@ -8856,6 +9409,7 @@ q1
 q0
 -1
 3
+<<<<<<< HEAD
 data7
 -1
 3
@@ -8878,6 +9432,12 @@ data1
 -1
 3
 data0
+=======
+clock
+-1
+3
+clk_en
+>>>>>>> origin/master
 -1
 3
 aclr
@@ -8885,12 +9445,18 @@ aclr
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dpram_n3v
 # storage
 db|LidarFrameView.(80).cnf
@@ -8962,6 +9528,22 @@ rdaddress1
 -1
 3
 rdaddress0
+=======
+a_graycounter_s16
+# storage
+db|LidarFrameView.(13).cnf
+db|LidarFrameView.(13).cnf
+# case_insensitive
+# source_file
+db|a_graycounter_s16.tdf
+b272e9e4a35d8a857ea0ace39a8b89
+7
+# used_port {
+q9
+-1
+3
+q8
+>>>>>>> origin/master
 -1
 3
 q7
@@ -8988,6 +9570,7 @@ q1
 q0
 -1
 3
+<<<<<<< HEAD
 outclocken
 -1
 3
@@ -9019,16 +9602,30 @@ data1
 -1
 3
 data0
+=======
+clock
+-1
+3
+clk_en
+-1
+3
+aclr
+>>>>>>> origin/master
 -1
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 altsyncram_pof1
 # storage
 db|LidarFrameView.(81).cnf
@@ -9037,6 +9634,16 @@ db|LidarFrameView.(81).cnf
 # source_file
 db|altsyncram_pof1.tdf
 113fbc5d965ec773da81a59374a65df
+=======
+altsyncram_4941
+# storage
+db|LidarFrameView.(14).cnf
+db|LidarFrameView.(14).cnf
+# case_insensitive
+# source_file
+db|altsyncram_4941.tdf
+c3a21f2c96fed53d0751d34bb49a16
+>>>>>>> origin/master
 7
 # used_port {
 wren_a
@@ -9161,12 +9768,17 @@ address_a0
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 add_sub_4g8
 # storage
 db|LidarFrameView.(82).cnf
@@ -9268,16 +9880,97 @@ dataa0
 -1
 3
 cout
+=======
+alt_synch_pipe_0e8
+# storage
+db|LidarFrameView.(15).cnf
+db|LidarFrameView.(15).cnf
+# case_insensitive
+# source_file
+db|alt_synch_pipe_0e8.tdf
+9d462dc33d21d9981e628ce4fbee798
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+d9
+-1
+3
+d8
+-1
+3
+d7
+-1
+3
+d6
+-1
+3
+d5
+-1
+3
+d4
+-1
+3
+d3
+-1
+3
+d2
+-1
+3
+d1
+-1
+3
+d0
+-1
+3
+clrn
+-1
+3
+clock
+>>>>>>> origin/master
 -1
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_4g8:add_sub2
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 add_sub_a18
 # storage
 db|LidarFrameView.(83).cnf
@@ -9385,24 +10078,15 @@ dataa1
 -1
 3
 dataa0
--1
-3
-}
-# hierarchies {
-SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_a18:add_sub3
-}
-# macro_sequence
-
-# end
-# entity
-cntr_lua
+=======
+dffpipe_qe9
 # storage
-db|LidarFrameView.(84).cnf
-db|LidarFrameView.(84).cnf
+db|LidarFrameView.(16).cnf
+db|LidarFrameView.(16).cnf
 # case_insensitive
 # source_file
-db|cntr_lua.tdf
-7a577e75ef894e1a8a2e4ab374277493
+db|dffpipe_qe9.tdf
+b019222efebb327b4f465a5779e32620
 7
 # used_port {
 q9
@@ -9429,15 +10113,119 @@ q3
 q2
 -1
 3
-q10
--1
-3
 q1
 -1
 3
 q0
 -1
 3
+d9
+-1
+3
+d8
+-1
+3
+d7
+-1
+3
+d6
+-1
+3
+d5
+-1
+3
+d4
+-1
+3
+d3
+-1
+3
+d2
+-1
+3
+d1
+-1
+3
+d0
+-1
+3
+clrn
+-1
+3
+clock
+>>>>>>> origin/master
+-1
+3
+}
+# hierarchies {
+<<<<<<< HEAD
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_a18:add_sub3
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+<<<<<<< HEAD
+cntr_lua
+# storage
+db|LidarFrameView.(84).cnf
+db|LidarFrameView.(84).cnf
+# case_insensitive
+# source_file
+db|cntr_lua.tdf
+7a577e75ef894e1a8a2e4ab374277493
+=======
+alt_synch_pipe_1e8
+# storage
+db|LidarFrameView.(17).cnf
+db|LidarFrameView.(17).cnf
+# case_insensitive
+# source_file
+db|alt_synch_pipe_1e8.tdf
+86f81b3f38d0c2cc46f0bc40ed42b87f
+>>>>>>> origin/master
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+<<<<<<< HEAD
+q10
+-1
+3
+=======
+>>>>>>> origin/master
+q1
+-1
+3
+q0
+-1
+3
+<<<<<<< HEAD
 cnt_en
 -1
 3
@@ -9445,16 +10233,57 @@ clock
 -1
 3
 aclr
+=======
+d9
+-1
+3
+d8
+-1
+3
+d7
+-1
+3
+d6
+-1
+3
+d5
+-1
+3
+d4
+-1
+3
+d3
+-1
+3
+d2
+-1
+3
+d1
+-1
+3
+d0
+-1
+3
+clrn
+-1
+3
+clock
+>>>>>>> origin/master
 -1
 3
 }
 # hierarchies {
+<<<<<<< HEAD
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1
+=======
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(85).cnf
@@ -9892,11 +10721,93 @@ altsyncram_fifo.inc
 4b2b21790828dd59a04a16f08af58b
 a_fefifo.inc
 5a44f50e786a1d286adceb22796b9f
+=======
+dffpipe_re9
+# storage
+db|LidarFrameView.(18).cnf
+db|LidarFrameView.(18).cnf
+# case_insensitive
+# source_file
+db|dffpipe_re9.tdf
+8272d5cece6398732c9934349e4be8b
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+d9
+-1
+3
+d8
+-1
+3
+d7
+-1
+3
+d6
+-1
+3
+d5
+-1
+3
+d4
+-1
+3
+d3
+-1
+3
+d2
+-1
+3
+d1
+-1
+3
+d0
+-1
+3
+clrn
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(87).cnf
@@ -10240,11 +11151,118 @@ lpm_add_sub.inc
 144a73b61081a2a03554ff5acc5e8842
 dcfifo.tdf
 27d554629393f1cfc78a2c3ccb14777
+=======
+add_sub_ovb
+# storage
+db|LidarFrameView.(19).cnf
+db|LidarFrameView.(19).cnf
+# case_insensitive
+# source_file
+db|add_sub_ovb.tdf
+79f4266c861e0ee7c5c6d138d477d53
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|add_sub_ovb:rdusedw_subtractor
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|add_sub_ovb:wrusedw_subtractor
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(89).cnf
@@ -10414,11 +11432,171 @@ lpm_add_sub.inc
 144a73b61081a2a03554ff5acc5e8842
 a_gray2bin.inc
 7e4b761bbeb1a382a47a2f89c3e13e
+=======
+cmpr_jr5
+# storage
+db|LidarFrameView.(20).cnf
+db|LidarFrameView.(20).cnf
+# case_insensitive
+# source_file
+db|cmpr_jr5.tdf
+77639ff88b9b3a5184f6479158cca37
+7
+# used_port {
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_jr5:address_comparer
 }
 # macro_sequence
 
 # end
 # entity
+cmpr_qh8
+# storage
+db|LidarFrameView.(21).cnf
+db|LidarFrameView.(21).cnf
+# case_insensitive
+# source_file
+db|cmpr_qh8.tdf
+4533fa7eb6523a232734fa8fa2cbc88
+7
+# used_port {
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+datab9
+-1
+1
+datab8
+-1
+1
+datab7
+-1
+1
+datab6
+-1
+1
+datab5
+-1
+1
+datab4
+-1
+1
+datab3
+-1
+1
+datab2
+-1
+1
+datab1
+-1
+1
+datab0
+-1
+1
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_qh8:wrempty_comparison
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(90).cnf
@@ -10557,12 +11735,59 @@ q
 -1
 3
 data
+=======
+cntr_9ua
+# storage
+db|LidarFrameView.(22).cnf
+db|LidarFrameView.(22).cnf
+# case_insensitive
+# source_file
+db|cntr_9ua.tdf
+9e553037213cbf61c6ae77f2ffc65cf3
+7
+# used_port {
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+clk_en
+>>>>>>> origin/master
 -1
 3
 aclr
 -1
 3
 }
+<<<<<<< HEAD
 # include_file {
 lpm_compare.inc
 bbd3e8c93afb7320934629e5fb11566
@@ -10588,11 +11813,17 @@ lpm_counter.inc
 c5cfeeabc5f2ab60b3453f6abbc42b41
 altdpram.inc
 2f9e6727b678ffd76e72bc5a95a2630
+=======
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:wrptr_b
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(91).cnf
@@ -10607,6 +11838,18 @@ WIDTH_BYTEENA
 1
 PARAMETER_UNKNOWN
 DEF
+=======
+scfifo
+# storage
+db|LidarFrameView.(23).cnf
+db|LidarFrameView.(23).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|scfifo.tdf
+892513e141f296ca2a061c832e0b073
+7
+# user_parameter {
+>>>>>>> origin/master
 AUTO_CARRY_CHAINS
 ON
 AUTO_CARRY
@@ -10623,6 +11866,7 @@ IGNORE_CASCADE_BUFFERS
 OFF
 IGNORE_CASCADE
 USR
+<<<<<<< HEAD
 LPM_WIDTH
 8
 PARAMETER_SIGNED_DEC
@@ -10634,6 +11878,19 @@ USR
 LPM_WIDTHU
 10
 PARAMETER_SIGNED_DEC
+=======
+lpm_width
+8
+PARAMETER_UNKNOWN
+USR
+LPM_NUMWORDS
+3
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHU
+2
+PARAMETER_UNKNOWN
+>>>>>>> origin/master
 USR
 LPM_SHOWAHEAD
 OFF
@@ -10647,14 +11904,22 @@ OVERFLOW_CHECKING
 ON
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 USE_EAB
 ON
 PARAMETER_UNKNOWN
 USR
+=======
+ALLOW_RWCYCLE_WHEN_FULL
+OFF
+PARAMETER_UNKNOWN
+DEF
+>>>>>>> origin/master
 ADD_RAM_OUTPUT_REGISTER
 ON
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 DELAY_RDUSEDW
 1
 PARAMETER_UNKNOWN
@@ -10673,6 +11938,18 @@ PARAMETER_UNKNOWN
 DEF
 CLOCKS_ARE_SYNCHRONIZED
 TRUE
+=======
+ALMOST_FULL_VALUE
+0
+PARAMETER_UNKNOWN
+DEF
+ALMOST_EMPTY_VALUE
+0
+PARAMETER_UNKNOWN
+DEF
+USE_EAB
+OFF
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 MAXIMIZE_SPEED
@@ -10683,6 +11960,7 @@ DEVICE_FAMILY
 Cyclone
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 ADD_USEDW_MSB_BIT
 OFF
 PARAMETER_UNKNOWN
@@ -10693,10 +11971,19 @@ PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
 dcfifo_lhk1
+=======
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 }
 # used_port {
+<<<<<<< HEAD
 wrusedw
 -1
 3
@@ -10731,6 +12018,69 @@ q
 -1
 3
 data
+=======
+wrreq
+-1
+3
+rdreq
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+full
+-1
+3
+empty
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+>>>>>>> origin/master
 -1
 3
 aclr
@@ -10738,6 +12088,7 @@ aclr
 3
 }
 # include_file {
+<<<<<<< HEAD
 dffpipe.inc
 5471cd80ee441dd293deca0963c9aa0
 dcfifo.tdf
@@ -10798,11 +12149,31 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # hierarchies {
 |
+=======
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+a_fffifo.inc
+aa34dd3c645beefc31a3e4ef186db4
+scfifo.tdf
+892513e141f296ca2a061c832e0b073
+a_f2fifo.inc
+cebe3836bad826c95e765f77477e8a8b
+a_dpfifo.inc
+37c2d0bb70d5a3f83a4aa09e62c75080
+a_i2fifo.inc
+bfe272f05af0cf849bd8b4748efceffe
+a_regfifo.inc
+8b2977668c8752c10a1f1977c9b9ee6
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(92).cnf
@@ -10833,6 +12204,334 @@ IGNORE_CASCADE_BUFFERS
 OFF
 IGNORE_CASCADE
 USR
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+1024
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHU
+10
+PARAMETER_SIGNED_DEC
+=======
+a_fffifo
+# storage
+db|LidarFrameView.(24).cnf
+db|LidarFrameView.(24).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|a_fffifo.tdf
+c51524b2abd86708dc7aed6abd748c7
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_NUMWORDS
+3
+PARAMETER_UNKNOWN
+>>>>>>> origin/master
+USR
+LPM_SHOWAHEAD
+OFF
+PARAMETER_UNKNOWN
+USR
+UNDERFLOW_CHECKING
+ON
+PARAMETER_UNKNOWN
+USR
+OVERFLOW_CHECKING
+ON
+PARAMETER_UNKNOWN
+USR
+<<<<<<< HEAD
+USE_EAB
+ON
+PARAMETER_UNKNOWN
+USR
+ADD_RAM_OUTPUT_REGISTER
+ON
+PARAMETER_UNKNOWN
+USR
+DELAY_RDUSEDW
+1
+PARAMETER_UNKNOWN
+DEF
+DELAY_WRUSEDW
+1
+PARAMETER_UNKNOWN
+DEF
+RDSYNC_DELAYPIPE
+3
+PARAMETER_UNKNOWN
+DEF
+WRSYNC_DELAYPIPE
+3
+PARAMETER_UNKNOWN
+DEF
+CLOCKS_ARE_SYNCHRONIZED
+TRUE
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone
+PARAMETER_UNKNOWN
+USR
+ADD_USEDW_MSB_BIT
+OFF
+PARAMETER_UNKNOWN
+DEF
+WRITE_ACLR_SYNCH
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+dcfifo_lhk1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+wrusedw
+-1
+3
+wrreq
+-1
+3
+wrfull
+-1
+3
+wrempty
+-1
+3
+wrclk
+-1
+3
+rdusedw
+-1
+3
+rdreq
+-1
+3
+rdfull
+-1
+3
+rdempty
+-1
+3
+rdclk
+-1
+3
+q
+-1
+3
+data
+=======
+ALLOW_RWCYCLE_WHEN_FULL
+OFF
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+wreq
+-1
+3
+usedw1
+-1
+3
+usedw0
+-1
+3
+sclr
+-1
+3
+rreq
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+full
+-1
+3
+empty
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+>>>>>>> origin/master
+-1
+3
+aclr
+-1
+3
+}
+# include_file {
+<<<<<<< HEAD
+a_gray2bin.inc
+7e4b761bbeb1a382a47a2f89c3e13e
+altsyncram_fifo.inc
+4b2b21790828dd59a04a16f08af58b
+a_fefifo.inc
+5a44f50e786a1d286adceb22796b9f
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+dffpipe.inc
+5471cd80ee441dd293deca0963c9aa0
+a_graycounter.inc
+c8eabdd6f8e7d384595a15fec505aa8
+dcfifo.tdf
+27d554629393f1cfc78a2c3ccb14777
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+alt_sync_fifo.inc
+a019bef5b1e7379dfab915daa2a6c4
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+=======
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+a_fefifo.inc
+5a44f50e786a1d286adceb22796b9f
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_ff.inc
+5b1f18ec4f969a147b22e8c42bf962ac
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+a_fffifo.tdf
+c51524b2abd86708dc7aed6abd748c7
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+<<<<<<< HEAD
+dcfifo
+# storage
+db|LidarFrameView.(94).cnf
+db|LidarFrameView.(94).cnf
+# case_insensitive
+# source_file
+f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|dcfifo.tdf
+27d554629393f1cfc78a2c3ccb14777
+7
+# user_parameter {
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+=======
+lpm_ff
+# storage
+db|LidarFrameView.(25).cnf
+db|LidarFrameView.(25).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_ff.tdf
+899aa4439b601c3ade3898ee8d57d882
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+USR
+>>>>>>> origin/master
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+<<<<<<< HEAD
 LPM_WIDTH
 8
 PARAMETER_SIGNED_DEC
@@ -10941,6 +12640,62 @@ q
 -1
 3
 data
+=======
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+>>>>>>> origin/master
 -1
 3
 aclr
@@ -10948,10 +12703,7 @@ aclr
 3
 }
 # include_file {
-a_gray2bin.inc
-7e4b761bbeb1a382a47a2f89c3e13e
-altsyncram_fifo.inc
-4b2b21790828dd59a04a16f08af58b
+<<<<<<< HEAD
 a_fefifo.inc
 5a44f50e786a1d286adceb22796b9f
 lpm_counter.inc
@@ -10972,15 +12724,35 @@ lpm_add_sub.inc
 144a73b61081a2a03554ff5acc5e8842
 aglobal110.inc
 f560f9a992734abc3e37886b3957a26a
+a_gray2bin.inc
+7e4b761bbeb1a382a47a2f89c3e13e
+altsyncram_fifo.inc
+4b2b21790828dd59a04a16f08af58b
+=======
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+lpm_ff.tdf
+899aa4439b601c3ade3898ee8d57d882
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[1]
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[0]
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:output_buffer
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
-db|LidarFrameView.(94).cnf
-db|LidarFrameView.(94).cnf
+db|LidarFrameView.(93).cnf
+db|LidarFrameView.(93).cnf
 # case_insensitive
 # source_file
 f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|dcfifo.tdf
@@ -10991,6 +12763,18 @@ WIDTH_BYTEENA
 1
 PARAMETER_UNKNOWN
 DEF
+=======
+lpm_mux
+# storage
+db|LidarFrameView.(26).cnf
+db|LidarFrameView.(26).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_mux.tdf
+767943ce7c37bd9f83bbeeb83aede4b
+7
+# user_parameter {
+>>>>>>> origin/master
 AUTO_CARRY_CHAINS
 ON
 AUTO_CARRY
@@ -11009,6 +12793,7 @@ IGNORE_CASCADE
 USR
 LPM_WIDTH
 8
+<<<<<<< HEAD
 PARAMETER_SIGNED_DEC
 USR
 LPM_NUMWORDS
@@ -11063,184 +12848,31 @@ MAXIMIZE_SPEED
 5
 PARAMETER_UNKNOWN
 DEF
-DEVICE_FAMILY
-Cyclone
+=======
 PARAMETER_UNKNOWN
 USR
-ADD_USEDW_MSB_BIT
-OFF
+LPM_SIZE
+2
 PARAMETER_UNKNOWN
-DEF
-WRITE_ACLR_SYNCH
-OFF
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-dcfifo_lhk1
+mux_afc
 PARAMETER_UNKNOWN
 USR
-}
-# used_port {
-wrusedw
--1
-3
-wrreq
--1
-3
-wrfull
--1
-3
-wrempty
--1
-3
-wrclk
--1
-3
-rdusedw
--1
-3
-rdreq
--1
-3
-rdfull
--1
-3
-rdempty
--1
-3
-rdclk
--1
-3
-q
--1
-3
-data
--1
-3
-aclr
--1
-3
-}
-# include_file {
-a_fefifo.inc
-5a44f50e786a1d286adceb22796b9f
-lpm_counter.inc
-c5cfeeabc5f2ab60b3453f6abbc42b41
-dffpipe.inc
-5471cd80ee441dd293deca0963c9aa0
-a_graycounter.inc
-c8eabdd6f8e7d384595a15fec505aa8
-dcfifo.tdf
-27d554629393f1cfc78a2c3ccb14777
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-alt_sync_fifo.inc
-a019bef5b1e7379dfab915daa2a6c4
-lpm_compare.inc
-bbd3e8c93afb7320934629e5fb11566
-lpm_add_sub.inc
-144a73b61081a2a03554ff5acc5e8842
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-a_gray2bin.inc
-7e4b761bbeb1a382a47a2f89c3e13e
-altsyncram_fifo.inc
-4b2b21790828dd59a04a16f08af58b
-}
-# macro_sequence
-
-# end
-# entity
-dcfifo
-# storage
-db|LidarFrameView.(93).cnf
-db|LidarFrameView.(93).cnf
-# case_insensitive
-# source_file
-f:|engineeringprogramfiles|altera|11.0|quartus|libraries|megafunctions|dcfifo.tdf
-27d554629393f1cfc78a2c3ccb14777
-7
-# user_parameter {
-WIDTH_BYTEENA
-1
-PARAMETER_UNKNOWN
-DEF
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTH
-8
-PARAMETER_SIGNED_DEC
-USR
-LPM_NUMWORDS
-1024
-PARAMETER_SIGNED_DEC
-USR
-LPM_WIDTHU
-10
-PARAMETER_SIGNED_DEC
-USR
-LPM_SHOWAHEAD
-OFF
-PARAMETER_UNKNOWN
-USR
-UNDERFLOW_CHECKING
-ON
-PARAMETER_UNKNOWN
-USR
-OVERFLOW_CHECKING
-ON
-PARAMETER_UNKNOWN
-USR
-USE_EAB
-ON
-PARAMETER_UNKNOWN
-USR
-ADD_RAM_OUTPUT_REGISTER
-ON
-PARAMETER_UNKNOWN
-USR
-DELAY_RDUSEDW
-1
-PARAMETER_UNKNOWN
-DEF
-DELAY_WRUSEDW
-1
-PARAMETER_UNKNOWN
-DEF
-RDSYNC_DELAYPIPE
-3
-PARAMETER_UNKNOWN
-DEF
-WRSYNC_DELAYPIPE
-3
-PARAMETER_UNKNOWN
-DEF
-CLOCKS_ARE_SYNCHRONIZED
-TRUE
-PARAMETER_UNKNOWN
-USR
-MAXIMIZE_SPEED
-5
-PARAMETER_UNKNOWN
-DEF
+>>>>>>> origin/master
 DEVICE_FAMILY
 Cyclone
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 ADD_USEDW_MSB_BIT
 OFF
 PARAMETER_UNKNOWN
@@ -11454,11 +13086,108 @@ DEF
 }
 # hierarchies {
 CCD_ADC_Control:CCD_ADC_Control_inst
+=======
+}
+# used_port {
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+muxlut.inc
+301e88484af1e8d67bcd099bb975882
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+lpm_mux.tdf
+767943ce7c37bd9f83bbeeb83aede4b
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:col_data_out_mux
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(96).cnf
@@ -11473,6 +13202,113 @@ WIDTH_BYTEENA
 1
 PARAMETER_UNKNOWN
 DEF
+=======
+mux_afc
+# storage
+db|LidarFrameView.(27).cnf
+db|LidarFrameView.(27).cnf
+# case_insensitive
+# source_file
+db|mux_afc.tdf
+7e79e30ebdc737ffcf070a1e06d5e40
+7
+# used_port {
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]|mux_afc:auto_generated
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:col_data_out_mux|mux_afc:auto_generated
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:last_row_data_out_mux|mux_afc:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|LidarFrameView.(28).cnf
+db|LidarFrameView.(28).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_counter.tdf
+4f44861b706b94d17d5fb6b22178db9
+7
+# user_parameter {
+>>>>>>> origin/master
 AUTO_CARRY_CHAINS
 ON
 AUTO_CARRY
@@ -11490,6 +13326,7 @@ OFF
 IGNORE_CASCADE
 USR
 LPM_WIDTH
+<<<<<<< HEAD
 8
 PARAMETER_SIGNED_DEC
 USR
@@ -11543,12 +13380,36 @@ PARAMETER_UNKNOWN
 USR
 MAXIMIZE_SPEED
 5
+=======
+2
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_CONNECTIVITY
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 DEF
 DEVICE_FAMILY
 Cyclone
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 ADD_USEDW_MSB_BIT
 OFF
 PARAMETER_UNKNOWN
@@ -11559,10 +13420,39 @@ PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
 dcfifo_lhk1
+=======
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_tue
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 }
 # used_port {
+<<<<<<< HEAD
 wrusedw
 -1
 3
@@ -11597,12 +13487,92 @@ q
 -1
 3
 data
+=======
+updown
+-1
+3
+sclr
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
 -1
 3
 aclr
 -1
 3
 }
+# include_file {
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_counter.tdf
+4f44861b706b94d17d5fb6b22178db9
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr
+}
+# macro_sequence
+
+# end
+# entity
+cntr_tue
+# storage
+db|LidarFrameView.(29).cnf
+db|LidarFrameView.(29).cnf
+# case_insensitive
+# source_file
+db|cntr_tue.tdf
+3cfbf459495ce5e43f3ccfa1ef27eba
+7
+# used_port {
+updown
+-1
+3
+sclr
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+>>>>>>> origin/master
+-1
+3
+aclr
+-1
+3
+}
+<<<<<<< HEAD
 # include_file {
 altsyncram_fifo.inc
 4b2b21790828dd59a04a16f08af58b
@@ -11628,11 +13598,16 @@ aglobal110.inc
 f560f9a992734abc3e37886b3957a26a
 a_gray2bin.inc
 7e4b761bbeb1a382a47a2f89c3e13e
+=======
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr|cntr_tue:auto_generated
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(95).cnf
@@ -11676,6 +13651,27 @@ LPM_WIDTHU
 PARAMETER_SIGNED_DEC
 USR
 LPM_SHOWAHEAD
+=======
+a_fefifo
+# storage
+db|LidarFrameView.(30).cnf
+db|LidarFrameView.(30).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|a_fefifo.tdf
+64ffb8e2dbf329238449855198869d
+7
+# user_parameter {
+LPM_WIDTHAD
+2
+PARAMETER_UNKNOWN
+USR
+LPM_NUMWORDS
+3
+PARAMETER_UNKNOWN
+USR
+ALLOW_RWCYCLE_WHEN_FULL
+>>>>>>> origin/master
 OFF
 PARAMETER_UNKNOWN
 USR
@@ -11687,6 +13683,7 @@ OVERFLOW_CHECKING
 ON
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 USE_EAB
 ON
 PARAMETER_UNKNOWN
@@ -11733,10 +13730,19 @@ PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
 dcfifo_lhk1
+=======
+USEDW_IN_DELAY
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+>>>>>>> origin/master
 PARAMETER_UNKNOWN
 USR
 }
 # used_port {
+<<<<<<< HEAD
 wrusedw
 -1
 3
@@ -11771,6 +13777,33 @@ q
 -1
 3
 data
+=======
+wreq
+-1
+3
+usedw_in1
+-1
+3
+usedw_in0
+-1
+3
+threshold
+-1
+3
+sclr
+-1
+3
+rreq
+-1
+3
+full
+-1
+3
+empty
+-1
+3
+clock
+>>>>>>> origin/master
 -1
 3
 aclr
@@ -11778,6 +13811,7 @@ aclr
 3
 }
 # include_file {
+<<<<<<< HEAD
 lpm_compare.inc
 bbd3e8c93afb7320934629e5fb11566
 lpm_add_sub.inc
@@ -11802,11 +13836,23 @@ altdpram.inc
 2f9e6727b678ffd76e72bc5a95a2630
 alt_sync_fifo.inc
 a019bef5b1e7379dfab915daa2a6c4
+=======
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+a_fefifo.tdf
+64ffb8e2dbf329238449855198869d
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state
+>>>>>>> origin/master
 }
 # macro_sequence
 
 # end
 # entity
+<<<<<<< HEAD
 dcfifo
 # storage
 db|LidarFrameView.(97).cnf
@@ -11893,10 +13939,59 @@ MAXIMIZE_SPEED
 5
 PARAMETER_UNKNOWN
 DEF
+=======
+lpm_compare
+# storage
+db|LidarFrameView.(31).cnf
+db|LidarFrameView.(31).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+7
+# user_parameter {
+lpm_width
+2
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+DEF
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+>>>>>>> origin/master
 DEVICE_FAMILY
 Cyclone
 PARAMETER_UNKNOWN
 USR
+<<<<<<< HEAD
 ADD_USEDW_MSB_BIT
 OFF
 PARAMETER_UNKNOWN
@@ -11979,11 +14074,98 @@ altdpram.inc
 }
 # hierarchies {
 SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+=======
+CBXI_PARAMETER
+cmpr_33g
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+datab1
+-1
+1
+}
+# include_file {
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+comptree.inc
+17f2438ef7f3db194fa362eabd6d61a
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare
 }
 # macro_sequence
 
 # end
 # entity
+cmpr_33g
+# storage
+db|LidarFrameView.(32).cnf
+db|LidarFrameView.(32).cnf
+# case_insensitive
+# source_file
+db|cmpr_33g.tdf
+b710d28175a414a2469be996f5cf6b21
+7
+# used_port {
+datab1
+-1
+3
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare|cmpr_33g:auto_generated
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare|cmpr_33g:auto_generated
+>>>>>>> origin/master
+}
+# macro_sequence
+
+# end
+# entity
+<<<<<<< HEAD
 dac7512
 # storage
 db|LidarFrameView.(98).cnf
@@ -12033,6 +14215,108 @@ DEF
 }
 # hierarchies {
 dac7512:dac7512_inst
+=======
+lpm_compare
+# storage
+db|LidarFrameView.(33).cnf
+db|LidarFrameView.(33).cnf
+# case_insensitive
+# source_file
+|altera|11.0|quartus|libraries|megafunctions|lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+7
+# user_parameter {
+lpm_width
+2
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+DEF
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+cmpr_33g
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+dataa1
+-1
+3
+dataa0
+-1
+3
+aeb
+-1
+3
+datab0
+-1
+1
+datab1
+-1
+2
+}
+# include_file {
+aglobal110.inc
+f560f9a992734abc3e37886b3957a26a
+comptree.inc
+17f2438ef7f3db194fa362eabd6d61a
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+lpm_compare.tdf
+7f90afdaac84b18415393f8f254a42
+}
+# hierarchies {
+SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare
+>>>>>>> origin/master
 }
 # macro_sequence
 

@@ -2,6 +2,7 @@ m255
 K3
 13
 cModel Technology
+<<<<<<< HEAD
 Z0 dD:\GitHub\LidarFrameView_11.0\simulation\modelsim
 vCCD_ADC_Control
 I6VDj^V5bB8WS]ojidagW52
@@ -10,12 +11,23 @@ Z1 dD:\GitHub\LidarFrameView_11.0\simulation\modelsim
 w1495644924
 8D:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v
 FD:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v
+=======
+Z0 dC:\EngineeringDocument\GitHub\LidarFrameView_11.0\simulation\modelsim
+vCCD_ADC_Control
+I2>^UmXn@9aabA>];XINik3
+VfRWA^m1I`a]=<a:;oRmna0
+Z1 dC:\EngineeringDocument\GitHub\LidarFrameView_11.0\simulation\modelsim
+Z2 w1495384312
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v
+>>>>>>> origin/master
 L0 1
-Z2 OV;L;10.1d;51
+Z3 OV;L;6.6d;45
 r1
 31
-Z3 o-vlog01compat -work work -O0
+Z4 o-vlog01compat -work work -O0
 n@c@c@d_@a@d@c_@control
+<<<<<<< HEAD
 Z4 !s92 -vlog01compat -work work +incdir+D:/GitHub/LidarFrameView_11.0 -O0
 !i10b 1
 !s100 D0Xj6Pk_ZE9z10J2MmR<P2
@@ -32,12 +44,27 @@ w1495380537
 8D:/GitHub/LidarFrameView_11.0/LidarFrameView.v
 FD:/GitHub/LidarFrameView_11.0/LidarFrameView.v
 L0 1
+=======
+Z5 !s92 -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0 -O0
+!s100 JAU8H5PP6Um5NlDNZhdkB0
+!s85 0
+!s101 -O0
+vLidarFrameView
+I3T8A``mPz9:]dNY13d`DF1
+V317;9GaXRMT`JTco2Hi=]3
+R1
+>>>>>>> origin/master
 R2
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 n@lidar@frame@view
+<<<<<<< HEAD
 !i10b 1
 !s100 dUYeeQka?=W[cD7]M?K?72
 !s85 0
@@ -54,11 +81,25 @@ R1
 w1495360278
 8D:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt
 FD:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt
+=======
+!s100 aGDjEB8Lld`R[U2HA`hMD2
+!s85 0
+!s101 -O0
+vLidarFrameView_vlg_tst
+!s100 GO<036^7oTeimMG`cLe_h1
+IRLT>5T6BRCRT]A0Gn=G??3
+V78zJQOT5e?gL]PY]FOm2o2
+R1
+Z6 w1495384313
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt
+>>>>>>> origin/master
 L0 28
-R2
+R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 !s108 1495644971.773000
 !s107 D:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitHub/LidarFrameView_11.0/simulation/modelsim|D:/GitHub/LidarFrameView_11.0/simulation/modelsim/LidarFrameView.vt|
@@ -74,12 +115,59 @@ w1495355885
 8D:/GitHub/LidarFrameView_11.0/SamplingControl.v
 FD:/GitHub/LidarFrameView_11.0/SamplingControl.v
 L0 1
-R2
+=======
+!s101 -O0
+R4
+!s92 -vlog01compat -work work +incdir+C:/EngineeringDocument/GitHub/LidarFrameView_11.0/simulation/modelsim -O0
+n@lidar@frame@view_vlg_tst
+vmy_uart_rx
+IRJ`cJV^`QI]eTO?O7OmO>2
+V89N_QY]8VoBD<Jk:kn4Ae0
+R1
+R6
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_rx.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_rx.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
+!s100 j]:4_Q82A85dFB`<a@D>h2
+!s85 0
+!s101 -O0
+vmy_uart_tx
+IG_P;DSB4?[=JcW<ZLmUR>3
+VKR_A3L^_:1DOezloJJ6ek1
+R1
+R6
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_tx.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_tx.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 mloMhTF:z@Ukg89e=Q^0o1
+!s85 0
+!s101 -O0
+vSamplingControl
+I2]>AXYL>U8MzOkZl_B4A_2
+Vl:877gYbY6BLVZLc=G9no2
+R1
+>>>>>>> origin/master
+R2
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SamplingControl.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/SamplingControl.v
+L0 1
+R3
+r1
+31
+R4
+R5
 n@sampling@control
+<<<<<<< HEAD
 !i10b 1
 !s100 63hVi<DX:fPMlId<0>cFZ2
 !s85 0
@@ -94,12 +182,24 @@ R1
 w1495643233
 8D:/GitHub/LidarFrameView_11.0/senddcfifo.v
 FD:/GitHub/LidarFrameView_11.0/senddcfifo.v
+=======
+!s100 o7ih5Ae6^cFHF[ghHM@Td0
+!s85 0
+!s101 -O0
+vsenddcfifo
+Ii7faGShImF0T;9kcj^9]W3
+VQB3HOIiM]1<_<=@gh;RNP3
+R1
+R6
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/senddcfifo.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/senddcfifo.v
+>>>>>>> origin/master
 L0 39
-R2
+R3
 r1
 31
-R3
 R4
+<<<<<<< HEAD
 !i10b 1
 !s100 L:Vb8O82[i3J>V4`dCh522
 !s85 0
@@ -115,12 +215,27 @@ w1495644396
 8D:/GitHub/LidarFrameView_11.0/SerialSend.v
 FD:/GitHub/LidarFrameView_11.0/SerialSend.v
 L0 3
+=======
+R5
+!s100 3Y7;QnOgORNLA5[Woc8`80
+!s85 0
+!s101 -O0
+vSerialSend
+IjclLj0EiL1lgezE?aN]4B2
+V;S6Q@?iZI8K[]hzEd7?nG1
+R1
+>>>>>>> origin/master
 R2
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SerialSend.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/SerialSend.v
+L0 3
+R3
 r1
 31
-R3
 R4
+R5
 n@serial@send
+<<<<<<< HEAD
 !i10b 1
 !s100 <zYl10ODjjljd[]hRzJXb2
 !s85 0
@@ -135,12 +250,24 @@ R1
 w1495469652
 8D:/GitHub/LidarFrameView_11.0/speed_select.v
 FD:/GitHub/LidarFrameView_11.0/speed_select.v
+=======
+!s100 Fjm0::;?]55b_?zei^AWK3
+!s85 0
+!s101 -O0
+vspeed_select
+I0^SHCkiIOEU;AC[eZ85Zz1
+VCA_H6_`2zbk^eHlZ7]zc>2
+R1
+R6
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/speed_select.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/speed_select.v
+>>>>>>> origin/master
 L0 1
-R2
+R3
 r1
 31
-R3
 R4
+<<<<<<< HEAD
 !i10b 1
 !s100 _0=Aa`Yd5AQg@ebPmK5nz3
 !s85 0
@@ -155,16 +282,34 @@ R1
 w1495636132
 8D:/GitHub/LidarFrameView_11.0/uart_tx.v
 FD:/GitHub/LidarFrameView_11.0/uart_tx.v
+=======
+R5
+!s100 z]M9FJCH<>;]EKC5kZX4C3
+!s85 0
+!s101 -O0
+vtimer
+IlfHLNlHM1=ze2PD8Y`iZ43
+VR?9[HMmE>fIFcmE>akjcD2
+R1
+R6
+8C:/EngineeringDocument/GitHub/LidarFrameView_11.0/timer.v
+FC:/EngineeringDocument/GitHub/LidarFrameView_11.0/timer.v
+>>>>>>> origin/master
 L0 1
-R2
+R3
 r1
 31
-R3
 R4
+<<<<<<< HEAD
 !i10b 1
 !s100 ;OWG@KZX?GIgn]15jT^[F1
 !s85 0
 !s108 1495644970.443000
 !s107 D:/GitHub/LidarFrameView_11.0/uart_tx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitHub/LidarFrameView_11.0|D:/GitHub/LidarFrameView_11.0/uart_tx.v|
+=======
+R5
+!s100 B=fVkz^;6_Q=I;VW;]0?J2
+!s85 0
+>>>>>>> origin/master
 !s101 -O0

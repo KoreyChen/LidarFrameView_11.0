@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 State Machine - |LidarFrameView|dac7512:dac7512_inst|state
 Name state.ST_Start state.ST_Stop state.ST_Data 
 state.ST_Start 0 0 0 
@@ -13,6 +14,26 @@ serialState.serialState_CMD 0 0 0 1 0 1
 serialState.serialState_Data 0 0 1 0 0 1 
 serialState.serialState_End 0 1 0 0 0 1 
 serialState.serialState_Stop 1 0 0 0 0 1 
+=======
+State Machine - |LidarFrameView|SerialSend:SerialSend_inst|sendcount
+Name sendcount.COUNT_S4 sendcount.COUNT_S3 sendcount.COUNT_S2 sendcount.COUNT_S1 
+sendcount.COUNT_S1 0 0 0 0 
+sendcount.COUNT_S2 0 0 1 1 
+sendcount.COUNT_S3 0 1 0 1 
+sendcount.COUNT_S4 1 0 0 1 
+
+State Machine - |LidarFrameView|SerialSend:SerialSend_inst|SateCount
+Name SateCount.S1 SateCount.S3 SateCount.S2 
+SateCount.S1 0 0 0 
+SateCount.S2 1 0 1 
+SateCount.S3 1 1 0 
+
+State Machine - |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|sm_emptyfull
+Name state_middle state_full state_empty 
+state_empty 0 0 0 
+state_middle 1 0 1 
+state_full 0 1 1 
+>>>>>>> origin/master
 
 State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState
 Name DataOutState.DataOutState_S2 
