@@ -1,4 +1,10 @@
 
+State Machine - |LidarFrameView|dac7512:dac7512_inst|state
+Name state.ST_Start state.ST_Stop state.ST_Data 
+state.ST_Start 0 0 0 
+state.ST_Data 1 0 1 
+state.ST_Stop 1 1 0 
+
 State Machine - |LidarFrameView|SerialSend:SerialSend_inst|serialState
 Name serialState.serialState_Stop serialState.serialState_End serialState.serialState_Data serialState.serialState_CMD serialState.serialState_Head serialState.000 
 serialState.000 0 0 0 0 0 0 

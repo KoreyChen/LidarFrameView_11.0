@@ -59,7 +59,7 @@ output  reg  frameclk;	      //数据帧计数
 //定时器
 parameter TimeReset       =     1000 ;
 parameter TimeSetClk      =     50  ; //半个周期的长度
-parameter TimeIntegration =     8000 ;
+parameter TimeIntegration =     80000 ;
 parameter TimeADCDelay    =     20  ;  //这个数必须小于 TimeSetClk -1
 reg   [25:0]  timercount;
 

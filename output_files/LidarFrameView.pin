@@ -114,9 +114,9 @@ CCD_data                     : 47        : output : 3.3-V LVTTL       :         
 CCD_clk                      : 48        : output : 3.3-V LVTTL       :         : 4         : Y              
 CCD_RM                       : 49        : output : 3.3-V LVTTL       :         : 4         : Y              
 AD_OE                        : 50        : output : 3.3-V LVTTL       :         : 4         : Y              
-GND*                         : 51        :        :                   :         : 3         :                
-GND*                         : 52        :        :                   :         : 3         :                
-GND*                         : 53        :        :                   :         : 3         :                
+DAC_SYNC                     : 51        : output : 3.3-V LVTTL       :         : 3         : Y              
+DAC_CLK                      : 52        : output : 3.3-V LVTTL       :         : 3         : Y              
+DAC_DIN                      : 53        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : 54        :        :                   :         : 3         :                
 GND*                         : 55        :        :                   :         : 3         :                
 GND*                         : 56        :        :                   :         : 3         :                

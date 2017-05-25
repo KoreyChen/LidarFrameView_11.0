@@ -14,6 +14,9 @@ CCD_data,
 CCD_M0,
 CCD_M1,
 CCD_RM,
+DAC_CLK,
+DAC_SYNC,
+DAC_DIN
 );
 
 input  clk;       		   //ģ��ʱ�� 50MHz
@@ -52,6 +55,12 @@ assign enable=1;
 assign timeSet = 22000;
 assign resolution = 10;
 assign serialsend_flag = 1;
+
+
+
+output DAC_CLK;
+output DAC_SYNC;
+output DAC_DIN;
 
 
 reg st;
@@ -122,7 +131,7 @@ CCD_ADC_Control  CCD_ADC_Control_inst
 .wrreq(wrreq),      			//д������
 .wrempty(),    			//д��buffer�ձ�־
 .wrfull(),     			//д��buffer����־
-.wrusedw(),     			//д�����.rdempty(),	            //��ձ���.rdfull(),              //��������
+.wrusedw(),     			//д�����rdempty(),	            //��ձ���rdfull(),              //��������
 .frameclk(frameclk)             //����֡����,�����źű�����д����֮ǰ��������������Ч
 
 );
@@ -139,24 +148,18 @@ SerialSend SerialSend_inst(
 .wrreq(wrreq),      		//д������
 .wrempty(wrempty),    			   //д��buffer�ձ�־
 .wrfull(wrfull),     			   //д��buffer����־
-.wrusedw(wrusedw),     			   //д�����.rdempty(rdempty),	               //��ձ���.rdfull(rdfull),                 //��������
+.wrusedw(wrusedw),     			   //д�����rdempty(rdempty),	               //��ձ���rdfull(rdfull),                 //��������
 .frameclk(frameclk )        //����֡����,�����źű�����д����֮ǰ��������������Ч
 
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+dac7512 dac7512_inst(
+.clk(clk),
+.rst_n(rst_n),
+.sclk(DAC_CLK),
+.sync(DAC_SYNC),
+.din(DAC_DIN)
+);
 
 endmodule
 

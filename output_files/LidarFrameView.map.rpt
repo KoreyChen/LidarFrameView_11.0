@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LidarFrameView
-Thu May 25 02:11:36 2017
+Fri May 26 00:43:00 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -15,29 +15,31 @@ Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|serialState
- 11. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState
- 12. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState
- 13. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|RestState
- 14. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|MainState
- 15. Registers Removed During Synthesis
- 16. General Register Statistics
- 17. Inverted Register Statistics
- 18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
- 20. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated
- 21. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14
- 22. Parameter Settings for User Entity Instance: CCD_ADC_Control:CCD_ADC_Control_inst
- 23. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst
- 24. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
- 25. dcfifo Parameter Settings by Entity Instance
- 26. Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"
- 27. Port Connectivity Checks: "SerialSend:SerialSend_inst"
- 28. Port Connectivity Checks: "CCD_ADC_Control:CCD_ADC_Control_inst"
- 29. Port Connectivity Checks: "SamplingControl:SamplingControl_inst"
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
- 32. Analysis & Synthesis Suppressed Messages
+ 10. State Machine - |LidarFrameView|dac7512:dac7512_inst|state
+ 11. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|serialState
+ 12. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState
+ 13. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState
+ 14. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|RestState
+ 15. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|MainState
+ 16. Registers Removed During Synthesis
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+ 21. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated
+ 22. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14
+ 23. Parameter Settings for User Entity Instance: CCD_ADC_Control:CCD_ADC_Control_inst
+ 24. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst
+ 25. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+ 26. Parameter Settings for User Entity Instance: dac7512:dac7512_inst
+ 27. dcfifo Parameter Settings by Entity Instance
+ 28. Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"
+ 29. Port Connectivity Checks: "SerialSend:SerialSend_inst"
+ 30. Port Connectivity Checks: "CCD_ADC_Control:CCD_ADC_Control_inst"
+ 31. Port Connectivity Checks: "SamplingControl:SamplingControl_inst"
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -63,13 +65,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-----------------------------+-------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu May 25 02:11:35 2017     ;
+; Analysis & Synthesis Status ; Successful - Fri May 26 00:43:00 2017     ;
 ; Quartus II 64-Bit Version   ; 11.0 Build 157 04/27/2011 SJ Full Version ;
 ; Revision Name               ; LidarFrameView                            ;
 ; Top-level Entity Name       ; LidarFrameView                            ;
 ; Family                      ; Cyclone                                   ;
-; Total logic elements        ; 393                                       ;
-; Total pins                  ; 21                                        ;
+; Total logic elements        ; 439                                       ;
+; Total pins                  ; 24                                        ;
 ; Total virtual pins          ; 0                                         ;
 ; Total memory bits           ; 8,192                                     ;
 ; Total PLLs                  ; 0                                         ;
@@ -184,6 +186,7 @@ applicable agreement for further details.
 ; SamplingControl.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SamplingControl.v                                            ;
 ; LidarFrameView.v                 ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/LidarFrameView.v                                             ;
 ; senddcfifo.v                     ; yes             ; User Wizard-Generated File   ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v                                                 ;
+; dac7512.v                        ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/dac7512.v                                                    ;
 ; dcfifo.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dcfifo.tdf          ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_counter.inc     ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_add_sub.inc     ;
@@ -211,34 +214,34 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 393   ;
-;     -- Combinational with no register       ; 190   ;
-;     -- Register only                        ; 55    ;
-;     -- Combinational with a register        ; 148   ;
+; Total logic elements                        ; 439   ;
+;     -- Combinational with no register       ; 212   ;
+;     -- Register only                        ; 58    ;
+;     -- Combinational with a register        ; 169   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 140   ;
-;     -- 3 input functions                    ; 85    ;
-;     -- 2 input functions                    ; 105   ;
-;     -- 1 input functions                    ; 6     ;
+;     -- 4 input functions                    ; 155   ;
+;     -- 3 input functions                    ; 90    ;
+;     -- 2 input functions                    ; 126   ;
+;     -- 1 input functions                    ; 8     ;
 ;     -- 0 input functions                    ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 283   ;
-;     -- arithmetic mode                      ; 110   ;
+;     -- normal mode                          ; 319   ;
+;     -- arithmetic mode                      ; 120   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 46    ;
-;     -- asynchronous clear/load mode         ; 193   ;
+;     -- synchronous clear/load mode          ; 54    ;
+;     -- asynchronous clear/load mode         ; 217   ;
 ;                                             ;       ;
-; Total registers                             ; 203   ;
-; Total logic cells in carry chains           ; 120   ;
-; I/O pins                                    ; 21    ;
+; Total registers                             ; 227   ;
+; Total logic cells in carry chains           ; 132   ;
+; I/O pins                                    ; 24    ;
 ; Total memory bits                           ; 8192  ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 148   ;
-; Total fan-out                               ; 1800  ;
-; Average fan-out                             ; 4.27  ;
+; Maximum fan-out node                        ; rst_n ;
+; Maximum fan-out                             ; 166   ;
+; Total fan-out                               ; 1987  ;
+; Average fan-out                             ; 4.22  ;
 +---------------------------------------------+-------+
 
 
@@ -247,8 +250,8 @@ applicable agreement for further details.
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                                                              ; Library Name ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |LidarFrameView                                     ; 393 (0)     ; 203          ; 8192        ; 21   ; 0            ; 190 (0)      ; 55 (0)            ; 148 (0)          ; 120 (0)         ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                  ;              ;
-;    |CCD_ADC_Control:CCD_ADC_Control_inst|           ; 133 (133)   ; 72           ; 0           ; 0    ; 0            ; 61 (61)      ; 5 (5)             ; 67 (67)          ; 37 (37)         ; 0 (0)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                             ;              ;
+; |LidarFrameView                                     ; 439 (0)     ; 227          ; 8192        ; 24   ; 0            ; 212 (0)      ; 58 (0)            ; 169 (0)          ; 132 (0)         ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                  ;              ;
+;    |CCD_ADC_Control:CCD_ADC_Control_inst|           ; 135 (135)   ; 72           ; 0           ; 0    ; 0            ; 63 (63)      ; 4 (4)             ; 68 (68)          ; 37 (37)         ; 0 (0)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                             ;              ;
 ;    |SerialSend:SerialSend_inst|                     ; 260 (111)   ; 131          ; 8192        ; 0    ; 0            ; 129 (68)     ; 50 (5)            ; 81 (38)          ; 83 (11)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst                                                                                                                                                       ;              ;
 ;       |senddcfifo:SendFifo_inst|                    ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst                                                                                                                              ;              ;
 ;          |dcfifo:dcfifo_component|                  ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component                                                                                                      ;              ;
@@ -260,6 +263,7 @@ applicable agreement for further details.
 ;                      |altsyncram_pof1:altsyncram14| ; 0 (0)       ; 0            ; 8192        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14 ;              ;
 ;       |speed_select:speed_tx|                       ; 20 (20)     ; 14           ; 0           ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx                                                                                                                                 ;              ;
 ;       |uart_tx:my_uart_tx|                          ; 33 (33)     ; 19           ; 0           ; 0    ; 0            ; 14 (14)      ; 12 (12)           ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx                                                                                                                                    ;              ;
+;    |dac7512:dac7512_inst|                           ; 44 (44)     ; 24           ; 0           ; 0    ; 0            ; 20 (20)      ; 4 (4)             ; 20 (20)          ; 12 (12)         ; 0 (0)      ; |LidarFrameView|dac7512:dac7512_inst                                                                                                                                                             ;              ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -280,6 +284,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+--------------------------------------------+
 ; Altera ; FIFO         ; 11.0    ; N/A          ; N/A          ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+--------------------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |LidarFrameView|dac7512:dac7512_inst|state      ;
++----------------+----------------+---------------+---------------+
+; Name           ; state.ST_Start ; state.ST_Stop ; state.ST_Data ;
++----------------+----------------+---------------+---------------+
+; state.ST_Start ; 0              ; 0             ; 0             ;
+; state.ST_Data  ; 1              ; 0             ; 1             ;
+; state.ST_Stop  ; 1              ; 1             ; 0             ;
++----------------+----------------+---------------+---------------+
 
 
 Encoding Type:  One-Hot
@@ -357,7 +373,9 @@ Encoding Type:  One-Hot
 ; Register name                                                ; Reason for Removal                                    ;
 +--------------------------------------------------------------+-------------------------------------------------------+
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r~en ; Lost fanout                                           ;
+; dac7512:dac7512_inst|data_reg[0,3,4,7,8,11]                  ; Stuck at GND due to stuck port data_in                ;
 ; SerialSend:SerialSend_inst|fifo_clear_reg                    ; Merged with SerialSend:SerialSend_inst|SerialSendbtn1 ;
+; dac7512:dac7512_inst|data_reg[1,2,5,6,9]                     ; Merged with dac7512:dac7512_inst|data_reg[10]         ;
 ; SerialSend:SerialSend_inst|serialState~10                    ; Lost fanout                                           ;
 ; SerialSend:SerialSend_inst|serialState~11                    ; Lost fanout                                           ;
 ; SerialSend:SerialSend_inst|serialState~12                    ; Lost fanout                                           ;
@@ -369,7 +387,7 @@ Encoding Type:  One-Hot
 ; CCD_ADC_Control:CCD_ADC_Control_inst|RestState~9             ; Lost fanout                                           ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~8             ; Lost fanout                                           ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~9             ; Lost fanout                                           ;
-; Total Number of Removed Registers = 13                       ;                                                       ;
+; Total Number of Removed Registers = 24                       ;                                                       ;
 +--------------------------------------------------------------+-------------------------------------------------------+
 
 
@@ -378,12 +396,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 203   ;
-; Number of registers using Synchronous Clear  ; 40    ;
+; Total registers                              ; 227   ;
+; Number of registers using Synchronous Clear  ; 48    ;
 ; Number of registers using Synchronous Load   ; 7     ;
-; Number of registers using Asynchronous Clear ; 193   ;
+; Number of registers using Asynchronous Clear ; 217   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 59    ;
+; Number of registers using Clock Enable       ; 65    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -405,19 +423,21 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                           ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|FrameCount[0]             ;                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[0] ;                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|data[6]         ;                            ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[2]     ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|FrameCount[1]             ;                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[1] ;                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|data[7]         ;                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; |LidarFrameView|dac7512:dac7512_inst|clk_count[2]                    ;                            ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[4]     ;                            ;
 ; 7:1                ; 11 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|serialSendCount[10]       ;                            ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[3]     ;                            ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[7]     ;                            ;
-; 9:1                ; 26 bits   ; 156 LEs       ; 26 LEs               ; 130 LEs                ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]  ;                            ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[5]     ;                            ;
+; 9:1                ; 26 bits   ; 156 LEs       ; 26 LEs               ; 130 LEs                ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]  ;                            ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |LidarFrameView|dac7512:dac7512_inst|Selector6                       ;                            ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|Selector76      ;                            ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState      ;                            ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState      ;                            ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector13                ;                            ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector14                ;                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector10                ;                            ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector11                ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
 
 
@@ -455,7 +475,7 @@ Encoding Type:  One-Hot
 +--------------------+-------+------------------------------------------------------+
 ; TimeReset          ; 1000  ; Signed Integer                                       ;
 ; TimeSetClk         ; 50    ; Signed Integer                                       ;
-; TimeIntegration    ; 8000  ; Signed Integer                                       ;
+; TimeIntegration    ; 80000 ; Signed Integer                                       ;
 ; TimeADCDelay       ; 20    ; Signed Integer                                       ;
 ; State1_Reset       ; 00    ; Unsigned Binary                                      ;
 ; State2_Integration ; 01    ; Unsigned Binary                                      ;
@@ -533,6 +553,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WRITE_ACLR_SYNCH        ; OFF         ; Untyped                                                                          ;
 ; CBXI_PARAMETER          ; dcfifo_lhk1 ; Untyped                                                                          ;
 +-------------------------+-------------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dac7512:dac7512_inst ;
++----------------+----------+---------------------------------------+
+; Parameter Name ; Value    ; Type                                  ;
++----------------+----------+---------------------------------------+
+; ST_Start       ; 0        ; Signed Integer                        ;
+; ST_Data        ; 1        ; Signed Integer                        ;
+; ST_Stop        ; 2        ; Signed Integer                        ;
+; TimeDivSet     ; 00110010 ; Unsigned Binary                       ;
++----------------+----------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -618,7 +651,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -628,7 +661,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Thu May 25 02:11:27 2017
+    Info: Processing started: Fri May 26 00:42:53 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LidarFrameView -c LidarFrameView
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file ccd_adc_control.v
@@ -643,14 +676,16 @@ Info: Found 1 design units, including 1 entities, in source file serialsend.v
     Info: Found entity 1: SerialSend
 Info: Found 1 design units, including 1 entities, in source file samplingcontrol.v
     Info: Found entity 1: SamplingControl
-Warning (10238): Verilog Module Declaration warning at LidarFrameView.v(17): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "LidarFrameView"
 Info: Found 1 design units, including 1 entities, in source file lidarframeview.v
     Info: Found entity 1: LidarFrameView
 Info: Found 1 design units, including 1 entities, in source file senddcfifo.v
     Info: Found entity 1: senddcfifo
+Warning (10238): Verilog Module Declaration warning at dac7512.v(8): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "dac7512"
+Info: Found 1 design units, including 1 entities, in source file dac7512.v
+    Info: Found entity 1: dac7512
 Info: Elaborating entity "LidarFrameView" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LidarFrameView.v(57): object "st" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at LidarFrameView.v(73): truncated value with size 32 to match size of target (8)
+Warning (10036): Verilog HDL or VHDL warning at LidarFrameView.v(66): object "st" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at LidarFrameView.v(82): truncated value with size 32 to match size of target (8)
 Info: Elaborating entity "SamplingControl" for hierarchy "SamplingControl:SamplingControl_inst"
 Warning (10230): Verilog HDL assignment warning at SamplingControl.v(121): truncated value with size 32 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at SamplingControl.v(126): truncated value with size 32 to match size of target (26)
@@ -703,6 +738,10 @@ Info: Elaborating entity "add_sub_a18" for hierarchy "SerialSend:SerialSend_inst
 Info: Found 1 design units, including 1 entities, in source file db/cntr_lua.tdf
     Info: Found entity 1: cntr_lua
 Info: Elaborating entity "cntr_lua" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1"
+Info: Elaborating entity "dac7512" for hierarchy "dac7512:dac7512_inst"
+Warning (10230): Verilog HDL assignment warning at dac7512.v(39): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at dac7512.v(65): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at dac7512.v(107): truncated value with size 32 to match size of target (5)
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
     Warning: Converted tri-state buffer "SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start" feeding internal logic into a wire
 Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -733,15 +772,15 @@ Info: Generated suppressed messages file D:/GitHub/LidarFrameView_11.0/output_fi
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "startPoint"
-Info: Implemented 422 device resources after synthesis - the final resource count might be different
+Info: Implemented 471 device resources after synthesis - the final resource count might be different
     Info: Implemented 11 input pins
-    Info: Implemented 10 output pins
-    Info: Implemented 393 logic cells
+    Info: Implemented 13 output pins
+    Info: Implemented 439 logic cells
     Info: Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 385 megabytes
-    Info: Processing ended: Thu May 25 02:11:36 2017
-    Info: Elapsed time: 00:00:09
+    Info: Processing ended: Fri May 26 00:43:00 2017
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 
 

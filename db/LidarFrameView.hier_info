@@ -1,6 +1,6 @@
 |LidarFrameView
-clk => clk.IN3
-rst_n => rst_n.IN3
+clk => clk.IN4
+rst_n => rst_n.IN4
 startPoint => startPoint.IN1
 AD_data[0] => AD_data[0].IN1
 AD_data[1] => AD_data[1].IN1
@@ -967,5 +967,50 @@ cnt_en => counter_cella7.DATAB
 cnt_en => counter_cella8.DATAB
 cnt_en => counter_cella9.DATAB
 cnt_en => counter_cella10.DATAB
+
+
+|LidarFrameView|dac7512:dac7512_inst
+clk => div_clk.CLK
+clk => div_count[0].CLK
+clk => div_count[1].CLK
+clk => div_count[2].CLK
+clk => div_count[3].CLK
+clk => div_count[4].CLK
+clk => div_count[5].CLK
+clk => div_count[6].CLK
+clk => div_count[7].CLK
+rst_n => data_reg[0].ACLR
+rst_n => data_reg[1].ACLR
+rst_n => data_reg[2].ACLR
+rst_n => data_reg[3].ACLR
+rst_n => data_reg[4].ACLR
+rst_n => data_reg[5].ACLR
+rst_n => data_reg[6].ACLR
+rst_n => data_reg[7].ACLR
+rst_n => data_reg[8].ACLR
+rst_n => data_reg[9].ACLR
+rst_n => data_reg[10].ACLR
+rst_n => data_reg[11].ACLR
+rst_n => din~reg0.ACLR
+rst_n => sync~reg0.ACLR
+rst_n => sclk~reg0.ACLR
+rst_n => clk_count[0].ACLR
+rst_n => clk_count[1].ACLR
+rst_n => clk_count[2].ACLR
+rst_n => count[0].ACLR
+rst_n => count[1].ACLR
+rst_n => count[2].ACLR
+rst_n => count[3].ACLR
+rst_n => count[4].ACLR
+rst_n => div_clk.ACLR
+rst_n => div_count[0].ACLR
+rst_n => div_count[1].ACLR
+rst_n => div_count[2].ACLR
+rst_n => div_count[3].ACLR
+rst_n => div_count[4].ACLR
+rst_n => div_count[5].ACLR
+rst_n => div_count[6].ACLR
+rst_n => div_count[7].ACLR
+rst_n => state~6.DATAIN
 
 
