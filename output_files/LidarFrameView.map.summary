@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Tue May 23 00:34:30 2017
+Analysis & Synthesis Status : Successful - Thu May 25 02:11:35 2017
 Quartus II 64-Bit Version : 11.0 Build 157 04/27/2011 SJ Full Version
 Revision Name : LidarFrameView
 Top-level Entity Name : LidarFrameView
 Family : Cyclone
-Total logic elements : 504
+Total logic elements : 393
 Total pins : 21
 Total virtual pins : 0
 Total memory bits : 8,192

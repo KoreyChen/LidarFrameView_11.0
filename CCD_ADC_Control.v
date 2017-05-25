@@ -57,10 +57,10 @@ input [10:0] wrusedw;     	//写入数量
 output  reg  frameclk;	      //数据帧计数 
 
 //定时器
-parameter TimeReset       =     100 ;
-parameter TimeSetClk      =     10  ; //半个周期的长度
-parameter TimeIntegration =     500 ;
-parameter TimeADCDelay    =     5  ;  //这个数必须小于 TimeSetClk -1
+parameter TimeReset       =     1000 ;
+parameter TimeSetClk      =     50  ; //半个周期的长度
+parameter TimeIntegration =     8000 ;
+parameter TimeADCDelay    =     20  ;  //这个数必须小于 TimeSetClk -1
 reg   [25:0]  timercount;
 
 //状态机

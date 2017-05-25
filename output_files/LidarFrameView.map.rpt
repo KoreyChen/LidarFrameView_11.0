@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LidarFrameView
-Tue May 23 00:34:30 2017
+Thu May 25 02:11:36 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -15,41 +15,29 @@ Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|sendcount
- 11. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|SateCount
- 12. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|sm_emptyfull
- 13. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState
- 14. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState
- 15. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|RestState
- 16. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|MainState
- 17. Registers Removed During Synthesis
- 18. General Register Statistics
- 19. Inverted Register Statistics
- 20. Multiplexer Restructuring Statistics (Restructuring Performed)
- 21. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
- 22. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated
- 23. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g
- 24. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write
- 25. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g
- 26. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram
- 27. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers
- 28. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18
- 29. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers
- 30. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22
- 31. Parameter Settings for User Entity Instance: CCD_ADC_Control:CCD_ADC_Control_inst
- 32. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst
- 33. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
- 34. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel
- 35. dcfifo Parameter Settings by Entity Instance
- 36. scfifo Parameter Settings by Entity Instance
- 37. Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"
- 38. Port Connectivity Checks: "SerialSend:SerialSend_inst|timer:my_timer_tx"
- 39. Port Connectivity Checks: "SerialSend:SerialSend_inst"
- 40. Port Connectivity Checks: "CCD_ADC_Control:CCD_ADC_Control_inst"
- 41. Port Connectivity Checks: "SamplingControl:SamplingControl_inst"
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
- 44. Analysis & Synthesis Suppressed Messages
+ 10. State Machine - |LidarFrameView|SerialSend:SerialSend_inst|serialState
+ 11. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState
+ 12. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState
+ 13. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|RestState
+ 14. State Machine - |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|MainState
+ 15. Registers Removed During Synthesis
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+ 20. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated
+ 21. Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14
+ 22. Parameter Settings for User Entity Instance: CCD_ADC_Control:CCD_ADC_Control_inst
+ 23. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst
+ 24. Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component
+ 25. dcfifo Parameter Settings by Entity Instance
+ 26. Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"
+ 27. Port Connectivity Checks: "SerialSend:SerialSend_inst"
+ 28. Port Connectivity Checks: "CCD_ADC_Control:CCD_ADC_Control_inst"
+ 29. Port Connectivity Checks: "SamplingControl:SamplingControl_inst"
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -75,12 +63,12 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-----------------------------+-------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue May 23 00:34:30 2017     ;
+; Analysis & Synthesis Status ; Successful - Thu May 25 02:11:35 2017     ;
 ; Quartus II 64-Bit Version   ; 11.0 Build 157 04/27/2011 SJ Full Version ;
 ; Revision Name               ; LidarFrameView                            ;
 ; Top-level Entity Name       ; LidarFrameView                            ;
 ; Family                      ; Cyclone                                   ;
-; Total logic elements        ; 504                                       ;
+; Total logic elements        ; 393                                       ;
 ; Total pins                  ; 21                                        ;
 ; Total virtual pins          ; 0                                         ;
 ; Total memory bits           ; 8,192                                     ;
@@ -184,153 +172,105 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+
-; CCD_ADC_Control.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v                                                ;
-; uart_tx.v                        ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/uart_tx.v                                                        ;
-; timer.v                          ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/timer.v                                                          ;
-; speed_select.v                   ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/speed_select.v                                                   ;
-; SerialSend.v                     ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SerialSend.v                                                     ;
-; SamplingControl.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SamplingControl.v                                                ;
-; LidarFrameView.v                 ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/LidarFrameView.v                                                 ;
-; senddcfifo.v                     ; yes             ; User Wizard-Generated File   ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v                                                     ;
-; dcfifo.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dcfifo.tdf              ;
-; lpm_counter.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_counter.inc         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_add_sub.inc         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altdpram.inc            ;
-; a_graycounter.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_graycounter.inc       ;
-; a_fefifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fefifo.inc            ;
-; a_gray2bin.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_gray2bin.inc          ;
-; dffpipe.inc                      ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dffpipe.inc             ;
-; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/alt_sync_fifo.inc       ;
-; lpm_compare.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_compare.inc         ;
-; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altsyncram_fifo.inc     ;
-; aglobal110.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/aglobal110.inc          ;
-; db/dcfifo_0kk1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dcfifo_0kk1.tdf                                               ;
-; db/a_gray2bin_26b.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/a_gray2bin_26b.tdf                                            ;
-; db/a_graycounter_r16.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/a_graycounter_r16.tdf                                         ;
-; db/a_graycounter_s16.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/a_graycounter_s16.tdf                                         ;
-; db/altsyncram_4941.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/altsyncram_4941.tdf                                           ;
-; db/alt_synch_pipe_0e8.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/alt_synch_pipe_0e8.tdf                                        ;
-; db/dffpipe_qe9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dffpipe_qe9.tdf                                               ;
-; db/alt_synch_pipe_1e8.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/alt_synch_pipe_1e8.tdf                                        ;
-; db/dffpipe_re9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dffpipe_re9.tdf                                               ;
-; db/add_sub_ovb.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/add_sub_ovb.tdf                                               ;
-; db/cmpr_jr5.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cmpr_jr5.tdf                                                  ;
-; db/cmpr_qh8.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cmpr_qh8.tdf                                                  ;
-; db/cntr_9ua.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cntr_9ua.tdf                                                  ;
-; scfifo.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/scfifo.tdf              ;
-; a_regfifo.inc                    ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_regfifo.inc           ;
-; a_dpfifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_dpfifo.inc            ;
-; a_i2fifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_i2fifo.inc            ;
-; a_fffifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fffifo.inc            ;
-; a_f2fifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_f2fifo.inc            ;
-; a_fffifo.tdf                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fffifo.tdf            ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_mux.inc             ;
-; lpm_ff.inc                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_ff.inc              ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_ff.tdf              ;
-; lpm_constant.inc                 ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_constant.inc        ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_mux.tdf             ;
-; muxlut.inc                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/muxlut.inc              ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/bypassff.inc            ;
-; altshift.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altshift.inc            ;
-; db/mux_afc.tdf                   ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/mux_afc.tdf                                                   ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_counter.tdf         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_decode.inc          ;
-; cmpconst.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/cmpconst.inc            ;
-; dffeea.inc                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dffeea.inc              ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/alt_counter_stratix.inc ;
-; db/cntr_tue.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cntr_tue.tdf                                                  ;
-; a_fefifo.tdf                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fefifo.tdf            ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_compare.tdf         ;
-; comptree.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/comptree.inc            ;
-; db/cmpr_33g.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cmpr_33g.tdf                                                  ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
+; CCD_ADC_Control.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v                                            ;
+; uart_tx.v                        ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/uart_tx.v                                                    ;
+; speed_select.v                   ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/speed_select.v                                               ;
+; SerialSend.v                     ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SerialSend.v                                                 ;
+; SamplingControl.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SamplingControl.v                                            ;
+; LidarFrameView.v                 ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/LidarFrameView.v                                             ;
+; senddcfifo.v                     ; yes             ; User Wizard-Generated File   ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v                                                 ;
+; dcfifo.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dcfifo.tdf          ;
+; lpm_counter.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_counter.inc     ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_add_sub.inc     ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altdpram.inc        ;
+; a_graycounter.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_graycounter.inc   ;
+; a_fefifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fefifo.inc        ;
+; a_gray2bin.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_gray2bin.inc      ;
+; dffpipe.inc                      ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dffpipe.inc         ;
+; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/alt_sync_fifo.inc   ;
+; lpm_compare.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_compare.inc     ;
+; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altsyncram_fifo.inc ;
+; aglobal110.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/aglobal110.inc      ;
+; db/dcfifo_lhk1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dcfifo_lhk1.tdf                                           ;
+; db/alt_sync_fifo_8gm.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/alt_sync_fifo_8gm.tdf                                     ;
+; db/dpram_n3v.tdf                 ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dpram_n3v.tdf                                             ;
+; db/altsyncram_pof1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/altsyncram_pof1.tdf                                       ;
+; db/add_sub_4g8.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/add_sub_4g8.tdf                                           ;
+; db/add_sub_a18.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/add_sub_a18.tdf                                           ;
+; db/cntr_lua.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cntr_lua.tdf                                              ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                               ;
-+---------------------------------------------+---------------------------------------------+
-; Resource                                    ; Usage                                       ;
-+---------------------------------------------+---------------------------------------------+
-; Total logic elements                        ; 504                                         ;
-;     -- Combinational with no register       ; 174                                         ;
-;     -- Register only                        ; 122                                         ;
-;     -- Combinational with a register        ; 208                                         ;
-;                                             ;                                             ;
-; Logic element usage by number of LUT inputs ;                                             ;
-;     -- 4 input functions                    ; 176                                         ;
-;     -- 3 input functions                    ; 89                                          ;
-;     -- 2 input functions                    ; 109                                         ;
-;     -- 1 input functions                    ; 6                                           ;
-;     -- 0 input functions                    ; 2                                           ;
-;                                             ;                                             ;
-; Logic elements by mode                      ;                                             ;
-;     -- normal mode                          ; 427                                         ;
-;     -- arithmetic mode                      ; 77                                          ;
-;     -- qfbk mode                            ; 0                                           ;
-;     -- register cascade mode                ; 0                                           ;
-;     -- synchronous clear/load mode          ; 66                                          ;
-;     -- asynchronous clear/load mode         ; 319                                         ;
-;                                             ;                                             ;
-; Total registers                             ; 330                                         ;
-; Total logic cells in carry chains           ; 84                                          ;
-; I/O pins                                    ; 21                                          ;
-; Total memory bits                           ; 8192                                        ;
-; Maximum fan-out node                        ; SerialSend:SerialSend_inst|SerialSendEN_REG ;
-; Maximum fan-out                             ; 183                                         ;
-; Total fan-out                               ; 2392                                        ;
-; Average fan-out                             ; 4.49                                        ;
-+---------------------------------------------+---------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 393   ;
+;     -- Combinational with no register       ; 190   ;
+;     -- Register only                        ; 55    ;
+;     -- Combinational with a register        ; 148   ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 140   ;
+;     -- 3 input functions                    ; 85    ;
+;     -- 2 input functions                    ; 105   ;
+;     -- 1 input functions                    ; 6     ;
+;     -- 0 input functions                    ; 2     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 283   ;
+;     -- arithmetic mode                      ; 110   ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 46    ;
+;     -- asynchronous clear/load mode         ; 193   ;
+;                                             ;       ;
+; Total registers                             ; 203   ;
+; Total logic cells in carry chains           ; 120   ;
+; I/O pins                                    ; 21    ;
+; Total memory bits                           ; 8192  ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 148   ;
+; Total fan-out                               ; 1800  ;
+; Average fan-out                             ; 4.27  ;
++---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                       ;
-+-----------------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                                                                      ; Library Name ;
-+-----------------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |LidarFrameView                                           ; 504 (0)     ; 330          ; 8192        ; 21   ; 0            ; 174 (0)      ; 122 (0)           ; 208 (0)          ; 84 (0)          ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                          ;              ;
-;    |CCD_ADC_Control:CCD_ADC_Control_inst|                 ; 129 (129)   ; 72           ; 0           ; 0    ; 0            ; 57 (57)      ; 5 (5)             ; 67 (67)          ; 37 (37)         ; 0 (0)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                                     ;              ;
-;    |SerialSend:SerialSend_inst|                           ; 375 (106)   ; 258          ; 8192        ; 0    ; 0            ; 117 (63)     ; 117 (7)           ; 141 (36)         ; 47 (12)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst                                                                                                                                                               ;              ;
-;       |senddcfifo:SendFifo_inst|                          ; 216 (0)     ; 182          ; 8192        ; 0    ; 0            ; 34 (0)       ; 99 (0)            ; 83 (0)           ; 22 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst                                                                                                                                      ;              ;
-;          |dcfifo:dcfifo_component|                        ; 216 (0)     ; 182          ; 8192        ; 0    ; 0            ; 34 (0)       ; 99 (0)            ; 83 (0)           ; 22 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component                                                                                                              ;              ;
-;             |dcfifo_0kk1:auto_generated|                  ; 216 (39)    ; 182          ; 8192        ; 0    ; 0            ; 34 (6)       ; 99 (15)           ; 83 (18)          ; 22 (10)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated                                                                                   ;              ;
-;                |a_gray2bin_26b:write_side_gray_converter| ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:write_side_gray_converter                                          ;              ;
-;                |a_graycounter_r16:rdptr_g|                ; 21 (21)     ; 14           ; 0           ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 14 (14)          ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g                                                         ;              ;
-;                |a_graycounter_r16:wrptr_g|                ; 17 (17)     ; 14           ; 0           ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 14 (14)          ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g                                                         ;              ;
-;                |a_graycounter_s16:read_counter_for_write| ; 17 (17)     ; 14           ; 0           ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 14 (14)          ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write                                          ;              ;
-;                |alt_synch_pipe_0e8:read_sync_registers|   ; 30 (0)      ; 30           ; 0           ; 0    ; 0            ; 0 (0)        ; 30 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers                                            ;              ;
-;                   |dffpipe_qe9:dffpipe18|                 ; 30 (30)     ; 30           ; 0           ; 0    ; 0            ; 0 (0)        ; 30 (30)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18                      ;              ;
-;                |alt_synch_pipe_1e8:write_sync_registers|  ; 30 (0)      ; 30           ; 0           ; 0    ; 0            ; 0 (0)        ; 30 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers                                           ;              ;
-;                   |dffpipe_re9:dffpipe22|                 ; 30 (30)     ; 30           ; 0           ; 0    ; 0            ; 0 (0)        ; 30 (30)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22                     ;              ;
-;                |altsyncram_4941:fifo_ram|                 ; 0 (0)       ; 0            ; 8192        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram                                                          ;              ;
-;                |cmpr_jr5:address_comparer|                ; 7 (7)       ; 0            ; 0           ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_jr5:address_comparer                                                         ;              ;
-;                |cntr_9ua:wrptr_b|                         ; 10 (10)     ; 10           ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 10 (10)          ; 10 (10)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:wrptr_b                                                                  ;              ;
-;                |scfifo:output_channel|                    ; 43 (0)      ; 37           ; 0           ; 0    ; 0            ; 6 (0)        ; 24 (0)            ; 13 (0)           ; 2 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel                                                             ;              ;
-;                   |a_fffifo:subfifo|                      ; 43 (2)      ; 37           ; 0           ; 0    ; 0            ; 6 (2)        ; 24 (0)            ; 13 (0)           ; 2 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo                                            ;              ;
-;                      |a_fefifo:fifo_state|                ; 7 (7)       ; 3            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state                        ;              ;
-;                      |lpm_counter:rd_ptr|                 ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr                         ;              ;
-;                         |cntr_tue:auto_generated|         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr|cntr_tue:auto_generated ;              ;
-;                      |lpm_ff:data_node[0][0]|             ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]                     ;              ;
-;                      |lpm_ff:last_data_node[0]|           ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[0]                   ;              ;
-;                      |lpm_ff:last_data_node[1]|           ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:last_data_node[1]                   ;              ;
-;                      |lpm_ff:output_buffer|               ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:output_buffer                       ;              ;
-;       |speed_select:speed_tx|                             ; 20 (20)     ; 14           ; 0           ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx                                                                                                                                         ;              ;
-;       |uart_tx:my_uart_tx|                                ; 33 (33)     ; 19           ; 0           ; 0    ; 0            ; 14 (14)      ; 11 (11)           ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx                                                                                                                                            ;              ;
-+-----------------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                         ;
++-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                          ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                                                              ; Library Name ;
++-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |LidarFrameView                                     ; 393 (0)     ; 203          ; 8192        ; 21   ; 0            ; 190 (0)      ; 55 (0)            ; 148 (0)          ; 120 (0)         ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                  ;              ;
+;    |CCD_ADC_Control:CCD_ADC_Control_inst|           ; 133 (133)   ; 72           ; 0           ; 0    ; 0            ; 61 (61)      ; 5 (5)             ; 67 (67)          ; 37 (37)         ; 0 (0)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                             ;              ;
+;    |SerialSend:SerialSend_inst|                     ; 260 (111)   ; 131          ; 8192        ; 0    ; 0            ; 129 (68)     ; 50 (5)            ; 81 (38)          ; 83 (11)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst                                                                                                                                                       ;              ;
+;       |senddcfifo:SendFifo_inst|                    ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst                                                                                                                              ;              ;
+;          |dcfifo:dcfifo_component|                  ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component                                                                                                      ;              ;
+;             |dcfifo_lhk1:auto_generated|            ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated                                                                           ;              ;
+;                |alt_sync_fifo_8gm:sync_fifo|        ; 96 (74)     ; 55           ; 8192        ; 0    ; 0            ; 41 (30)      ; 33 (33)           ; 22 (11)          ; 59 (37)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo                                               ;              ;
+;                   |add_sub_4g8:add_sub2|            ; 11 (11)     ; 0            ; 0           ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 0 (0)            ; 11 (11)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_4g8:add_sub2                          ;              ;
+;                   |cntr_lua:cntr1|                  ; 11 (11)     ; 11           ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (11)          ; 11 (11)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1                                ;              ;
+;                   |dpram_n3v:dpram4|                ; 0 (0)       ; 0            ; 8192        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4                              ;              ;
+;                      |altsyncram_pof1:altsyncram14| ; 0 (0)       ; 0            ; 8192        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14 ;              ;
+;       |speed_select:speed_tx|                       ; 20 (20)     ; 14           ; 0           ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx                                                                                                                                 ;              ;
+;       |uart_tx:my_uart_tx|                          ; 33 (33)     ; 19           ; 0           ; 0    ; 0            ; 14 (14)      ; 12 (12)           ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx                                                                                                                                    ;              ;
++-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                               ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                                                                                                                       ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; None ;
-+--------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; None ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -343,40 +283,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------+
-; State Machine - |LidarFrameView|SerialSend:SerialSend_inst|sendcount                                   ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
-; Name               ; sendcount.COUNT_S4 ; sendcount.COUNT_S3 ; sendcount.COUNT_S2 ; sendcount.COUNT_S1 ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
-; sendcount.COUNT_S1 ; 0                  ; 0                  ; 0                  ; 0                  ;
-; sendcount.COUNT_S2 ; 0                  ; 0                  ; 1                  ; 1                  ;
-; sendcount.COUNT_S3 ; 0                  ; 1                  ; 0                  ; 1                  ;
-; sendcount.COUNT_S4 ; 1                  ; 0                  ; 0                  ; 1                  ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
-
-
-Encoding Type:  One-Hot
-+----------------------------------------------------------------------+
-; State Machine - |LidarFrameView|SerialSend:SerialSend_inst|SateCount ;
-+--------------+--------------+--------------+-------------------------+
-; Name         ; SateCount.S1 ; SateCount.S3 ; SateCount.S2            ;
-+--------------+--------------+--------------+-------------------------+
-; SateCount.S1 ; 0            ; 0            ; 0                       ;
-; SateCount.S2 ; 1            ; 0            ; 1                       ;
-; SateCount.S3 ; 1            ; 1            ; 0                       ;
-+--------------+--------------+--------------+-------------------------+
-
-
-Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|sm_emptyfull ;
-+--------------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Name         ; state_middle ; state_full ; state_empty                                                                                                                                                         ;
-+--------------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; state_empty  ; 0            ; 0          ; 0                                                                                                                                                                   ;
-; state_middle ; 1            ; 0          ; 1                                                                                                                                                                   ;
-; state_full   ; 0            ; 1          ; 1                                                                                                                                                                   ;
-+--------------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |LidarFrameView|SerialSend:SerialSend_inst|serialState                                                                                                                                  ;
++------------------------------+------------------------------+-----------------------------+------------------------------+-----------------------------+------------------------------+-----------------+
+; Name                         ; serialState.serialState_Stop ; serialState.serialState_End ; serialState.serialState_Data ; serialState.serialState_CMD ; serialState.serialState_Head ; serialState.000 ;
++------------------------------+------------------------------+-----------------------------+------------------------------+-----------------------------+------------------------------+-----------------+
+; serialState.000              ; 0                            ; 0                           ; 0                            ; 0                           ; 0                            ; 0               ;
+; serialState.serialState_Head ; 0                            ; 0                           ; 0                            ; 0                           ; 1                            ; 1               ;
+; serialState.serialState_CMD  ; 0                            ; 0                           ; 0                            ; 1                           ; 0                            ; 1               ;
+; serialState.serialState_Data ; 0                            ; 0                           ; 1                            ; 0                           ; 0                            ; 1               ;
+; serialState.serialState_End  ; 0                            ; 1                           ; 0                            ; 0                           ; 0                            ; 1               ;
+; serialState.serialState_Stop ; 1                            ; 0                           ; 0                            ; 0                           ; 0                            ; 1               ;
++------------------------------+------------------------------+-----------------------------+------------------------------+-----------------------------+------------------------------+-----------------+
 
 
 Encoding Type:  One-Hot
@@ -433,34 +351,26 @@ Encoding Type:  One-Hot
 +------------------------------+------------------+--------------------------+------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                      ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                ; Reason for Removal                                                                                                                                                                       ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[0..9]                                         ; Lost fanout                                                                                                                                                                              ;
-; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r~en                                                                                                                 ; Lost fanout                                                                                                                                                                              ;
-; SerialSend:SerialSend_inst|fifo_clear_reg                                                                                                                                    ; Merged with SerialSend:SerialSend_inst|SerialSendEN_REG                                                                                                                                  ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[7] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[7] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[6] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[6] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[5] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[5] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[4] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[4] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[3] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[3] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[2] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[2] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[1] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[1] ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]|dffs[0] ; Merged with SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][0]|dffs[0] ;
-; SerialSend:SerialSend_inst|sendcount~4                                                                                                                                       ; Lost fanout                                                                                                                                                                              ;
-; SerialSend:SerialSend_inst|sendcount~5                                                                                                                                       ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState~7                                                                                                                          ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~12                                                                                                                           ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~13                                                                                                                           ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~14                                                                                                                           ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|RestState~8                                                                                                                             ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|RestState~9                                                                                                                             ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~8                                                                                                                             ; Lost fanout                                                                                                                                                                              ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~9                                                                                                                             ; Lost fanout                                                                                                                                                                              ;
-; Total Number of Removed Registers = 30                                                                                                                                       ;                                                                                                                                                                                          ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                   ;
++--------------------------------------------------------------+-------------------------------------------------------+
+; Register name                                                ; Reason for Removal                                    ;
++--------------------------------------------------------------+-------------------------------------------------------+
+; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r~en ; Lost fanout                                           ;
+; SerialSend:SerialSend_inst|fifo_clear_reg                    ; Merged with SerialSend:SerialSend_inst|SerialSendbtn1 ;
+; SerialSend:SerialSend_inst|serialState~10                    ; Lost fanout                                           ;
+; SerialSend:SerialSend_inst|serialState~11                    ; Lost fanout                                           ;
+; SerialSend:SerialSend_inst|serialState~12                    ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState~7          ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~12           ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~13           ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~14           ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|RestState~8             ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|RestState~9             ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~8             ; Lost fanout                                           ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState~9             ; Lost fanout                                           ;
+; Total Number of Removed Registers = 13                       ;                                                       ;
++--------------------------------------------------------------+-------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -468,50 +378,47 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 330   ;
-; Number of registers using Synchronous Clear  ; 52    ;
-; Number of registers using Synchronous Load   ; 15    ;
-; Number of registers using Asynchronous Clear ; 319   ;
+; Total registers                              ; 203   ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 7     ;
+; Number of registers using Asynchronous Clear ; 193   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 139   ;
+; Number of registers using Clock Enable       ; 59    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Inverted Register Statistics                                                                                                                                             ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Inverted Register                                                                                                                                              ; Fan out ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r                                                                                                       ; 2       ;
-; SerialSend:SerialSend_inst|TxSendEN_Reg                                                                                                                        ; 2       ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g|sub_parity12a0                ; 1       ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g|sub_parity12a0                ; 1       ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write|sub_parity15a0 ; 1       ;
-; Total number of inverted registers = 5                                                                                                                         ;         ;
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------+
+; Inverted Register Statistics                                          ;
++-------------------------------------------------------------+---------+
+; Inverted Register                                           ; Fan out ;
++-------------------------------------------------------------+---------+
+; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r    ; 2       ;
+; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|send_complete ; 3       ;
+; SerialSend:SerialSend_inst|TxSendEN_Reg                     ; 2       ;
+; Total number of inverted registers = 3                      ;         ;
++-------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                                                                                                                                                 ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:output_buffer|dffs[4] ;                            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|FrameCount[2]                                                                                                                                   ;                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[2]                                                                                                                       ;                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|data[5]                                                                                                                               ;                            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx|send_complete                                                                                                                ;                            ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[6]                                                                                                                           ;                            ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[1]                                                                                                                           ;                            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[7]                                                                                                                           ;                            ;
-; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|count[6]                                                                                                                                        ;                            ;
-; 9:1                ; 26 bits   ; 156 LEs       ; 26 LEs               ; 130 LEs                ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]                                                                                                                         ;                            ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|Selector74                                                                                                                            ;                            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState                                                                                                                            ;                            ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SateCount                                                                                                                                       ;                            ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState                                                                                                                            ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                           ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|FrameCount[0]             ;                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[0] ;                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|data[6]         ;                            ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[2]     ;                            ;
+; 7:1                ; 11 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|serialSendCount[10]       ;                            ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[3]     ;                            ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|SerialSendData_Reg[7]     ;                            ;
+; 9:1                ; 26 bits   ; 156 LEs       ; 26 LEs               ; 130 LEs                ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]  ;                            ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|Selector76      ;                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState      ;                            ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst|IntegState      ;                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector13                ;                            ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; |LidarFrameView|SerialSend:SerialSend_inst|Selector14                ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+----------------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -524,7 +431,7 @@ Encoding Type:  One-Hot
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated ;
+; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated ;
 +---------------------------------+-------+------+------------------------------------------------------------------------------+
 ; Assignment                      ; Value ; From ; To                                                                           ;
 +---------------------------------+-------+------+------------------------------------------------------------------------------+
@@ -532,79 +439,13 @@ Encoding Type:  One-Hot
 +---------------------------------+-------+------+------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-; Assignment     ; Value ; From ; To                                                                                                                      ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-; POWER_UP_LEVEL ; HIGH  ; -    ; sub_parity12a0                                                                                                          ;
-; POWER_UP_LEVEL ; LOW   ; -    ; parity11                                                                                                                ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write ;
-+----------------+-------+------+----------------------------------------------------------------------------------------------------------------------------------------+
-; Assignment     ; Value ; From ; To                                                                                                                                     ;
-+----------------+-------+------+----------------------------------------------------------------------------------------------------------------------------------------+
-; POWER_UP_LEVEL ; HIGH  ; -    ; sub_parity15a0                                                                                                                         ;
-; POWER_UP_LEVEL ; LOW   ; -    ; parity14                                                                                                                               ;
-+----------------+-------+------+----------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:wrptr_g ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-; Assignment     ; Value ; From ; To                                                                                                                      ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-; POWER_UP_LEVEL ; HIGH  ; -    ; sub_parity12a0                                                                                                          ;
-; POWER_UP_LEVEL ; LOW   ; -    ; parity11                                                                                                                ;
-+----------------+-------+------+-------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                       ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                        ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers ;
-+-----------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------+
-; Assignment            ; Value ; From ; To                                                                                                                            ;
-+-----------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------+
-; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                                             ;
-+-----------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18 ;
-+---------------------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value ; From ; To                                                                                                                                        ;
-+---------------------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                                                         ;
-+---------------------------------+-------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers ;
-+-----------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------+
-; Assignment            ; Value ; From ; To                                                                                                                             ;
-+-----------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------+
-; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                                              ;
-+-----------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22 ;
-+---------------------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value ; From ; To                                                                                                                                         ;
-+---------------------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                                                          ;
-+---------------------------------+-------+------+--------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14 ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                                                        ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                                         ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------+
@@ -612,10 +453,10 @@ Encoding Type:  One-Hot
 +--------------------+-------+------------------------------------------------------+
 ; Parameter Name     ; Value ; Type                                                 ;
 +--------------------+-------+------------------------------------------------------+
-; TimeReset          ; 100   ; Signed Integer                                       ;
-; TimeSetClk         ; 10    ; Signed Integer                                       ;
-; TimeIntegration    ; 500   ; Signed Integer                                       ;
-; TimeADCDelay       ; 5     ; Signed Integer                                       ;
+; TimeReset          ; 1000  ; Signed Integer                                       ;
+; TimeSetClk         ; 50    ; Signed Integer                                       ;
+; TimeIntegration    ; 8000  ; Signed Integer                                       ;
+; TimeADCDelay       ; 20    ; Signed Integer                                       ;
 ; State1_Reset       ; 00    ; Unsigned Binary                                      ;
 ; State2_Integration ; 01    ; Unsigned Binary                                      ;
 ; State3_DataOut     ; 10    ; Unsigned Binary                                      ;
@@ -642,26 +483,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst ;
-+----------------+----------+---------------------------------------------+
-; Parameter Name ; Value    ; Type                                        ;
-+----------------+----------+---------------------------------------------+
-; SD1            ; 01111011 ; Unsigned Binary                             ;
-; SD2            ; 00101000 ; Unsigned Binary                             ;
-; SD3            ; 00110001 ; Unsigned Binary                             ;
-; SD4            ; 00110000 ; Unsigned Binary                             ;
-; SD5            ; 00110010 ; Unsigned Binary                             ;
-; SD6            ; 00110100 ; Unsigned Binary                             ;
-; SD7            ; 00101001 ; Unsigned Binary                             ;
-; SD8            ; 01111101 ; Unsigned Binary                             ;
-; S1             ; 00       ; Unsigned Binary                             ;
-; S2             ; 01       ; Unsigned Binary                             ;
-; S3             ; 10       ; Unsigned Binary                             ;
-; COUNT_S1       ; 00       ; Unsigned Binary                             ;
-; COUNT_S2       ; 01       ; Unsigned Binary                             ;
-; COUNT_S3       ; 10       ; Unsigned Binary                             ;
-; COUNT_S4       ; 11       ; Unsigned Binary                             ;
-; TXDATA_CNT_NUM ; 1500     ; Signed Integer                              ;
-+----------------+----------+---------------------------------------------+
++-------------------+----------+------------------------------------------+
+; Parameter Name    ; Value    ; Type                                     ;
++-------------------+----------+------------------------------------------+
+; serialState_Start ; 0        ; Signed Integer                           ;
+; serialState_Head  ; 1        ; Signed Integer                           ;
+; serialState_CMD   ; 2        ; Signed Integer                           ;
+; serialState_Data  ; 3        ; Signed Integer                           ;
+; serialState_End   ; 4        ; Signed Integer                           ;
+; serialState_Stop  ; 5        ; Signed Integer                           ;
+; SD1               ; 01111011 ; Unsigned Binary                          ;
+; SD2               ; 00101000 ; Unsigned Binary                          ;
+; SD3               ; 00110001 ; Unsigned Binary                          ;
+; SD4               ; 00110000 ; Unsigned Binary                          ;
+; SD5               ; 00110010 ; Unsigned Binary                          ;
+; SD6               ; 00110100 ; Unsigned Binary                          ;
+; SD7               ; 00101001 ; Unsigned Binary                          ;
+; SD8               ; 01111101 ; Unsigned Binary                          ;
++-------------------+----------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -687,41 +526,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DELAY_WRUSEDW           ; 1           ; Untyped                                                                          ;
 ; RDSYNC_DELAYPIPE        ; 3           ; Untyped                                                                          ;
 ; WRSYNC_DELAYPIPE        ; 3           ; Untyped                                                                          ;
-; CLOCKS_ARE_SYNCHRONIZED ; FALSE       ; Untyped                                                                          ;
+; CLOCKS_ARE_SYNCHRONIZED ; TRUE        ; Untyped                                                                          ;
 ; MAXIMIZE_SPEED          ; 5           ; Untyped                                                                          ;
 ; DEVICE_FAMILY           ; Cyclone     ; Untyped                                                                          ;
 ; ADD_USEDW_MSB_BIT       ; OFF         ; Untyped                                                                          ;
 ; WRITE_ACLR_SYNCH        ; OFF         ; Untyped                                                                          ;
-; CBXI_PARAMETER          ; dcfifo_0kk1 ; Untyped                                                                          ;
+; CBXI_PARAMETER          ; dcfifo_lhk1 ; Untyped                                                                          ;
 +-------------------------+-------------+----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel ;
-+-------------------------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Name          ; Value   ; Type                                                                                                                                  ;
-+-------------------------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS       ; ON      ; AUTO_CARRY                                                                                                                            ;
-; IGNORE_CARRY_BUFFERS    ; OFF     ; IGNORE_CARRY                                                                                                                          ;
-; AUTO_CASCADE_CHAINS     ; ON      ; AUTO_CASCADE                                                                                                                          ;
-; IGNORE_CASCADE_BUFFERS  ; OFF     ; IGNORE_CASCADE                                                                                                                        ;
-; lpm_width               ; 8       ; Untyped                                                                                                                               ;
-; LPM_NUMWORDS            ; 3       ; Untyped                                                                                                                               ;
-; LPM_WIDTHU              ; 2       ; Untyped                                                                                                                               ;
-; LPM_SHOWAHEAD           ; OFF     ; Untyped                                                                                                                               ;
-; UNDERFLOW_CHECKING      ; ON      ; Untyped                                                                                                                               ;
-; OVERFLOW_CHECKING       ; ON      ; Untyped                                                                                                                               ;
-; ALLOW_RWCYCLE_WHEN_FULL ; OFF     ; Untyped                                                                                                                               ;
-; ADD_RAM_OUTPUT_REGISTER ; ON      ; Untyped                                                                                                                               ;
-; ALMOST_FULL_VALUE       ; 0       ; Untyped                                                                                                                               ;
-; ALMOST_EMPTY_VALUE      ; 0       ; Untyped                                                                                                                               ;
-; USE_EAB                 ; OFF     ; Untyped                                                                                                                               ;
-; MAXIMIZE_SPEED          ; 5       ; Untyped                                                                                                                               ;
-; DEVICE_FAMILY           ; Cyclone ; Untyped                                                                                                                               ;
-; OPTIMIZE_FOR_SPEED      ; 5       ; Untyped                                                                                                                               ;
-; CBXI_PARAMETER          ; NOTHING ; Untyped                                                                                                                               ;
-+-------------------------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -740,45 +551,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+-----------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; scfifo Parameter Settings by Entity Instance                                                                                                              ;
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------+
-; Name                       ; Value                                                                                                                        ;
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------+
-; Number of entity instances ; 1                                                                                                                            ;
-; Entity Instance            ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel ;
-;     -- FIFO Type           ; Single Clock                                                                                                                 ;
-;     -- lpm_width           ; 8                                                                                                                            ;
-;     -- LPM_NUMWORDS        ; 3                                                                                                                            ;
-;     -- LPM_SHOWAHEAD       ; OFF                                                                                                                          ;
-;     -- USE_EAB             ; OFF                                                                                                                          ;
-+----------------------------+------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst" ;
-+---------+--------+----------+---------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                           ;
-+---------+--------+----------+---------------------------------------------------+
-; rdusedw ; Output ; Info     ; Explicitly unconnected                            ;
-+---------+--------+----------+---------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialSend:SerialSend_inst|timer:my_timer_tx"                                                                                                                                               ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; timer         ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (25 bits) it drives.  The 7 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; timer[8..6]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; timer[4..2]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; timer[24..11] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; timer[1..0]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; timer[10]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; timer[9]      ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; timer[5]      ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"                                   ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; rdusedw ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -839,7 +618,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -849,7 +628,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Tue May 23 00:34:22 2017
+    Info: Processing started: Thu May 25 02:11:27 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LidarFrameView -c LidarFrameView
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file ccd_adc_control.v
@@ -880,16 +659,20 @@ Info: Elaborating entity "CCD_ADC_Control" for hierarchy "CCD_ADC_Control:CCD_AD
 Warning (10036): Verilog HDL or VHDL warning at CCD_ADC_Control.v(90): object "IntegCount" assigned a value but never read
 Warning (10230): Verilog HDL assignment warning at CCD_ADC_Control.v(137): truncated value with size 32 to match size of target (26)
 Info: Elaborating entity "SerialSend" for hierarchy "SerialSend:SerialSend_inst"
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(213): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(218): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(261): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(273): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(297): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at SerialSend.v(302): truncated value with size 32 to match size of target (3)
 Info: Elaborating entity "speed_select" for hierarchy "SerialSend:SerialSend_inst|speed_select:speed_tx"
 Info: Elaborating entity "uart_tx" for hierarchy "SerialSend:SerialSend_inst|uart_tx:my_uart_tx"
-Info: Elaborating entity "timer" for hierarchy "SerialSend:SerialSend_inst|timer:my_timer_tx"
-Warning (10230): Verilog HDL assignment warning at timer.v(45): truncated value with size 32 to match size of target (24)
 Info: Elaborating entity "senddcfifo" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst"
 Info: Elaborating entity "dcfifo" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component"
 Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component"
 Info: Instantiated megafunction "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component" with the following parameter:
     Info: Parameter "add_ram_output_register" = "ON"
-    Info: Parameter "clocks_are_synchronized" = "FALSE"
+    Info: Parameter "clocks_are_synchronized" = "TRUE"
     Info: Parameter "intended_device_family" = "Cyclone"
     Info: Parameter "lpm_numwords" = "1024"
     Info: Parameter "lpm_showahead" = "OFF"
@@ -899,101 +682,45 @@ Info: Instantiated megafunction "SerialSend:SerialSend_inst|senddcfifo:SendFifo_
     Info: Parameter "overflow_checking" = "ON"
     Info: Parameter "underflow_checking" = "ON"
     Info: Parameter "use_eab" = "ON"
-Info: Found 1 design units, including 1 entities, in source file db/dcfifo_0kk1.tdf
-    Info: Found entity 1: dcfifo_0kk1
-Info: Elaborating entity "dcfifo_0kk1" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated"
-Info: Found 1 design units, including 1 entities, in source file db/a_gray2bin_26b.tdf
-    Info: Found entity 1: a_gray2bin_26b
-Info: Elaborating entity "a_gray2bin_26b" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_gray2bin_26b:read_side_gray_converter"
-Info: Found 1 design units, including 1 entities, in source file db/a_graycounter_r16.tdf
-    Info: Found entity 1: a_graycounter_r16
-Info: Elaborating entity "a_graycounter_r16" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_r16:rdptr_g"
-Info: Found 1 design units, including 1 entities, in source file db/a_graycounter_s16.tdf
-    Info: Found entity 1: a_graycounter_s16
-Info: Elaborating entity "a_graycounter_s16" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|a_graycounter_s16:read_counter_for_write"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_4941.tdf
-    Info: Found entity 1: altsyncram_4941
-Info: Elaborating entity "altsyncram_4941" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|altsyncram_4941:fifo_ram"
-Info: Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_0e8.tdf
-    Info: Found entity 1: alt_synch_pipe_0e8
-Info: Elaborating entity "alt_synch_pipe_0e8" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers"
-Info: Found 1 design units, including 1 entities, in source file db/dffpipe_qe9.tdf
-    Info: Found entity 1: dffpipe_qe9
-Info: Elaborating entity "dffpipe_qe9" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_0e8:read_sync_registers|dffpipe_qe9:dffpipe18"
-Info: Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_1e8.tdf
-    Info: Found entity 1: alt_synch_pipe_1e8
-Info: Elaborating entity "alt_synch_pipe_1e8" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers"
-Info: Found 1 design units, including 1 entities, in source file db/dffpipe_re9.tdf
-    Info: Found entity 1: dffpipe_re9
-Info: Elaborating entity "dffpipe_re9" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|alt_synch_pipe_1e8:write_sync_registers|dffpipe_re9:dffpipe22"
-Info: Found 1 design units, including 1 entities, in source file db/add_sub_ovb.tdf
-    Info: Found entity 1: add_sub_ovb
-Info: Elaborating entity "add_sub_ovb" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|add_sub_ovb:rdusedw_subtractor"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_jr5.tdf
-    Info: Found entity 1: cmpr_jr5
-Info: Elaborating entity "cmpr_jr5" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_jr5:address_comparer"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_qh8.tdf
-    Info: Found entity 1: cmpr_qh8
-Info: Elaborating entity "cmpr_qh8" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cmpr_qh8:wrempty_comparison"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_9ua.tdf
-    Info: Found entity 1: cntr_9ua
-Info: Elaborating entity "cntr_9ua" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b"
-Info: Elaborating entity "scfifo" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Instantiated megafunction "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel" with the following parameter:
-    Info: Parameter "ADD_RAM_OUTPUT_REGISTER" = "ON"
-    Info: Parameter "LPM_NUMWORDS" = "3"
-    Info: Parameter "LPM_SHOWAHEAD" = "OFF"
-    Info: Parameter "LPM_WIDTH" = "8"
-    Info: Parameter "LPM_WIDTHU" = "2"
-    Info: Parameter "OVERFLOW_CHECKING" = "ON"
-    Info: Parameter "UNDERFLOW_CHECKING" = "ON"
-    Info: Parameter "USE_EAB" = "OFF"
-Info: Elaborating entity "a_fffifo" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Elaborating entity "lpm_ff" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_ff:data_node[0][1]", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Elaborating entity "lpm_mux" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Found 1 design units, including 1 entities, in source file db/mux_afc.tdf
-    Info: Found entity 1: mux_afc
-Info: Elaborating entity "mux_afc" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_mux:row_data_out_mux[0]|mux_afc:auto_generated"
-Info: Elaborating entity "lpm_counter" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Found 1 design units, including 1 entities, in source file db/cntr_tue.tdf
-    Info: Found entity 1: cntr_tue
-Info: Elaborating entity "cntr_tue" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|lpm_counter:rd_ptr|cntr_tue:auto_generated"
-Info: Elaborating entity "a_fefifo" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Elaborating entity "lpm_compare" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
-Info: Found 1 design units, including 1 entities, in source file db/cmpr_33g.tdf
-    Info: Found entity 1: cmpr_33g
-Info: Elaborating entity "cmpr_33g" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_empty_compare|cmpr_33g:auto_generated"
-Info: Elaborating entity "lpm_compare" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare"
-Info: Elaborated megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel|a_fffifo:subfifo|a_fefifo:fifo_state|lpm_compare:is_almost_full_compare", which is child of megafunction instantiation "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|scfifo:output_channel"
+Info: Found 1 design units, including 1 entities, in source file db/dcfifo_lhk1.tdf
+    Info: Found entity 1: dcfifo_lhk1
+Info: Elaborating entity "dcfifo_lhk1" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/alt_sync_fifo_8gm.tdf
+    Info: Found entity 1: alt_sync_fifo_8gm
+Info: Elaborating entity "alt_sync_fifo_8gm" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo"
+Info: Found 1 design units, including 1 entities, in source file db/dpram_n3v.tdf
+    Info: Found entity 1: dpram_n3v
+Info: Elaborating entity "dpram_n3v" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_pof1.tdf
+    Info: Found entity 1: altsyncram_pof1
+Info: Elaborating entity "altsyncram_pof1" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_4g8.tdf
+    Info: Found entity 1: add_sub_4g8
+Info: Elaborating entity "add_sub_4g8" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_4g8:add_sub2"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_a18.tdf
+    Info: Found entity 1: add_sub_a18
+Info: Elaborating entity "add_sub_a18" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|add_sub_a18:add_sub3"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_lua.tdf
+    Info: Found entity 1: cntr_lua
+Info: Elaborating entity "cntr_lua" for hierarchy "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1"
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
     Warning: Converted tri-state buffer "SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start" feeding internal logic into a wire
-Warning: 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Ignored 116 buffer(s)
+    Info: Ignored 116 SOFT buffer(s)
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "CCD_M0" is stuck at GND
     Warning (13410): Pin "CCD_M1" is stuck at GND
     Warning (13410): Pin "CCD_RM" is stuck at GND
 Info: Registers with preset signals will power-up high
-Info: 21 registers lost all their fanouts during netlist optimizations. The first 21 are displayed below.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[0]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[1]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[2]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[6]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[7]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[8]" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_0kk1:auto_generated|cntr_9ua:rdptr_b|safe_q[9]" lost all its fanouts during netlist optimizations.
+Warning: Ignored 1 CARRY_SUM primitives
+    Warning: Ignored 1 CARRY_SUM primitives -- logic cell requires more inputs than it can contain
+        Warning: Can't place CARRY primitive "SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs11a[10]" -- logic cell requires more inputs than it can contain
+Info: 12 registers lost all their fanouts during netlist optimizations. The first 12 are displayed below.
     Info: Register "SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r~en" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|sendcount~4" lost all its fanouts during netlist optimizations.
-    Info: Register "SerialSend:SerialSend_inst|sendcount~5" lost all its fanouts during netlist optimizations.
+    Info: Register "SerialSend:SerialSend_inst|serialState~10" lost all its fanouts during netlist optimizations.
+    Info: Register "SerialSend:SerialSend_inst|serialState~11" lost all its fanouts during netlist optimizations.
+    Info: Register "SerialSend:SerialSend_inst|serialState~12" lost all its fanouts during netlist optimizations.
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState~7" lost all its fanouts during netlist optimizations.
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~12" lost all its fanouts during netlist optimizations.
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~13" lost all its fanouts during netlist optimizations.
@@ -1006,15 +733,15 @@ Info: Generated suppressed messages file D:/GitHub/LidarFrameView_11.0/output_fi
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "startPoint"
-Info: Implemented 533 device resources after synthesis - the final resource count might be different
+Info: Implemented 422 device resources after synthesis - the final resource count might be different
     Info: Implemented 11 input pins
     Info: Implemented 10 output pins
-    Info: Implemented 504 logic cells
+    Info: Implemented 393 logic cells
     Info: Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 393 megabytes
-    Info: Processing ended: Tue May 23 00:34:30 2017
-    Info: Elapsed time: 00:00:08
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 385 megabytes
+    Info: Processing ended: Thu May 25 02:11:36 2017
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 
 

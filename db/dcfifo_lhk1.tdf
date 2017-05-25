@@ -1,0 +1,60 @@
+--dcfifo_mixed_widths ADD_RAM_OUTPUT_REGISTER="ON" CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 CLOCKS_ARE_SYNCHRONIZED="TRUE" DEVICE_FAMILY="Cyclone" IGNORE_CARRY_BUFFERS="OFF" LPM_NUMWORDS=1024 LPM_SHOWAHEAD="OFF" LPM_WIDTH=8 LPM_WIDTH_R=8 LPM_WIDTHU=10 LPM_WIDTHU_R=10 OVERFLOW_CHECKING="ON" UNDERFLOW_CHECKING="ON" USE_EAB="ON" aclr data q rdclk rdempty rdfull rdreq rdusedw wrclk wrempty wrfull wrreq wrusedw CYCLONEII_M4K_COMPATIBILITY="ON" INTENDED_DEVICE_FAMILY="Cyclone" LOW_POWER_MODE="AUTO" ALTERA_INTERNAL_OPTIONS=AUTO_SHIFT_REGISTER_RECOGNITION=OFF
+--VERSION_BEGIN 11.0 cbx_a_gray2bin 2011:04:27:21:07:19:SJ cbx_a_graycounter 2011:04:27:21:07:19:SJ cbx_altdpram 2011:04:27:21:07:19:SJ cbx_altsyncram 2011:04:27:21:07:19:SJ cbx_cycloneii 2011:04:27:21:07:19:SJ cbx_dcfifo 2011:04:27:21:07:19:SJ cbx_fifo_common 2011:04:27:21:07:19:SJ cbx_lpm_add_sub 2011:04:27:21:07:19:SJ cbx_lpm_compare 2011:04:27:21:07:19:SJ cbx_lpm_counter 2011:04:27:21:07:19:SJ cbx_lpm_decode 2011:04:27:21:07:19:SJ cbx_lpm_mux 2011:04:27:21:07:19:SJ cbx_mgl 2011:04:27:21:11:03:SJ cbx_scfifo 2011:04:27:21:07:19:SJ cbx_stratix 2011:04:27:21:07:19:SJ cbx_stratixii 2011:04:27:21:07:19:SJ cbx_stratixiii 2011:04:27:21:07:19:SJ cbx_stratixv 2011:04:27:21:07:19:SJ cbx_util_mgl 2011:04:27:21:07:19:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2011 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION alt_sync_fifo_8gm (aclr, data[7..0], rdclk, rdreq, wrclk, wrreq)
+RETURNS ( q[7..0], rdempty, rdfull, rdusedw[9..0], wrempty, wrfull, wrusedw[9..0]);
+
+--synthesis_resources = lut 112 M4K 2 
+OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;suppress_da_rule_internal=d101";
+
+SUBDESIGN dcfifo_lhk1
+( 
+	aclr	:	input;
+	data[7..0]	:	input;
+	q[7..0]	:	output;
+	rdclk	:	input;
+	rdempty	:	output;
+	rdfull	:	output;
+	rdreq	:	input;
+	rdusedw[9..0]	:	output;
+	wrclk	:	input;
+	wrempty	:	output;
+	wrfull	:	output;
+	wrreq	:	input;
+	wrusedw[9..0]	:	output;
+) 
+VARIABLE 
+	sync_fifo : alt_sync_fifo_8gm;
+
+BEGIN 
+	sync_fifo.aclr = aclr;
+	sync_fifo.data[] = data[];
+	sync_fifo.rdclk = rdclk;
+	sync_fifo.rdreq = rdreq;
+	sync_fifo.wrclk = wrclk;
+	sync_fifo.wrreq = wrreq;
+	q[] = sync_fifo.q[];
+	rdempty = sync_fifo.rdempty;
+	rdfull = sync_fifo.rdfull;
+	rdusedw[] = sync_fifo.rdusedw[];
+	wrempty = sync_fifo.wrempty;
+	wrfull = sync_fifo.wrfull;
+	wrusedw[] = sync_fifo.wrusedw[];
+END;
+--VALID FILE

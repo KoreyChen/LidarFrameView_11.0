@@ -49,7 +49,7 @@ begin
 			bps_start_r <= 1'bz;
 			tx_en <= 1'b0;
 			tx_data_t <= 8'd0;
-			send_complete <= 0;
+			send_complete <= 1;
 		end
 	else if(neg_tx_int) begin	//接收数据完毕，准备把接收到的数据发回去
 			bps_start_r <= 1'b1;

@@ -103,7 +103,7 @@ module senddcfifo (
 				.rdusedw (sub_wire6));
 	defparam
 		dcfifo_component.add_ram_output_register = "ON",
-		dcfifo_component.clocks_are_synchronized = "FALSE",
+		dcfifo_component.clocks_are_synchronized = "TRUE",
 		dcfifo_component.intended_device_family = "Cyclone",
 		dcfifo_component.lpm_numwords = 1024,
 		dcfifo_component.lpm_showahead = "OFF",
@@ -124,7 +124,7 @@ endmodule
 // Retrieval info: PRIVATE: AlmostEmptyThr NUMERIC "-1"
 // Retrieval info: PRIVATE: AlmostFull NUMERIC "0"
 // Retrieval info: PRIVATE: AlmostFullThr NUMERIC "-1"
-// Retrieval info: PRIVATE: CLOCKS_ARE_SYNCHRONIZED NUMERIC "0"
+// Retrieval info: PRIVATE: CLOCKS_ARE_SYNCHRONIZED NUMERIC "1"
 // Retrieval info: PRIVATE: Clock NUMERIC "4"
 // Retrieval info: PRIVATE: Depth NUMERIC "1024"
 // Retrieval info: PRIVATE: Empty NUMERIC "1"
@@ -154,7 +154,7 @@ endmodule
 // Retrieval info: PRIVATE: wsUsedW NUMERIC "1"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: ADD_RAM_OUTPUT_REGISTER STRING "ON"
-// Retrieval info: CONSTANT: CLOCKS_ARE_SYNCHRONIZED STRING "FALSE"
+// Retrieval info: CONSTANT: CLOCKS_ARE_SYNCHRONIZED STRING "TRUE"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone"
 // Retrieval info: CONSTANT: LPM_NUMWORDS NUMERIC "1024"
 // Retrieval info: CONSTANT: LPM_SHOWAHEAD STRING "OFF"
