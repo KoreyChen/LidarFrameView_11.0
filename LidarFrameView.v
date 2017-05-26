@@ -16,7 +16,8 @@ CCD_M1,
 CCD_RM,
 DAC_CLK,
 DAC_SYNC,
-DAC_DIN
+DAC_DIN,
+leaser_ctl
 );
 
 input  clk;       		   
@@ -33,6 +34,7 @@ output CCD_data;
 output CCD_M0;
 output CCD_M1;
 output CCD_RM;
+
 
 wire  serialsend_flag;      
 
@@ -63,8 +65,8 @@ assign serialsend_flag = 1;
 output DAC_CLK;
 output DAC_SYNC;
 output DAC_DIN;
-
-
+output leaser_ctl;
+assign leaser_ctl =1;
 reg st;
 reg [7:0] countcount;
 reg flag;

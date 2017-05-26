@@ -163,4 +163,4 @@ GND                          : 96        : gnd    :                   :         
 startPoint                   : 97        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 98        :        :                   :         : 2         :                
 rst_n                        : 99        : input  : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : 100       :        :                   :         : 2         :                
+leaser_ctl                   : 100       : output : 3.3-V LVTTL       :         : 2         : Y              

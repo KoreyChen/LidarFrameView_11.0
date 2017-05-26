@@ -10,7 +10,7 @@ din,
 input clk; //时钟输入 50MHz
 input rst_n; //复位信号
 //input [11:0] data;//ADC输出数据
-reg [11:0] data = 12'd1638;//ADC输出数据  1310 1.6V  1720 2.1V  1638 2V
+reg [11:0] data = 12'd1790;//ADC输出数据  1310 1.6V  1720 2.1V  1638 2V
 output reg sclk;//DAC时钟
 output reg sync;//同步使能信号
 output reg din;//数据信号

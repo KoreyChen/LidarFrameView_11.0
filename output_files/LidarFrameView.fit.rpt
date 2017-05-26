@@ -1,5 +1,5 @@
 Fitter report for LidarFrameView
-Fri May 26 15:50:39 2017
+Fri May 26 23:24:14 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -62,15 +62,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Fitter Summary                                                        ;
 +---------------------------+-------------------------------------------+
-; Fitter Status             ; Successful - Fri May 26 15:50:39 2017     ;
+; Fitter Status             ; Successful - Fri May 26 23:24:14 2017     ;
 ; Quartus II 64-Bit Version ; 11.0 Build 157 04/27/2011 SJ Full Version ;
 ; Revision Name             ; LidarFrameView                            ;
 ; Top-level Entity Name     ; LidarFrameView                            ;
 ; Family                    ; Cyclone                                   ;
 ; Device                    ; EP1C3T100C8                               ;
 ; Timing Models             ; Final                                     ;
-; Total logic elements      ; 421 / 2,910 ( 14 % )                      ;
-; Total pins                ; 24 / 65 ( 37 % )                          ;
+; Total logic elements      ; 420 / 2,910 ( 14 % )                      ;
+; Total pins                ; 25 / 65 ( 38 % )                          ;
 ; Total virtual pins        ; 0                                         ;
 ; Total memory bits         ; 8,192 / 59,904 ( 14 % )                   ;
 ; Total PLLs                ; 0 / 1 ( 0 % )                             ;
@@ -179,7 +179,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.pin.
+The pin-out file can be found in D:/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.pin.
 
 
 +------------------------------------------------------------------------------------------------------+
@@ -187,32 +187,32 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 +---------------------------------------------+--------------------------------------------------------+
 ; Resource                                    ; Usage                                                  ;
 +---------------------------------------------+--------------------------------------------------------+
-; Total logic elements                        ; 421 / 2,910 ( 14 % )                                   ;
-;     -- Combinational with no register       ; 194                                                    ;
-;     -- Register only                        ; 40                                                     ;
-;     -- Combinational with a register        ; 187                                                    ;
+; Total logic elements                        ; 420 / 2,910 ( 14 % )                                   ;
+;     -- Combinational with no register       ; 193                                                    ;
+;     -- Register only                        ; 39                                                     ;
+;     -- Combinational with a register        ; 188                                                    ;
 ;                                             ;                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                        ;
 ;     -- 4 input functions                    ; 155                                                    ;
-;     -- 3 input functions                    ; 90                                                     ;
-;     -- 2 input functions                    ; 126                                                    ;
+;     -- 3 input functions                    ; 97                                                     ;
+;     -- 2 input functions                    ; 119                                                    ;
 ;     -- 1 input functions                    ; 8                                                      ;
 ;     -- 0 input functions                    ; 2                                                      ;
 ;                                             ;                                                        ;
 ; Logic elements by mode                      ;                                                        ;
-;     -- normal mode                          ; 301                                                    ;
+;     -- normal mode                          ; 300                                                    ;
 ;     -- arithmetic mode                      ; 120                                                    ;
-;     -- qfbk mode                            ; 17                                                     ;
+;     -- qfbk mode                            ; 14                                                     ;
 ;     -- register cascade mode                ; 0                                                      ;
-;     -- synchronous clear/load mode          ; 96                                                     ;
+;     -- synchronous clear/load mode          ; 93                                                     ;
 ;     -- asynchronous clear/load mode         ; 217                                                    ;
 ;                                             ;                                                        ;
 ; Total registers                             ; 227 / 3,099 ( 7 % )                                    ;
-; Total LABs                                  ; 60 / 291 ( 21 % )                                      ;
+; Total LABs                                  ; 58 / 291 ( 20 % )                                      ;
 ; Logic elements in carry chains              ; 132                                                    ;
 ; User inserted logic elements                ; 0                                                      ;
 ; Virtual pins                                ; 0                                                      ;
-; I/O pins                                    ; 24 / 65 ( 37 % )                                       ;
+; I/O pins                                    ; 25 / 65 ( 38 % )                                       ;
 ;     -- Clock pins                           ; 1 / 2 ( 50 % )                                         ;
 ; Global signals                              ; 6                                                      ;
 ; M4Ks                                        ; 2 / 13 ( 15 % )                                        ;
@@ -224,13 +224,13 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ; ASMI Blocks                                 ; 0 / 1 ( 0 % )                                          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )                                          ;
 ; Average interconnect usage (total/H/V)      ; 4% / 4% / 4%                                           ;
-; Peak interconnect usage (total/H/V)         ; 4% / 4% / 4%                                           ;
+; Peak interconnect usage (total/H/V)         ; 5% / 5% / 6%                                           ;
 ; Maximum fan-out node                        ; rst_n                                                  ;
 ; Maximum fan-out                             ; 166                                                    ;
 ; Highest non-global fan-out signal           ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~56 ;
 ; Highest non-global fan-out                  ; 26                                                     ;
-; Total fan-out                               ; 1881                                                   ;
-; Average fan-out                             ; 4.19                                                   ;
+; Total fan-out                               ; 1889                                                   ;
+; Average fan-out                             ; 4.21                                                   ;
 +---------------------------------------------+--------------------------------------------------------+
 
 
@@ -241,10 +241,10 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 421                 ; 0                              ;
-;     -- Combinational with no register       ; 194                 ; 0                              ;
-;     -- Register only                        ; 40                  ; 0                              ;
-;     -- Combinational with a register        ; 187                 ; 0                              ;
+; Total logic elements                        ; 420                 ; 0                              ;
+;     -- Combinational with no register       ; 193                 ; 0                              ;
+;     -- Register only                        ; 39                  ; 0                              ;
+;     -- Combinational with a register        ; 188                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
 ;     -- 4 input functions                    ; 0                   ; 0                              ;
@@ -263,7 +263,7 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 227 / 1455 ( 15 % ) ; 0 / 1455 ( 0 % )               ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 24                  ; 0                              ;
+; I/O pins                                    ; 25                  ; 0                              ;
 ; DSP block 9-bit elements                    ; 0                   ; 0                              ;
 ; Total memory bits                           ; 8192                ; 0                              ;
 ; Total RAM block bits                        ; 9216                ; 0                              ;
@@ -276,8 +276,8 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 1985                ; 0                              ;
-;     -- Registered Connections               ; 893                 ; 0                              ;
+;     -- Total Connections                    ; 1991                ; 0                              ;
+;     -- Registered Connections               ; 897                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 0                              ;
@@ -285,7 +285,7 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
 ;     -- Input Ports                          ; 11                  ; 0                              ;
-;     -- Output Ports                         ; 13                  ; 0                              ;
+;     -- Output Ports                         ; 14                  ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Registered Ports                            ;                     ;                                ;
@@ -323,25 +323,26 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                                              ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
-; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
-; AD_OE    ; 50    ; 4        ; 26           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; AD_clk   ; 23    ; 1        ; 0            ; 2            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_M0   ; 41    ; 4        ; 20           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_M1   ; 40    ; 4        ; 18           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_RM   ; 49    ; 4        ; 26           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_clk  ; 48    ; 4        ; 22           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_data ; 47    ; 4        ; 22           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_rst  ; 42    ; 4        ; 20           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; CCD_sht  ; 38    ; 4        ; 16           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; DAC_CLK  ; 52    ; 3        ; 27           ; 1            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; DAC_DIN  ; 53    ; 3        ; 27           ; 2            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; DAC_SYNC ; 51    ; 3        ; 27           ; 1            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-; rs232_tx ; 70    ; 3        ; 27           ; 9            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
-+----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
+; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
+; AD_OE      ; 50    ; 4        ; 26           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; AD_clk     ; 23    ; 1        ; 0            ; 2            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_M0     ; 41    ; 4        ; 20           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_M1     ; 40    ; 4        ; 18           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_RM     ; 49    ; 4        ; 26           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_clk    ; 48    ; 4        ; 22           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_data   ; 47    ; 4        ; 22           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_rst    ; 42    ; 4        ; 20           ; 0            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; CCD_sht    ; 38    ; 4        ; 16           ; 0            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; DAC_CLK    ; 52    ; 3        ; 27           ; 1            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; DAC_DIN    ; 53    ; 3        ; 27           ; 2            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; DAC_SYNC   ; 51    ; 3        ; 27           ; 1            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; leaser_ctl ; 100   ; 2        ; 2            ; 14           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
+; rs232_tx   ; 70    ; 3        ; 27           ; 9            ; 0           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 10 pF ; -                    ; -                   ;
++------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------+----------------------+---------------------+
 
 
 +------------------------------------------------------------+
@@ -350,7 +351,7 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 6 / 14 ( 43 % )  ; 3.3V          ; --           ;
-; 2        ; 2 / 17 ( 12 % )  ; 3.3V          ; --           ;
+; 2        ; 3 / 17 ( 18 % )  ; 3.3V          ; --           ;
 ; 3        ; 4 / 17 ( 24 % )  ; 3.3V          ; --           ;
 ; 4        ; 14 / 17 ( 82 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
@@ -460,7 +461,7 @@ The pin-out file can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11
 ; 97       ; 111        ; 2        ; startPoint                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 98       ; 112        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 99       ; 115        ; 2        ; rst_n                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 100      ; 116        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 100      ; 116        ; 2        ; leaser_ctl                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 +----------+------------+----------+------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -491,7 +492,7 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------------------------------+-------------+--------------+-------------+------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Logic Cells ; LC Registers ; Memory Bits ; M4Ks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                                                              ; Library Name ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |LidarFrameView                                     ; 421 (0)     ; 227          ; 8192        ; 2    ; 24   ; 0            ; 194 (0)      ; 40 (0)            ; 187 (0)          ; 132 (0)         ; 17 (0)     ; |LidarFrameView                                                                                                                                                                                  ;              ;
+; |LidarFrameView                                     ; 420 (0)     ; 227          ; 8192        ; 2    ; 25   ; 0            ; 193 (0)      ; 39 (0)            ; 188 (0)          ; 132 (0)         ; 14 (0)     ; |LidarFrameView                                                                                                                                                                                  ;              ;
 ;    |CCD_ADC_Control:CCD_ADC_Control_inst|           ; 132 (132)   ; 72           ; 0           ; 0    ; 0    ; 0            ; 60 (60)      ; 1 (1)             ; 71 (71)          ; 37 (37)         ; 3 (3)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                             ;              ;
 ;    |SerialSend:SerialSend_inst|                     ; 248 (108)   ; 131          ; 8192        ; 2    ; 0    ; 0            ; 117 (65)     ; 38 (2)            ; 93 (41)          ; 83 (11)         ; 11 (3)     ; |LidarFrameView|SerialSend:SerialSend_inst                                                                                                                                                       ;              ;
 ;       |senddcfifo:SendFifo_inst|                    ; 95 (0)      ; 55           ; 8192        ; 2    ; 0    ; 0            ; 40 (0)       ; 32 (0)            ; 23 (0)           ; 59 (0)          ; 1 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst                                                                                                                              ;              ;
@@ -504,7 +505,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;                      |altsyncram_pof1:altsyncram14| ; 0 (0)       ; 0            ; 8192        ; 2    ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14 ;              ;
 ;       |speed_select:speed_tx|                       ; 20 (20)     ; 14           ; 0           ; 0    ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx                                                                                                                                 ;              ;
 ;       |uart_tx:my_uart_tx|                          ; 25 (25)     ; 19           ; 0           ; 0    ; 0    ; 0            ; 6 (6)        ; 4 (4)             ; 15 (15)          ; 0 (0)           ; 7 (7)      ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx                                                                                                                                    ;              ;
-;    |dac7512:dac7512_inst|                           ; 41 (41)     ; 24           ; 0           ; 0    ; 0    ; 0            ; 17 (17)      ; 1 (1)             ; 23 (23)          ; 12 (12)         ; 3 (3)      ; |LidarFrameView|dac7512:dac7512_inst                                                                                                                                                             ;              ;
+;    |dac7512:dac7512_inst|                           ; 40 (40)     ; 24           ; 0           ; 0    ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 24 (24)          ; 12 (12)         ; 0 (0)      ; |LidarFrameView|dac7512:dac7512_inst                                                                                                                                                             ;              ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -528,6 +529,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DAC_CLK    ; Output   ; --            ; --            ; --                    ; --  ;
 ; DAC_SYNC   ; Output   ; --            ; --            ; --                    ; --  ;
 ; DAC_DIN    ; Output   ; --            ; --            ; --                    ; --  ;
+; leaser_ctl ; Output   ; --            ; --            ; --                    ; --  ;
 ; clk        ; Input    ; OFF           ; OFF           ; --                    ; --  ;
 ; rst_n      ; Input    ; OFF           ; ON            ; --                    ; --  ;
 ; AD_data[5] ; Input    ; ON            ; ON            ; --                    ; --  ;
@@ -603,6 +605,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]               ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]               ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|timercount[25]               ; 0                 ; OFF     ;
+;      - dac7512:dac7512_inst|count[1]                                     ; 0                 ; OFF     ;
+;      - dac7512:dac7512_inst|count[2]                                     ; 0                 ; OFF     ;
+;      - dac7512:dac7512_inst|count[3]                                     ; 0                 ; OFF     ;
+;      - dac7512:dac7512_inst|count[4]                                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[0]           ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[1]           ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[2]           ; 0                 ; OFF     ;
@@ -648,8 +654,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State2_Integration ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S6     ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S1     ; 0                 ; OFF     ;
-;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S8     ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S4     ; 0                 ; OFF     ;
+;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S8     ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|RestState.RestState_S3       ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|clk_count[2]                                 ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|clk_count[1]                                 ; 0                 ; OFF     ;
@@ -657,12 +663,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - dac7512:dac7512_inst|clk_count[0]                                 ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|state.ST_Start                               ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|div_clk                                      ; 0                 ; OFF     ;
+;      - dac7512:dac7512_inst|count[0]                                     ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|data_reg[10]                                 ; 0                 ; OFF     ;
-;      - dac7512:dac7512_inst|count[2]                                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_int1             ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S2     ; 0                 ; OFF     ;
 ;      - dac7512:dac7512_inst|state.ST_Stop                                ; 0                 ; OFF     ;
-;      - dac7512:dac7512_inst|count[0]                                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_int0             ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|serialState.serialState_Data           ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|serialState.serialState_End            ; 0                 ; OFF     ;
@@ -699,20 +704,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - SerialSend:SerialSend_inst|btnOne1                                ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|frameclk                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|SendOneFrameFlag~0                     ; 1                 ; ON      ;
-;      - dac7512:dac7512_inst|count[3]                                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_data_t[2]        ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_data_t[4]        ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_data_t[5]        ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_data_t[1]        ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_data_t[7]        ; 0                 ; OFF     ;
-;      - dac7512:dac7512_inst|count[4]                                     ; 0                 ; OFF     ;
-;      - dac7512:dac7512_inst|count[1]                                     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|btnOne2                                ; 0                 ; OFF     ;
-;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S5     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_en               ; 0                 ; OFF     ;
+;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S3     ; 0                 ; OFF     ;
+;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S5     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|btn1                                   ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_int2             ; 0                 ; OFF     ;
-;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S3     ; 0                 ; OFF     ;
 ;      - SerialSend:SerialSend_inst|btn2                                   ; 0                 ; OFF     ;
 ;      - CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S7     ; 0                 ; OFF     ;
 ; AD_data[5]                                                               ;                   ;         ;
@@ -739,33 +741,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------+---------------+---------+----------------------------+--------+----------------------+------------------+
 ; Name                                                                                                                                        ; Location      ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ;
 +---------------------------------------------------------------------------------------------------------------------------------------------+---------------+---------+----------------------------+--------+----------------------+------------------+
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~28                                                                                       ; LC_X16_Y4_N6  ; 11      ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~25                                                                                          ; LC_X18_Y5_N2  ; 2       ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~26                                                                                          ; LC_X17_Y4_N4  ; 2       ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State1_Reset                                                                                 ; LC_X17_Y6_N8  ; 13      ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State2_Integration                                                                           ; LC_X16_Y5_N2  ; 12      ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State3_DataOut                                                                               ; LC_X16_Y5_N1  ; 10      ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|data[7]~1                                                                                              ; LC_X8_Y6_N0   ; 8       ; Clock enable               ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~56                                                                                      ; LC_X17_Y5_N2  ; 26      ; Sync. clear                ; no     ; --                   ; --               ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk                                                                                                  ; LC_X8_Y6_N4   ; 36      ; Clock                      ; yes    ; Global Clock         ; GCLK0            ;
-; SerialSend:SerialSend_inst|SerialSendData_Reg[3]~5                                                                                          ; LC_X16_Y11_N3 ; 3       ; Clock enable               ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|SerialSendData_Reg[6]~4                                                                                          ; LC_X15_Y11_N6 ; 3       ; Clock enable               ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|SerialSendData_Reg[7]~3                                                                                          ; LC_X16_Y11_N4 ; 2       ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~24                                                                                       ; LC_X11_Y2_N8  ; 11      ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~25                                                                                          ; LC_X9_Y3_N3   ; 2       ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~26                                                                                          ; LC_X10_Y4_N5  ; 2       ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State1_Reset                                                                                 ; LC_X12_Y5_N0  ; 13      ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State2_Integration                                                                           ; LC_X11_Y6_N2  ; 12      ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State3_DataOut                                                                               ; LC_X11_Y6_N6  ; 9       ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|data[7]~1                                                                                              ; LC_X8_Y4_N9   ; 8       ; Clock enable               ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~56                                                                                      ; LC_X9_Y3_N9   ; 26      ; Sync. clear                ; no     ; --                   ; --               ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk                                                                                                  ; LC_X8_Y4_N7   ; 36      ; Clock                      ; yes    ; Global Clock         ; GCLK2            ;
+; SerialSend:SerialSend_inst|SerialSendData_Reg[3]~5                                                                                          ; LC_X15_Y8_N6  ; 3       ; Clock enable               ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|SerialSendData_Reg[6]~4                                                                                          ; LC_X12_Y8_N4  ; 3       ; Clock enable               ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|SerialSendData_Reg[7]~3                                                                                          ; LC_X15_Y8_N1  ; 2       ; Clock enable               ; no     ; --                   ; --               ;
 ; SerialSend:SerialSend_inst|SerialSendbtn1                                                                                                   ; LC_X26_Y6_N2  ; 57      ; Async. clear               ; yes    ; Global Clock         ; GCLK7            ;
-; SerialSend:SerialSend_inst|rdclk_reg                                                                                                        ; LC_X9_Y6_N3   ; 25      ; Clock                      ; yes    ; Global Clock         ; GCLK3            ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs10a[1] ; LC_X10_Y10_N8 ; 13      ; Clock enable, Write enable ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs13     ; LC_X12_Y10_N5 ; 2       ; Clock enable               ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|serialSendCount[10]~23                                                                                           ; LC_X11_Y8_N7  ; 11      ; Clock enable               ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|serialState.serialState_Data                                                                                     ; LC_X17_Y10_N4 ; 22      ; Sync. load                 ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|serialState.serialState_End                                                                                      ; LC_X15_Y10_N1 ; 17      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|speed_select:speed_tx|always0~0                                                                                  ; LC_X8_Y8_N8   ; 13      ; Sync. clear                ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|neg_tx_int                                                                                    ; LC_X9_Y8_N4   ; 9       ; Clock enable               ; no     ; --                   ; --               ;
-; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_en~2                                                                                       ; LC_X9_Y9_N5   ; 2       ; Clock enable               ; no     ; --                   ; --               ;
-; clk                                                                                                                                         ; PIN_10        ; 157     ; Clock                      ; yes    ; Global Clock         ; GCLK2            ;
-; dac7512:dac7512_inst|LessThan0~1                                                                                                            ; LC_X8_Y5_N8   ; 9       ; Sync. clear                ; no     ; --                   ; --               ;
-; dac7512:dac7512_inst|din~0                                                                                                                  ; LC_X21_Y1_N4  ; 6       ; Clock enable               ; no     ; --                   ; --               ;
-; dac7512:dac7512_inst|div_clk                                                                                                                ; LC_X7_Y5_N2   ; 16      ; Clock                      ; yes    ; Global Clock         ; GCLK1            ;
-; rst_n                                                                                                                                       ; PIN_99        ; 166     ; Async. clear               ; yes    ; Global Clock         ; GCLK6            ;
+; SerialSend:SerialSend_inst|rdclk_reg                                                                                                        ; LC_X16_Y9_N8  ; 25      ; Clock                      ; yes    ; Global Clock         ; GCLK1            ;
+; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs10a[1] ; LC_X11_Y12_N8 ; 13      ; Clock enable, Write enable ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs13     ; LC_X11_Y10_N5 ; 2       ; Clock enable               ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|serialSendCount[10]~23                                                                                           ; LC_X15_Y12_N9 ; 11      ; Clock enable               ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|serialState.serialState_Data                                                                                     ; LC_X10_Y10_N9 ; 22      ; Sync. load                 ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|serialState.serialState_End                                                                                      ; LC_X15_Y10_N0 ; 17      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|speed_select:speed_tx|always0~0                                                                                  ; LC_X17_Y4_N8  ; 13      ; Sync. clear                ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|neg_tx_int                                                                                    ; LC_X16_Y5_N2  ; 9       ; Clock enable               ; no     ; --                   ; --               ;
+; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_en~2                                                                                       ; LC_X19_Y8_N8  ; 2       ; Clock enable               ; no     ; --                   ; --               ;
+; clk                                                                                                                                         ; PIN_10        ; 157     ; Clock                      ; yes    ; Global Clock         ; GCLK0            ;
+; dac7512:dac7512_inst|LessThan0~1                                                                                                            ; LC_X15_Y7_N8  ; 9       ; Sync. clear                ; no     ; --                   ; --               ;
+; dac7512:dac7512_inst|din~0                                                                                                                  ; LC_X17_Y3_N4  ; 6       ; Clock enable               ; no     ; --                   ; --               ;
+; dac7512:dac7512_inst|div_clk                                                                                                                ; LC_X15_Y6_N2  ; 16      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ;
+; rst_n                                                                                                                                       ; PIN_99        ; 166     ; Async. clear               ; yes    ; Global Clock         ; GCLK3            ;
 +---------------------------------------------------------------------------------------------------------------------------------------------+---------------+---------+----------------------------+--------+----------------------+------------------+
 
 
@@ -774,12 +776,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+--------------+---------+----------------------+------------------+
 ; Name                                       ; Location     ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +--------------------------------------------+--------------+---------+----------------------+------------------+
-; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; LC_X8_Y6_N4  ; 36      ; Global Clock         ; GCLK0            ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; LC_X8_Y4_N7  ; 36      ; Global Clock         ; GCLK2            ;
 ; SerialSend:SerialSend_inst|SerialSendbtn1  ; LC_X26_Y6_N2 ; 57      ; Global Clock         ; GCLK7            ;
-; SerialSend:SerialSend_inst|rdclk_reg       ; LC_X9_Y6_N3  ; 25      ; Global Clock         ; GCLK3            ;
-; clk                                        ; PIN_10       ; 157     ; Global Clock         ; GCLK2            ;
-; dac7512:dac7512_inst|div_clk               ; LC_X7_Y5_N2  ; 16      ; Global Clock         ; GCLK1            ;
-; rst_n                                      ; PIN_99       ; 166     ; Global Clock         ; GCLK6            ;
+; SerialSend:SerialSend_inst|rdclk_reg       ; LC_X16_Y9_N8 ; 25      ; Global Clock         ; GCLK1            ;
+; clk                                        ; PIN_10       ; 157     ; Global Clock         ; GCLK0            ;
+; dac7512:dac7512_inst|div_clk               ; LC_X15_Y6_N2 ; 16      ; Global Clock         ; GCLK6            ;
+; rst_n                                      ; PIN_99       ; 166     ; Global Clock         ; GCLK3            ;
 +--------------------------------------------+--------------+---------+----------------------+------------------+
 
 
@@ -792,7 +794,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|serialState.serialState_Data                                                                                                                                 ; 22      ;
 ; SerialSend:SerialSend_inst|serialState.serialState_End                                                                                                                                  ; 17      ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs10a[1]                                             ; 15      ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~6                                                                                                                                        ; 15      ;
 ; SerialSend:SerialSend_inst|sendDelayCount[2]                                                                                                                                            ; 13      ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|always0~0                                                                                                                              ; 13      ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State1_Reset                                                                                                                             ; 13      ;
@@ -801,31 +802,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dac7512:dac7512_inst|clk_count[0]                                                                                                                                                       ; 12      ;
 ; dac7512:dac7512_inst|clk_count[1]                                                                                                                                                       ; 12      ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State2_Integration                                                                                                                       ; 12      ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~5                                                                                                                                        ; 12      ;
 ; SerialSend:SerialSend_inst|serialSendCount[0]                                                                                                                                           ; 12      ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~28                                                                                                                                   ; 11      ;
 ; SerialSend:SerialSend_inst|serialSendCount[10]~23                                                                                                                                       ; 11      ;
 ; SerialSend:SerialSend_inst|serialState.serialState_Head                                                                                                                                 ; 11      ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~24                                                                                                                                   ; 11      ;
 ; dac7512:dac7512_inst|clk_count[2]                                                                                                                                                       ; 11      ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State3_DataOut                                                                                                                           ; 10      ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Equal2~2                                                                                                                                           ; 10      ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Equal2~1                                                                                                                                           ; 10      ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Equal2~0                                                                                                                                           ; 10      ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~9                                                                                                                                        ; 9       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs11a[10]~0                                          ; 9       ;
 ; SerialSend:SerialSend_inst|always2~0                                                                                                                                                    ; 9       ;
 ; dac7512:dac7512_inst|LessThan0~1                                                                                                                                                        ; 9       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|neg_tx_int                                                                                                                                ; 9       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State3_DataOut                                                                                                                           ; 9       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[1]                                                                                                                                    ; 9       ;
 ; SerialSend:SerialSend_inst|serialSendCount[2]                                                                                                                                           ; 9       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|data[7]~1                                                                                                                                          ; 8       ;
 ; dac7512:dac7512_inst|state.ST_Data                                                                                                                                                      ; 8       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S1                                                                                                                           ; 8       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState.DataOutState_S2                                                                                                                       ; 8       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~8                                                                                                                                        ; 8       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[0]                                                                                                                                    ; 8       ;
 ; SerialSend:SerialSend_inst|serialSendCount[1]                                                                                                                                           ; 8       ;
 ; SerialSend:SerialSend_inst|WideNor0~0                                                                                                                                                   ; 7       ;
 ; SerialSend:SerialSend_inst|Equal3~0                                                                                                                                                     ; 7       ;
 ; dac7512:dac7512_inst|state.ST_Start                                                                                                                                                     ; 7       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S4                                                                                                                           ; 7       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataOutState.DataOutState_S2                                                                                                                       ; 7       ;
 ; SerialSend:SerialSend_inst|Selector10~4                                                                                                                                                 ; 6       ;
 ; SerialSend:SerialSend_inst|serialState.000                                                                                                                                              ; 6       ;
 ; dac7512:dac7512_inst|din~0                                                                                                                                                              ; 6       ;
@@ -842,6 +846,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[1]                             ; 6       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[0]                             ; 6       ;
 ; SerialSend:SerialSend_inst|serialSendCount[10]                                                                                                                                          ; 6       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]                                                                                                                                      ; 6       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[4]                                                                                                                                      ; 6       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs12a[0]~COUT                                        ; 5       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cs12a[5]~COUT                                        ; 5       ;
@@ -856,7 +861,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S8                                                                                                                           ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|RestState.RestState_S1                                                                                                                             ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|RestState.RestState_S2                                                                                                                             ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~3                                                                                                                                        ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Equal2~3                                                                                                                                           ; 5       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[2]                                                                                                                                    ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|CCD_clk                                                                                                                                            ; 5       ;
@@ -878,16 +882,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|serialSendCount[4]~9                                                                                                                                         ; 5       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[5]~25                                                                                                                              ; 5       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[0]~19                                                                                                                              ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[2]~49                                                                                                                                   ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[2]                                                                                                                                      ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[17]~31                                                                                                                                  ; 5       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[17]~35                                                                                                                                  ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]                                                                                                                                      ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]                                                                                                                                      ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]                                                                                                                                      ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[7]~17                                                                                                                                   ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[12]~9                                                                                                                                   ; 5       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[2]~25                                                                                                                                   ; 5       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[7]~19                                                                                                                                   ; 5       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[12]~11                                                                                                                                  ; 5       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[0]                                                                                                                                      ; 5       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[5]~13                                                                                                                                    ; 5       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[5]~9                                                                                                                                     ; 5       ;
 ; SerialSend:SerialSend_inst|FrameCount[1]                                                                                                                                                ; 4       ;
 ; SerialSend:SerialSend_inst|serialState.serialState_CMD                                                                                                                                  ; 4       ;
 ; SerialSend:SerialSend_inst|Equal7~0                                                                                                                                                     ; 4       ;
@@ -896,12 +897,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CCD_ADC_Control:CCD_ADC_Control_inst|MainState.State4                                                                                                                                   ; 4       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|RestState.RestState_S4                                                                                                                             ; 4       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector44~0                                                                                                                                       ; 4       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|Equal0~1                                                                                                                                           ; 4       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|Equal0~0                                                                                                                                           ; 4       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[21]                                                                                                                                     ; 4       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]                                                                                                                                      ; 4       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[2]                                                                                                                                      ; 4       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]                                                                                                                                      ; 4       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[11]                                                                                                                                     ; 4       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]                                                                                                                                      ; 4       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]                                                                                                                                      ; 4       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[7]                                                                                                                                      ; 4       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]                                                                                                                                     ; 4       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~7                                                                                                                                        ; 3       ;
 ; SerialSend:SerialSend_inst|FrameCount[1]~0                                                                                                                                              ; 3       ;
 ; SerialSend:SerialSend_inst|Selector28~8                                                                                                                                                 ; 3       ;
@@ -924,11 +926,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector76~0                                                                                                                                       ; 3       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[3]~0                                                                                                                                  ; 3       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|Equal1~0                                                                                                                                  ; 3       ;
+; dac7512:dac7512_inst|data_reg[10]                                                                                                                                                       ; 3       ;
+; dac7512:dac7512_inst|count[0]                                                                                                                                                           ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~6                                                                                                                                        ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S6                                                                                                                           ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~7                                                                                                                                        ; 3       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~1                                                                                                                                            ; 3       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~1                                                                                                                                        ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~22                                                                                                                                   ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~2                                                                                                                                            ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~3                                                                                                                                        ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[0]                                                                                                                                       ; 3       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|num[3]                                                                                                                                    ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|CCD_rst                                                                                                                                            ; 3       ;
@@ -941,14 +946,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[1]                                                                                                                                 ; 3       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[3]                                                                                                                                 ; 3       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[0]                                                                                                                                 ; 3       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[22]~39                                                                                                                                  ; 3       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]                                                                                                                                      ; 3       ;
+; dac7512:dac7512_inst|count[1]                                                                                                                                                           ; 3       ;
+; dac7512:dac7512_inst|count[3]                                                                                                                                                           ; 3       ;
+; dac7512:dac7512_inst|count[2]                                                                                                                                                           ; 3       ;
+; dac7512:dac7512_inst|count[4]                                                                                                                                                           ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[22]~43                                                                                                                                  ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]                                                                                                                                      ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]                                                                                                                                      ; 3       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[7]                                                                                                                                      ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[16]                                                                                                                                     ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[13]                                                                                                                                     ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[12]                                                                                                                                     ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[15]                                                                                                                                     ; 3       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]                                                                                                                                     ; 3       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]                                                                                                                                     ; 3       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_int2                                                                                                                                   ; 2       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_en~2                                                                                                                                   ; 2       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dffe9a[0]                                            ; 2       ;
@@ -982,8 +992,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|TxSendEN_Reg                                                                                                                                                 ; 2       ;
 ; SerialSend:SerialSend_inst|SerialSendData_Reg[7]~3                                                                                                                                      ; 2       ;
 ; SerialSend:SerialSend_inst|SerialSendData_Reg[7]~0                                                                                                                                      ; 2       ;
-; dac7512:dac7512_inst|count[0]                                                                                                                                                           ; 2       ;
-; dac7512:dac7512_inst|count[4]                                                                                                                                                           ; 2       ;
 ; dac7512:dac7512_inst|Decoder0~0                                                                                                                                                         ; 2       ;
 ; dac7512:dac7512_inst|clk_count[2]~0                                                                                                                                                     ; 2       ;
 ; dac7512:dac7512_inst|Equal0~1                                                                                                                                                           ; 2       ;
@@ -993,21 +1001,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState~25                                                                                                                                      ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S7                                                                                                                           ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~53                                                                                                                                  ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~7                                                                                                                                        ; 2       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r                                                                                                                               ; 2       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|Equal0~2                                                                                                                               ; 2       ;
-; dac7512:dac7512_inst|count[2]                                                                                                                                                           ; 2       ;
-; dac7512:dac7512_inst|data_reg[10]                                                                                                                                                       ; 2       ;
 ; dac7512:dac7512_inst|Equal0~0                                                                                                                                                           ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~2                                                                                                                                            ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~5                                                                                                                                        ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~2                                                                                                                                        ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[11]~26                                                                                                                                   ; 2       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~3                                                                                                                                        ; 2       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~6                                                                                                                                        ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~4                                                                                                                                        ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~2                                                                                                                                        ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~0                                                                                                                                            ; 2       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~1                                                                                                                                            ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~1                                                                                                                                        ; 2       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~0                                                                                                                                        ; 2       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~2                                                                                                                                        ; 2       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|tx_en                                                                                                                                     ; 2       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r~0                                                                                                                              ; 2       ;
 ; dac7512:dac7512_inst|sync                                                                                                                                                               ; 2       ;
@@ -1045,7 +1048,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[6]                                                                                                                                 ; 2       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[2]                                                                                                                                 ; 2       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[4]                                                                                                                                 ; 2       ;
-; dac7512:dac7512_inst|Add2~0                                                                                                                                                             ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[25]                                                                                                                                     ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]                                                                                                                                     ; 2       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]                                                                                                                                     ; 2       ;
@@ -1202,9 +1204,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|always1~0                                                                                                                              ; 1       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|Equal0~1                                                                                                                               ; 1       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|Equal0~0                                                                                                                               ; 1       ;
-; dac7512:dac7512_inst|count[1]                                                                                                                                                           ; 1       ;
 ; dac7512:dac7512_inst|Mux2~1                                                                                                                                                             ; 1       ;
-; dac7512:dac7512_inst|count[3]                                                                                                                                                           ; 1       ;
 ; dac7512:dac7512_inst|Mux2~0                                                                                                                                                             ; 1       ;
 ; dac7512:dac7512_inst|Selector10~0                                                                                                                                                       ; 1       ;
 ; dac7512:dac7512_inst|Selector9~1                                                                                                                                                        ; 1       ;
@@ -1215,24 +1215,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~4                                                                                                                                        ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan1~3                                                                                                                                        ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector44~1                                                                                                                                       ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~8                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~7                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~6                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~5                                                                                                                                       ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S3                                                                                                                           ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~4                                                                                                                                       ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~3                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S5                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~3                                                                                                                                       ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|IntegState.IntegState_S3                                                                                                                           ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~2                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~1                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~6                                                                                                                                        ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~4                                                                                                                                        ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~3                                                                                                                                        ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~2                                                                                                                                        ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|Selector43~0                                                                                                                                       ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|AD_clk~0                                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~5                                                                                                                                        ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|Equal0~0                                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~0                                                                                                                                        ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~7                                                                                                                                        ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk~0                                                                                                                                            ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan2~2                                                                                                                                        ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|LessThan0~0                                                                                                                                        ; 1       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r~5                                                                                                                              ; 1       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r~4                                                                                                                              ; 1       ;
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|rs232_tx_r~3                                                                                                                              ; 1       ;
@@ -1323,13 +1324,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|q_b[3] ; 1       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|q_b[6] ; 1       ;
 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|q_b[5] ; 1       ;
-; dac7512:dac7512_inst|Add2~15                                                                                                                                                            ; 1       ;
-; dac7512:dac7512_inst|Add2~12COUT1_27                                                                                                                                                    ; 1       ;
-; dac7512:dac7512_inst|Add2~12                                                                                                                                                            ; 1       ;
-; dac7512:dac7512_inst|Add2~10                                                                                                                                                            ; 1       ;
-; dac7512:dac7512_inst|Add2~7COUT1_29                                                                                                                                                     ; 1       ;
-; dac7512:dac7512_inst|Add2~7                                                                                                                                                             ; 1       ;
-; dac7512:dac7512_inst|Add2~5                                                                                                                                                             ; 1       ;
 ; dac7512:dac7512_inst|div_count[6]~11COUT1_34                                                                                                                                            ; 1       ;
 ; dac7512:dac7512_inst|div_count[6]~11                                                                                                                                                    ; 1       ;
 ; dac7512:dac7512_inst|div_count[5]~9COUT1_32                                                                                                                                             ; 1       ;
@@ -1358,105 +1352,109 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[2]~3                                                                                                                               ; 1       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[4]~1COUT1_43                                                                                                                       ; 1       ;
 ; SerialSend:SerialSend_inst|speed_select:speed_tx|cnt[4]~1                                                                                                                               ; 1       ;
-; dac7512:dac7512_inst|Add2~2COUT1_25                                                                                                                                                     ; 1       ;
-; dac7512:dac7512_inst|Add2~2                                                                                                                                                             ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[4]~51COUT1_85                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[4]~51                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[21]~47COUT1_113                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[21]~47                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]~43COUT1_117                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]~43                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]~41COUT1_115                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]~41                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[20]~37COUT1_111                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[20]~37                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]~35COUT1_109                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]~35                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[18]~33COUT1_107                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[18]~33                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]~29COUT1_83                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]~29                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]~27COUT1_81                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]~27                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]~25COUT1_87                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]~25                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[11]~23COUT1_97                                                                                                                          ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[11]~23                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]~21COUT1_93                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]~21                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]~19COUT1_91                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]~19                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]~15COUT1_89                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]~15                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[16]~13COUT1_105                                                                                                                         ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[16]~13                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[13]~11COUT1_99                                                                                                                          ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[13]~11                                                                                                                                  ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[15]~7COUT1_103                                                                                                                          ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[15]~7                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~5COUT1_101                                                                                                                          ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~5                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]~3COUT1_95                                                                                                                           ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]~3                                                                                                                                   ; 1       ;
+; dac7512:dac7512_inst|count[1]~7COUT1_14                                                                                                                                                 ; 1       ;
+; dac7512:dac7512_inst|count[1]~7                                                                                                                                                         ; 1       ;
+; dac7512:dac7512_inst|count[3]~5COUT1_18                                                                                                                                                 ; 1       ;
+; dac7512:dac7512_inst|count[3]~5                                                                                                                                                         ; 1       ;
+; dac7512:dac7512_inst|count[2]~3COUT1_16                                                                                                                                                 ; 1       ;
+; dac7512:dac7512_inst|count[2]~3                                                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[21]~51COUT1_113                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[21]~51                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]~47COUT1_117                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[24]~47                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]~45COUT1_115                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[23]~45                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[20]~41COUT1_111                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[20]~41                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]~39COUT1_109                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[19]~39                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[18]~37COUT1_107                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[18]~37                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]~33COUT1_87                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[5]~33                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]~31COUT1_83                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[3]~31                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]~29COUT1_81                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[1]~29                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[4]~27COUT1_85                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[4]~27                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]~23COUT1_93                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[9]~23                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]~21COUT1_91                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[8]~21                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]~17COUT1_89                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[6]~17                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[16]~15COUT1_105                                                                                                                         ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[16]~15                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[13]~13COUT1_99                                                                                                                          ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[13]~13                                                                                                                                  ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[11]~9COUT1_97                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[11]~9                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]~7COUT1_95                                                                                                                           ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[10]~7                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[15]~5COUT1_103                                                                                                                          ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[15]~5                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~3COUT1_101                                                                                                                          ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[14]~3                                                                                                                                   ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[0]~1COUT1_79                                                                                                                            ; 1       ;
 ; CCD_ADC_Control:CCD_ADC_Control_inst|timercount[0]~1                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[10]~25                                                                                                                                   ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[9]~21COUT1_53                                                                                                                            ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[9]~21                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[8]~19COUT1_51                                                                                                                            ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[8]~19                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[7]~17COUT1_49                                                                                                                            ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[7]~17                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[6]~15COUT1_47                                                                                                                            ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[6]~15                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[4]~11COUT1_45                                                                                                                            ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[4]~11                                                                                                                                    ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[3]~9COUT1_43                                                                                                                             ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[3]~9                                                                                                                                     ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[2]~7COUT1_41                                                                                                                             ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[2]~7                                                                                                                                     ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[1]~5COUT1_39                                                                                                                             ; 1       ;
-; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[1]~5                                                                                                                                     ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[10]~21                                                                                                                                   ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[9]~17COUT1_49                                                                                                                            ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[9]~17                                                                                                                                    ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[8]~15COUT1_47                                                                                                                            ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[8]~15                                                                                                                                    ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[7]~13COUT1_45                                                                                                                            ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[7]~13                                                                                                                                    ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[6]~11COUT1_43                                                                                                                            ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[6]~11                                                                                                                                    ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[4]~7COUT1_41                                                                                                                             ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[4]~7                                                                                                                                     ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[3]~5COUT1_39                                                                                                                             ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[3]~5                                                                                                                                     ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[2]~3COUT1_37                                                                                                                             ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[2]~3                                                                                                                                     ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[1]~1COUT1_35                                                                                                                             ; 1       ;
+; CCD_ADC_Control:CCD_ADC_Control_inst|DataCount[1]~1                                                                                                                                     ; 1       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------+
-; Name                                                                                                                                                                                        ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF  ; Location                 ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------+
-; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2    ; None ; M4K_X13_Y11, M4K_X13_Y10 ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+-------------------------+
+; Name                                                                                                                                                                                        ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF  ; Location                ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+-------------------------+
+; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2    ; None ; M4K_X13_Y8, M4K_X13_Y10 ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+-------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
-+---------------------------------------------------+
-; Interconnect Usage Summary                        ;
-+----------------------------+----------------------+
-; Interconnect Resource Type ; Usage                ;
-+----------------------------+----------------------+
-; C4s                        ; 290 / 8,840 ( 3 % )  ;
-; Direct links               ; 103 / 11,506 ( 1 % ) ;
-; Global clocks              ; 6 / 8 ( 75 % )       ;
-; LAB clocks                 ; 52 / 156 ( 33 % )    ;
-; LUT chains                 ; 30 / 2,619 ( 1 % )   ;
-; Local interconnects        ; 524 / 11,506 ( 5 % ) ;
-; M4K buffers                ; 8 / 468 ( 2 % )      ;
-; R4s                        ; 296 / 7,520 ( 4 % )  ;
-+----------------------------+----------------------+
++----------------------------------------------------+
+; Interconnect Usage Summary                         ;
++----------------------------+-----------------------+
+; Interconnect Resource Type ; Usage                 ;
++----------------------------+-----------------------+
+; C4s                        ; 346 / 8,840 ( 4 % )   ;
+; Direct links               ; 51 / 11,506 ( < 1 % ) ;
+; Global clocks              ; 6 / 8 ( 75 % )        ;
+; LAB clocks                 ; 65 / 156 ( 42 % )     ;
+; LUT chains                 ; 35 / 2,619 ( 1 % )    ;
+; Local interconnects        ; 496 / 11,506 ( 4 % )  ;
+; M4K buffers                ; 8 / 468 ( 2 % )       ;
+; R4s                        ; 312 / 7,520 ( 4 % )   ;
++----------------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 7.02) ; Number of LABs  (Total = 60) ;
+; Number of Logic Elements  (Average = 7.24) ; Number of LABs  (Total = 58) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 10                           ;
-; 2                                          ; 6                            ;
-; 3                                          ; 2                            ;
+; 1                                          ; 8                            ;
+; 2                                          ; 7                            ;
+; 3                                          ; 1                            ;
 ; 4                                          ; 0                            ;
-; 5                                          ; 3                            ;
-; 6                                          ; 2                            ;
+; 5                                          ; 1                            ;
+; 6                                          ; 4                            ;
 ; 7                                          ; 1                            ;
 ; 8                                          ; 0                            ;
 ; 9                                          ; 1                            ;
@@ -1467,13 +1465,14 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.13) ; Number of LABs  (Total = 60) ;
+; LAB-wide Signals  (Average = 2.17) ; Number of LABs  (Total = 58) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 52                           ;
-; 1 Clock                            ; 46                           ;
-; 1 Clock enable                     ; 13                           ;
+; 1 Async. clear                     ; 51                           ;
+; 1 Clock                            ; 45                           ;
+; 1 Clock enable                     ; 12                           ;
 ; 1 Sync. clear                      ; 5                            ;
 ; 1 Sync. load                       ; 3                            ;
+; 2 Clock enables                    ; 1                            ;
 ; 2 Clocks                           ; 9                            ;
 +------------------------------------+------------------------------+
 
@@ -1481,39 +1480,38 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 6.68) ; Number of LABs  (Total = 60) ;
+; Number of Signals Sourced  (Average = 6.84) ; Number of LABs  (Total = 58) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 10                           ;
-; 2                                           ; 6                            ;
+; 1                                           ; 9                            ;
+; 2                                           ; 7                            ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 3                            ;
-; 5                                           ; 6                            ;
+; 4                                           ; 2                            ;
+; 5                                           ; 4                            ;
 ; 6                                           ; 2                            ;
 ; 7                                           ; 1                            ;
 ; 8                                           ; 1                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 26                           ;
-; 11                                          ; 2                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 24                           ;
+; 11                                          ; 5                            ;
 ; 12                                          ; 1                            ;
-; 13                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 4.07) ; Number of LABs  (Total = 60) ;
+; Number of Signals Sourced Out  (Average = 4.17) ; Number of LABs  (Total = 58) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 1                            ;
-; 1                                               ; 17                           ;
-; 2                                               ; 2                            ;
-; 3                                               ; 8                            ;
-; 4                                               ; 7                            ;
-; 5                                               ; 7                            ;
-; 6                                               ; 8                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 5                            ;
+; 1                                               ; 16                           ;
+; 2                                               ; 3                            ;
+; 3                                               ; 5                            ;
+; 4                                               ; 11                           ;
+; 5                                               ; 4                            ;
+; 6                                               ; 4                            ;
+; 7                                               ; 4                            ;
+; 8                                               ; 6                            ;
 ; 9                                               ; 0                            ;
 ; 10                                              ; 3                            ;
 ; 11                                              ; 1                            ;
@@ -1523,28 +1521,28 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.48) ; Number of LABs  (Total = 60) ;
+; Number of Distinct Inputs  (Average = 8.66) ; Number of LABs  (Total = 58) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
-; 2                                           ; 4                            ;
-; 3                                           ; 9                            ;
+; 2                                           ; 3                            ;
+; 3                                           ; 6                            ;
 ; 4                                           ; 10                           ;
-; 5                                           ; 4                            ;
-; 6                                           ; 2                            ;
-; 7                                           ; 5                            ;
-; 8                                           ; 2                            ;
+; 5                                           ; 5                            ;
+; 6                                           ; 6                            ;
+; 7                                           ; 2                            ;
+; 8                                           ; 3                            ;
 ; 9                                           ; 1                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 4                            ;
-; 12                                          ; 2                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 4                            ;
 ; 13                                          ; 2                            ;
 ; 14                                          ; 2                            ;
-; 15                                          ; 5                            ;
+; 15                                          ; 3                            ;
 ; 16                                          ; 1                            ;
-; 17                                          ; 1                            ;
-; 18                                          ; 4                            ;
-; 19                                          ; 1                            ;
+; 17                                          ; 2                            ;
+; 18                                          ; 5                            ;
+; 19                                          ; 0                            ;
 ; 20                                          ; 0                            ;
 ; 21                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
@@ -1573,7 +1571,7 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Fitter
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Fri May 26 15:50:36 2017
+    Info: Processing started: Fri May 26 23:24:10 2017
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off LidarFrameView -c LidarFrameView
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Selected device EP1C3T100C8 for design "LidarFrameView"
@@ -1618,9 +1616,9 @@ Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:01
 Info: Fitter routing operations beginning
-Info: Router estimated average interconnect usage is 3% of the available device resources
-    Info: Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
-Info: Fitter routing operations ending: elapsed time is 00:00:00
+Info: Router estimated average interconnect usage is 4% of the available device resources
+    Info: Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
+Info: Fitter routing operations ending: elapsed time is 00:00:01
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
@@ -1630,17 +1628,17 @@ Info: Delay annotation completed successfully
 Info: Completed Auto Delay Chain Operation
 Info: Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Generated suppressed messages file C:/EngineeringDocument/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.fit.smsg
+Info: Generated suppressed messages file D:/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 464 megabytes
-    Info: Processing ended: Fri May 26 15:50:39 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 463 megabytes
+    Info: Processing ended: Fri May 26 23:24:15 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.fit.smsg.
+The suppressed messages can be found in D:/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.fit.smsg.
 
 

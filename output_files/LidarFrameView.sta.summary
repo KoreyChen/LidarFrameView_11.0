@@ -3,51 +3,51 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'clk'
-Slack : -9.276
-TNS   : -936.749
+Slack : -8.759
+TNS   : -901.403
 
 Type  : Setup 'CCD_ADC_Control:CCD_ADC_Control_inst|wrclk'
-Slack : -7.032
-TNS   : -324.894
+Slack : -6.923
+TNS   : -321.275
 
 Type  : Setup 'SerialSend:SerialSend_inst|rdclk_reg'
-Slack : -5.602
-TNS   : -149.235
+Slack : -6.024
+TNS   : -169.629
 
 Type  : Setup 'dac7512:dac7512_inst|div_clk'
-Slack : -2.732
-TNS   : -34.904
+Slack : -2.461
+TNS   : -30.078
 
 Type  : Hold 'clk'
-Slack : -1.731
-TNS   : -4.242
+Slack : -1.783
+TNS   : -4.707
 
 Type  : Hold 'SerialSend:SerialSend_inst|rdclk_reg'
-Slack : 0.504
+Slack : 0.094
 TNS   : 0.000
 
 Type  : Hold 'CCD_ADC_Control:CCD_ADC_Control_inst|wrclk'
-Slack : 0.661
+Slack : 0.868
 TNS   : 0.000
 
 Type  : Hold 'dac7512:dac7512_inst|div_clk'
-Slack : 1.037
+Slack : 1.072
 TNS   : 0.000
 
 Type  : Recovery 'CCD_ADC_Control:CCD_ADC_Control_inst|wrclk'
-Slack : -2.720
-TNS   : -89.760
+Slack : -2.201
+TNS   : -72.633
 
 Type  : Recovery 'SerialSend:SerialSend_inst|rdclk_reg'
-Slack : -2.364
-TNS   : -52.008
+Slack : -1.434
+TNS   : -31.548
 
 Type  : Removal 'SerialSend:SerialSend_inst|rdclk_reg'
-Slack : 3.312
+Slack : 2.382
 TNS   : 0.000
 
 Type  : Removal 'CCD_ADC_Control:CCD_ADC_Control_inst|wrclk'
-Slack : 3.668
+Slack : 3.149
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clk'

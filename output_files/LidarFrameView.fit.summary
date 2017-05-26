@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri May 26 15:50:39 2017
+Fitter Status : Successful - Fri May 26 23:24:14 2017
 Quartus II 64-Bit Version : 11.0 Build 157 04/27/2011 SJ Full Version
 Revision Name : LidarFrameView
 Top-level Entity Name : LidarFrameView
 Family : Cyclone
 Device : EP1C3T100C8
 Timing Models : Final
-Total logic elements : 421 / 2,910 ( 14 % )
-Total pins : 24 / 65 ( 37 % )
+Total logic elements : 420 / 2,910 ( 14 % )
+Total pins : 25 / 65 ( 38 % )
 Total virtual pins : 0
 Total memory bits : 8,192 / 59,904 ( 14 % )
 Total PLLs : 0 / 1 ( 0 % )

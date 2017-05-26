@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LidarFrameView
-Fri May 26 15:50:35 2017
+Fri May 26 23:24:09 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-----------------------------+-------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri May 26 15:50:35 2017     ;
+; Analysis & Synthesis Status ; Successful - Fri May 26 23:24:09 2017     ;
 ; Quartus II 64-Bit Version   ; 11.0 Build 157 04/27/2011 SJ Full Version ;
 ; Revision Name               ; LidarFrameView                            ;
 ; Top-level Entity Name       ; LidarFrameView                            ;
 ; Family                      ; Cyclone                                   ;
-; Total logic elements        ; 439                                       ;
-; Total pins                  ; 24                                        ;
+; Total logic elements        ; 435                                       ;
+; Total pins                  ; 25                                        ;
 ; Total virtual pins          ; 0                                         ;
 ; Total memory bits           ; 8,192                                     ;
 ; Total PLLs                  ; 0                                         ;
@@ -174,39 +174,39 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
-; CCD_ADC_Control.v                ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v        ;
-; uart_tx.v                        ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/uart_tx.v                ;
-; speed_select.v                   ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/speed_select.v           ;
-; SerialSend.v                     ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SerialSend.v             ;
-; SamplingControl.v                ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/SamplingControl.v        ;
-; LidarFrameView.v                 ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/LidarFrameView.v         ;
-; senddcfifo.v                     ; yes             ; User Wizard-Generated File   ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/senddcfifo.v             ;
-; dac7512.v                        ; yes             ; User Verilog HDL File        ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/dac7512.v                ;
-; dcfifo.tdf                       ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/dcfifo.tdf                  ;
-; lpm_counter.inc                  ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/lpm_counter.inc             ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/lpm_add_sub.inc             ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/altdpram.inc                ;
-; a_graycounter.inc                ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/a_graycounter.inc           ;
-; a_fefifo.inc                     ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/a_fefifo.inc                ;
-; a_gray2bin.inc                   ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/a_gray2bin.inc              ;
-; dffpipe.inc                      ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/dffpipe.inc                 ;
-; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/alt_sync_fifo.inc           ;
-; lpm_compare.inc                  ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/lpm_compare.inc             ;
-; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/altsyncram_fifo.inc         ;
-; aglobal110.inc                   ; yes             ; Megafunction                 ; c:/altera/11.0/quartus/libraries/megafunctions/aglobal110.inc              ;
-; db/dcfifo_lhk1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/dcfifo_lhk1.tdf       ;
-; db/alt_sync_fifo_8gm.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/alt_sync_fifo_8gm.tdf ;
-; db/dpram_n3v.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/dpram_n3v.tdf         ;
-; db/altsyncram_pof1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/altsyncram_pof1.tdf   ;
-; db/add_sub_4g8.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/add_sub_4g8.tdf       ;
-; db/add_sub_a18.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/add_sub_a18.tdf       ;
-; db/cntr_lua.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/db/cntr_lua.tdf          ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
+; CCD_ADC_Control.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/CCD_ADC_Control.v                                            ;
+; uart_tx.v                        ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/uart_tx.v                                                    ;
+; speed_select.v                   ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/speed_select.v                                               ;
+; SerialSend.v                     ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SerialSend.v                                                 ;
+; SamplingControl.v                ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/SamplingControl.v                                            ;
+; LidarFrameView.v                 ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/LidarFrameView.v                                             ;
+; senddcfifo.v                     ; yes             ; User Wizard-Generated File   ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v                                                 ;
+; dac7512.v                        ; yes             ; User Verilog HDL File        ; D:/GitHub/LidarFrameView_11.0/dac7512.v                                                    ;
+; dcfifo.tdf                       ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dcfifo.tdf          ;
+; lpm_counter.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_counter.inc     ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_add_sub.inc     ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altdpram.inc        ;
+; a_graycounter.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_graycounter.inc   ;
+; a_fefifo.inc                     ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_fefifo.inc        ;
+; a_gray2bin.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/a_gray2bin.inc      ;
+; dffpipe.inc                      ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/dffpipe.inc         ;
+; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/alt_sync_fifo.inc   ;
+; lpm_compare.inc                  ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/lpm_compare.inc     ;
+; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/altsyncram_fifo.inc ;
+; aglobal110.inc                   ; yes             ; Megafunction                 ; f:/engineeringprogramfiles/altera/11.0/quartus/libraries/megafunctions/aglobal110.inc      ;
+; db/dcfifo_lhk1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dcfifo_lhk1.tdf                                           ;
+; db/alt_sync_fifo_8gm.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/alt_sync_fifo_8gm.tdf                                     ;
+; db/dpram_n3v.tdf                 ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/dpram_n3v.tdf                                             ;
+; db/altsyncram_pof1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/altsyncram_pof1.tdf                                       ;
+; db/add_sub_4g8.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/add_sub_4g8.tdf                                           ;
+; db/add_sub_a18.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/add_sub_a18.tdf                                           ;
+; db/cntr_lua.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/GitHub/LidarFrameView_11.0/db/cntr_lua.tdf                                              ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -214,20 +214,20 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 439   ;
-;     -- Combinational with no register       ; 212   ;
-;     -- Register only                        ; 58    ;
-;     -- Combinational with a register        ; 169   ;
+; Total logic elements                        ; 435   ;
+;     -- Combinational with no register       ; 208   ;
+;     -- Register only                        ; 54    ;
+;     -- Combinational with a register        ; 173   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 155   ;
-;     -- 3 input functions                    ; 90    ;
-;     -- 2 input functions                    ; 126   ;
+;     -- 3 input functions                    ; 97    ;
+;     -- 2 input functions                    ; 119   ;
 ;     -- 1 input functions                    ; 8     ;
 ;     -- 0 input functions                    ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 319   ;
+;     -- normal mode                          ; 315   ;
 ;     -- arithmetic mode                      ; 120   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -236,12 +236,12 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Total registers                             ; 227   ;
 ; Total logic cells in carry chains           ; 132   ;
-; I/O pins                                    ; 24    ;
+; I/O pins                                    ; 25    ;
 ; Total memory bits                           ; 8192  ;
 ; Maximum fan-out node                        ; rst_n ;
 ; Maximum fan-out                             ; 166   ;
-; Total fan-out                               ; 1987  ;
-; Average fan-out                             ; 4.22  ;
+; Total fan-out                               ; 1990  ;
+; Average fan-out                             ; 4.25  ;
 +---------------------------------------------+-------+
 
 
@@ -250,7 +250,7 @@ applicable agreement for further details.
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                                                                              ; Library Name ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |LidarFrameView                                     ; 439 (0)     ; 227          ; 8192        ; 24   ; 0            ; 212 (0)      ; 58 (0)            ; 169 (0)          ; 132 (0)         ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                  ;              ;
+; |LidarFrameView                                     ; 435 (0)     ; 227          ; 8192        ; 25   ; 0            ; 208 (0)      ; 54 (0)            ; 173 (0)          ; 132 (0)         ; 0 (0)      ; |LidarFrameView                                                                                                                                                                                  ;              ;
 ;    |CCD_ADC_Control:CCD_ADC_Control_inst|           ; 135 (135)   ; 72           ; 0           ; 0    ; 0            ; 63 (63)      ; 4 (4)             ; 68 (68)          ; 37 (37)         ; 0 (0)      ; |LidarFrameView|CCD_ADC_Control:CCD_ADC_Control_inst                                                                                                                                             ;              ;
 ;    |SerialSend:SerialSend_inst|                     ; 260 (111)   ; 131          ; 8192        ; 0    ; 0            ; 129 (68)     ; 50 (5)            ; 81 (38)          ; 83 (11)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst                                                                                                                                                       ;              ;
 ;       |senddcfifo:SendFifo_inst|                    ; 96 (0)      ; 55           ; 8192        ; 0    ; 0            ; 41 (0)       ; 33 (0)            ; 22 (0)           ; 59 (0)          ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst                                                                                                                              ;              ;
@@ -263,7 +263,7 @@ applicable agreement for further details.
 ;                      |altsyncram_pof1:altsyncram14| ; 0 (0)       ; 0            ; 8192        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dpram_n3v:dpram4|altsyncram_pof1:altsyncram14 ;              ;
 ;       |speed_select:speed_tx|                       ; 20 (20)     ; 14           ; 0           ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|speed_select:speed_tx                                                                                                                                 ;              ;
 ;       |uart_tx:my_uart_tx|                          ; 33 (33)     ; 19           ; 0           ; 0    ; 0            ; 14 (14)      ; 12 (12)           ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |LidarFrameView|SerialSend:SerialSend_inst|uart_tx:my_uart_tx                                                                                                                                    ;              ;
-;    |dac7512:dac7512_inst|                           ; 44 (44)     ; 24           ; 0           ; 0    ; 0            ; 20 (20)      ; 4 (4)             ; 20 (20)          ; 12 (12)         ; 0 (0)      ; |LidarFrameView|dac7512:dac7512_inst                                                                                                                                                             ;              ;
+;    |dac7512:dac7512_inst|                           ; 40 (40)     ; 24           ; 0           ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 24 (24)          ; 12 (12)         ; 0 (0)      ; |LidarFrameView|dac7512:dac7512_inst                                                                                                                                                             ;              ;
 +-----------------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -277,13 +277,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                     ; IP Include File                                                ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+
-; Altera ; FIFO         ; 11.0    ; N/A          ; N/A          ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst ; C:/EngineeringDocument/GitHub/LidarFrameView_11.0/senddcfifo.v ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+----------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                            ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+--------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                     ; IP Include File                            ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+--------------------------------------------+
+; Altera ; FIFO         ; 11.0    ; N/A          ; N/A          ; |LidarFrameView|SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst ; D:/GitHub/LidarFrameView_11.0/senddcfifo.v ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+--------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -373,9 +373,9 @@ Encoding Type:  One-Hot
 ; Register name                                                ; Reason for Removal                                    ;
 +--------------------------------------------------------------+-------------------------------------------------------+
 ; SerialSend:SerialSend_inst|uart_tx:my_uart_tx|bps_start_r~en ; Lost fanout                                           ;
-; dac7512:dac7512_inst|data_reg[0,3,4,7,8,11]                  ; Stuck at GND due to stuck port data_in                ;
+; dac7512:dac7512_inst|data_reg[0,8,11]                        ; Stuck at GND due to stuck port data_in                ;
 ; SerialSend:SerialSend_inst|fifo_clear_reg                    ; Merged with SerialSend:SerialSend_inst|SerialSendbtn1 ;
-; dac7512:dac7512_inst|data_reg[1,2,5,6,9]                     ; Merged with dac7512:dac7512_inst|data_reg[10]         ;
+; dac7512:dac7512_inst|data_reg[1..7,9]                        ; Merged with dac7512:dac7512_inst|data_reg[10]         ;
 ; SerialSend:SerialSend_inst|serialState~10                    ; Lost fanout                                           ;
 ; SerialSend:SerialSend_inst|serialState~11                    ; Lost fanout                                           ;
 ; SerialSend:SerialSend_inst|serialState~12                    ; Lost fanout                                           ;
@@ -475,7 +475,7 @@ Encoding Type:  One-Hot
 +--------------------+-------+------------------------------------------------------+
 ; TimeReset          ; 1000  ; Signed Integer                                       ;
 ; TimeSetClk         ; 50    ; Signed Integer                                       ;
-; TimeIntegration    ; 80000 ; Signed Integer                                       ;
+; TimeIntegration    ; 90000 ; Signed Integer                                       ;
 ; TimeADCDelay       ; 20    ; Signed Integer                                       ;
 ; State1_Reset       ; 00    ; Unsigned Binary                                      ;
 ; State2_Integration ; 01    ; Unsigned Binary                                      ;
@@ -651,7 +651,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -661,7 +661,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Fri May 26 15:50:32 2017
+    Info: Processing started: Fri May 26 23:24:03 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LidarFrameView -c LidarFrameView
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file ccd_adc_control.v
@@ -684,8 +684,8 @@ Warning (10238): Verilog Module Declaration warning at dac7512.v(8): ignored ano
 Info: Found 1 design units, including 1 entities, in source file dac7512.v
     Info: Found entity 1: dac7512
 Info: Elaborating entity "LidarFrameView" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LidarFrameView.v(68): object "st" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at LidarFrameView.v(84): truncated value with size 32 to match size of target (8)
+Warning (10036): Verilog HDL or VHDL warning at LidarFrameView.v(70): object "st" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at LidarFrameView.v(86): truncated value with size 32 to match size of target (8)
 Info: Elaborating entity "SamplingControl" for hierarchy "SamplingControl:SamplingControl_inst"
 Warning (10230): Verilog HDL assignment warning at SamplingControl.v(121): truncated value with size 32 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at SamplingControl.v(126): truncated value with size 32 to match size of target (26)
@@ -750,6 +750,7 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "CCD_M0" is stuck at GND
     Warning (13410): Pin "CCD_M1" is stuck at GND
     Warning (13410): Pin "CCD_RM" is stuck at GND
+    Warning (13410): Pin "leaser_ctl" is stuck at VCC
 Info: Registers with preset signals will power-up high
 Warning: Ignored 1 CARRY_SUM primitives
     Warning: Ignored 1 CARRY_SUM primitives -- logic cell requires more inputs than it can contain
@@ -767,25 +768,25 @@ Info: 12 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|RestState~9" lost all its fanouts during netlist optimizations.
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|MainState~8" lost all its fanouts during netlist optimizations.
     Info: Register "CCD_ADC_Control:CCD_ADC_Control_inst|MainState~9" lost all its fanouts during netlist optimizations.
-Info: Generated suppressed messages file C:/EngineeringDocument/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.map.smsg
+Info: Generated suppressed messages file D:/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
 Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "startPoint"
-Info: Implemented 471 device resources after synthesis - the final resource count might be different
+Info: Implemented 468 device resources after synthesis - the final resource count might be different
     Info: Implemented 11 input pins
-    Info: Implemented 13 output pins
-    Info: Implemented 439 logic cells
+    Info: Implemented 14 output pins
+    Info: Implemented 435 logic cells
     Info: Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 383 megabytes
-    Info: Processing ended: Fri May 26 15:50:35 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 385 megabytes
+    Info: Processing ended: Fri May 26 23:24:09 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/EngineeringDocument/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.map.smsg.
+The suppressed messages can be found in D:/GitHub/LidarFrameView_11.0/output_files/LidarFrameView.map.smsg.
 
 
