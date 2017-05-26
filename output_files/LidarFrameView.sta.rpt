@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for LidarFrameView
-Fri May 26 00:43:12 2017
+Fri May 26 15:50:42 2017
 Quartus II 64-Bit Version 11.0 Build 157 04/27/2011 SJ Full Version
 
 
@@ -886,8 +886,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 2.145 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[0]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[4]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.160      ;
 ; 2.150 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[8]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[10]                                                      ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.165      ;
 ; 2.157 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[1]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[3]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.172      ;
-; 2.161 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dffe5a[5]                 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dffe9a[5]                                                                      ; SerialSend:SerialSend_inst|rdclk_reg       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; -0.384     ; 1.792      ;
 ; 2.161 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[7]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[9]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.176      ;
+; 2.161 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dffe5a[5]                 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|dffe9a[5]                                                                      ; SerialSend:SerialSend_inst|rdclk_reg       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; -0.384     ; 1.792      ;
 ; 2.162 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[2]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[4]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.177      ;
 ; 2.163 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[6]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[8]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.178      ;
 ; 2.201 ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[9]  ; SerialSend:SerialSend_inst|senddcfifo:SendFifo_inst|dcfifo:dcfifo_component|dcfifo_lhk1:auto_generated|alt_sync_fifo_8gm:sync_fifo|cntr_lua:cntr1|safe_q[9]                                                       ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; CCD_ADC_Control:CCD_ADC_Control_inst|wrclk ; 0.000        ; 0.000      ; 2.216      ;
@@ -1737,7 +1737,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 11.0 Build 157 04/27/2011 SJ Full Version
-    Info: Processing started: Fri May 26 00:43:08 2017
+    Info: Processing started: Fri May 26 15:50:40 2017
 Info: Command: quartus_sta LidarFrameView -c LidarFrameView
 Info: qsta_default_script.tcl version: #1
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1784,9 +1784,9 @@ Info: The selected device family is not supported by the report_metastability co
 Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 357 megabytes
-    Info: Processing ended: Fri May 26 00:43:12 2017
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 360 megabytes
+    Info: Processing ended: Fri May 26 15:50:42 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

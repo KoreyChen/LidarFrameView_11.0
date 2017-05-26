@@ -1,8 +1,8 @@
 module LidarFrameView
 (
-clk,        		   //ģ��ʱ�� 50MHz
-rst_n,               //ģ�鸴λ
-rs232_tx,	         //232 TX����
+clk,        		   
+rst_n,               
+rs232_tx,	      
 startPoint,
 AD_data,
 AD_clk,
@@ -19,11 +19,11 @@ DAC_SYNC,
 DAC_DIN
 );
 
-input  clk;       		   //ģ��ʱ�� 50MHz
-input  rst_n;            //ģ�鸴λ
+input  clk;       		   
+input  rst_n;             
 input [7:0] AD_data;
 input startPoint;
-output rs232_tx;	      //232 TX����
+output rs232_tx;	      
 output AD_clk;
 output AD_OE;
 output CCD_clk;
@@ -34,22 +34,24 @@ output CCD_M0;
 output CCD_M1;
 output CCD_RM;
 
-wire  serialsend_flag;     //��Э�鷢�����ݱ���Ϊ  
-//Buffer�������� 
-wire  [7:0]data;        			//Ҫ����Buffer������
-wire  wrclk;      			//д��ʱ��
-wire  wrreq;      			//д������
-wire  wrempty;    			//д��buffer�ձ�־
-wire  wrfull;     			//д��buffer����־
-wire  [9:0] wrusedw;     			//д�����wire  rdempty;	            //��ձ���wire  rdfull;              //��������
-wire  frameclk;             //����֡����,�����źű�����д����֮ǰ��������������Ч
+wire  serialsend_flag;      
+
+wire  [7:0]data;        	 
+wire  wrclk;      			 
+wire  wrreq;      			 
+wire  wrempty;    			 
+wire  wrfull;     			 
+wire  [9:0] wrusedw;     	 
+wire  rdempty;	            
+wire  rdfull;              
+wire  frameclk;             
 
 
 wire sample_clk;
 wire [8:0] frame_number;
 wire enable;
-wire  [25:0] timeSet; //������������ 26λ ����67 108 863
-wire  [8:0] resolution;//�ֱ������� ,����360   1
+wire  [25:0] timeSet; 
+wire  [8:0] resolution; 
 
 assign enable=1;
 assign timeSet = 22000;
@@ -124,33 +126,35 @@ CCD_ADC_Control  CCD_ADC_Control_inst
 .CCD_M1(CCD_M1),
 .CCD_RM(CCD_RM),
 
-.serialsend_flag(),     //��Э�鷢�����ݱ���Ϊ  
-//Buffer�������� 
-.data(data),        			//Ҫ����Buffer������
-.wrclk(wrclk),      			//д��ʱ��
-.wrreq(wrreq),      			//д������
-.wrempty(),    			//д��buffer�ձ�־
-.wrfull(),     			//д��buffer����־
-.wrusedw(),     			//д�����rdempty(),	            //��ձ���rdfull(),              //��������
-.frameclk(frameclk)             //����֡����,�����źű�����д����֮ǰ��������������Ч
-
+.serialsend_flag(),     //按协议发送数据标记为 
+//Buffer操作相关 
+.data(data),        	//要输入Buffer的数据
+.wrclk(wrclk),      	//写入时钟
+.wrreq(wrreq),      	//写入请求
+.wrempty(),    			//写入buffer空标志
+.wrfull(),     			//写入buffer满标志
+.wrusedw(),     		//写入数量
+.rdempty(),	            //读空标记
+.rdfull(),              //读满标记
+.frameclk(frameclk)     //数据帧计数,这个信号必须在写数据之前发出，上升沿有效
 );
 
-//----------   ����SerialSend --------//
+//----------   SerialSend --------//
 SerialSend SerialSend_inst(
-.clk(clk),        		   //ģ��ʱ�� 50MHz
-.rst_n(rst_n),//ģ�鸴λ
-.rs232_tx(rs232_tx),	      //232 TX����
-.serialsend_flag(serialsend_flag),     //��Э�鷢�����ݱ���
-//Buffer�������� 
-.data(data),      //Ҫ����Buffer������
-.wrclk(wrclk),      	//д��ʱ��
-.wrreq(wrreq),      		//д������
-.wrempty(wrempty),    			   //д��buffer�ձ�־
-.wrfull(wrfull),     			   //д��buffer����־
-.wrusedw(wrusedw),     			   //д�����rdempty(rdempty),	               //��ձ���rdfull(rdfull),                 //��������
-.frameclk(frameclk )        //����֡����,�����źű�����д����֮ǰ��������������Ч
-
+.clk(clk),        		             //模块时钟 50MHz
+.rst_n(rst_n),                       //模块复位
+.rs232_tx(rs232_tx),	             //232 TX引脚
+.serialsend_flag(serialsend_flag),   //按协议发送数据标记为  
+//Buffer操作相关 
+.data(data),                         //要输入Buffer的数据
+.wrclk(wrclk),      	             //写入时钟
+.wrreq(wrreq),      		         //写入请求
+.wrempty(wrempty),    			     //写入buffer空标志
+.wrfull(wrfull),     			     //写入buffer满标志
+.wrusedw(wrusedw),     			     //写入数量
+.rdempty(rdempty),	                 //读空标记
+.rdfull(rdfull),                     //读满标记
+.frameclk(frameclk )                 //数据帧计数,这个信号必须在写数据之前发出，上升沿有效
 );
 
 dac7512 dac7512_inst(
